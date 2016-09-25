@@ -39,8 +39,8 @@ I didn't necessarily perform these in that exact order towards the end (and I'm 
 
 I still have plenty to learn about Hugo so I will no doubt revisit these in future, but I've written a bit about the build process (yet to automate publishing) and the cheatsheet I've started here:
 
-[Hugo Build and Publish Workflow](/page/projects/hugo-build-and-publish-workflow) (in progress)<br />
-[Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet)
+[Hugo Build and Publish Workflow](/page/projects/hugo-build-and-publish-workflow.html) (in progress)<br />
+[Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet.html)
 
 GitHub has a lot of relevant help pages for setting up a GitHub Pages site and configuring a custom domain. I read through many of them, which I've listed below - if you're thinking about setting up GitHub Pages with a custom domain and powering it with Hugo, hopefully some of the hints I've mentioned will be useful alongside the GitHub documentation and other material you read... 
 

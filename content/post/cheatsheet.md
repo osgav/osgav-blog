@@ -90,7 +90,7 @@ https://twitter.com/spf13/status/666616452582129664
 
 ---
 
-{{< figure src="/images/zerodots_wordle.png" title="zerdots wordle" >}}
+{{< figure src="/images/zerodots_wordle.png" title="zerodots wordle" >}}
 
 ---
 
