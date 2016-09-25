@@ -13,5 +13,6 @@ deploy:
   endpoint: osgav.run.s3-website.eu-central-1.amazonaws.com
   local-dir: public
   skip_cleanup: true
+  acl: public_read
   on:
     repo: osgav/osgav-blog

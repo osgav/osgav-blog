@@ -12,7 +12,7 @@ title = "Rundeck on AWS Part I: CloudFormation"
 
 +++
 
-#### Then
+#### Then...
 
 A few months ago I started playing around with [Rundeck](http://rundeck.org/) - a platform for *runbook automation, job scheduling, incident response, post-build deployment automation, environment provisioning, data processing jobs* and anything you like really it seems, according to its website.
 
@@ -30,7 +30,7 @@ This was great, I could now create and destroy a Rundeck stack at will for testi
 
 The next thing I tested was changing the Rundeck database from a local file-based one to a local MySQL database and then to an RDS instance in AWS. Then I started thinking about including RDS instance creation in the CloudFormation... unfortunately I didn't get around to putting RDS into the template, but I'm not too phased by this as I think I'm going to stick to a local MySQL database as it should be sufficient for my light usage...
 
-#### Now
+#### Now-ish
 
 Some time later I had the urge to work on Rundeck again... *(actually back in July when I drafted this post oops!)*
 
@@ -46,3 +46,6 @@ However, I'm thinking about replacing the Rundeck CloudFormation with an Ansible
 
 More blogs on Rundeck (and Ansible) to come...
  
+#### Also!
+
+Lately I stumbled across this interesting paper (via the Rundeck website) on using Rundeck in a security environment - very interesting read: [SANS Institute: Rundeck for Secure Script Executions](http://rundeck.org/news/2016/08/17/rundeck-sans-whitepaper.html)
