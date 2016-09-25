@@ -24,11 +24,11 @@ Taking the [example CloudFormation](https://aws.amazon.com/cloudformation/aws-cl
 
 I've described the changes I made to the example CloudFormation on [my project page.](/page/projects/rundeck-cloudformation.html)
 
-You can find the Rundeck CloudFormation [in my github](https://github.com) if you would like to try it out.
+You can find the Rundeck CloudFormation [in my github](https://github.com/osgav/rundeck/blob/master/rundeck_basic_cloudformation.template) if you would like to try it out.
 
 This was great, I could now create and destroy a Rundeck stack at will for testing.
 
-The next thing I tested was changing the Rundeck database from a local file-based one to a local MySQL database and then to an RDS instance in AWS. Then I started thinking about including RDS instance creation in the CloudFormation... unfortunately I didn't get around to putting RDS into the template, but I'm not too phased by this as I think I'm going to stick to a local MySQL database as it should be sufficient for my light usage...
+The next thing I tested was changing the Rundeck database from a local file-based one to a local MySQL database and then to an RDS instance in AWS. Then I started thinking about including RDS instance creation in the CloudFormation... unfortunately I didn't get around to putting RDS into the template, but I'm not too phased by this as I think I'm going to stick to a local MySQL database as it should be sufficient for my light usage - and I do have a [slightly messy cloudformation](https://github.com/osgav/rundeck/blob/master/rundeck_mysql_database_cloudformation.template) for configuring a MySQL database (PHP could be removed for example).
 
 #### Now-ish
 
@@ -48,4 +48,4 @@ More blogs on Rundeck (and Ansible) to come...
  
 #### Also!
 
-Lately I stumbled across this interesting paper (via the Rundeck website) on using Rundeck in a security environment - very interesting read: [SANS Institute: Rundeck for Secure Script Executions](http://rundeck.org/news/2016/08/17/rundeck-sans-whitepaper.html)
+Lately I stumbled across this interesting paper (via the Rundeck website) on using Rundeck in a security environment - very interesting read, particularly section 3: [SANS Institute: Rundeck for Secure Script Executions](http://rundeck.org/news/2016/08/17/rundeck-sans-whitepaper.html)
