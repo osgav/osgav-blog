@@ -9,7 +9,7 @@ title = "Hugo Build and Publish Workflow"
 
 +++
 
-[< back to projects](/page/projects)<br />
+[< back to projects](/page/projects.html)<br />
 **`created: 11/06/2016`**<br />
 **`updated: 12/06/2016`**
 
@@ -43,7 +43,7 @@ $ ./hugo/serve
 $ ./hugo/build-public
 ```
 
-As mentioned in [Hugo Markdown Cheatsheet](/page/hugo-markdown-cheatsheet), if you run `hugo server` with the parameter `--buildDrafts` then any posts or pages where `draft = true` will also be published to the blog on the local hugo server.
+As mentioned in [Hugo Markdown Cheatsheet](/page/hugo-markdown-cheatsheet.html), if you run `hugo server` with the parameter `--buildDrafts` then any posts or pages where `draft = true` will also be published to the blog on the local hugo server.
 
 The `--buildDrafts` parameter is the only difference between the `serve` and `serve-withdrafts` scripts.
 
@@ -126,7 +126,7 @@ $ vi content/post/next-new-post.md
 ```
 With the `vi` terminal on one side of the screen and a web browser on the other, I can see the changes immediately after `:w` in `vi`. Really awesome!
 
-And to publish that new content live, we follow the same workflow as below... if I run `02-serve` I will no longer see my [cheatsheet](/page/projects/hugo-markdown-cheatsheet), but if I notice the latest post isn't there I can use the `hugo undraft` command and it'll appear immediately.
+And to publish that new content live, we follow the same workflow as below... if I run `02-serve` I will no longer see my [cheatsheet](/page/projects/hugo-markdown-cheatsheet.html), but if I notice the latest post isn't there I can use the `hugo undraft` command and it'll appear immediately.
 
 
 - Simple update to live page like updating an image or a typo -->
@@ -226,6 +226,6 @@ As you can see I've also numbered the scripts so it is obvious which order they 
 
 ---
 
-[< back to projects](/page/projects)
+[< back to projects](/page/projects.html)
 
 

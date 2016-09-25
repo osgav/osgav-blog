@@ -9,15 +9,15 @@ title = "Hugo Platform Runbook"
 
 +++
 
-[< back to projects](/page/projects)<br />
+[< back to projects](/page/projects.html)<br />
 **`created: 12/06/2016`**
 
 ---
 
 This is my runbook for operating my blog, based on the scripts I wrote to help with hugo building and publishing, you can read about these here:
 
-[Hugo Build and Publish Workflow](/page/projects/hugo-build-and-publish-workflow)<br />
-[Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet)
+[Hugo Build and Publish Workflow](/page/projects/hugo-build-and-publish-workflow.html)<br />
+[Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet.html)
 
 > download source and website --><br />
 

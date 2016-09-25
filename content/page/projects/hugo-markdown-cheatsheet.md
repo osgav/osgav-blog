@@ -10,7 +10,7 @@ title = "Hugo Markdown Cheatsheet"
 
 +++
 
-[< back to projects](/page/projects)<br />
+[< back to projects](/page/projects.html)<br />
 **`created: 11/06/2016`**<br />
 **`updated: 12/06/2016`**
 
@@ -51,5 +51,5 @@ title = "cheatsheet"
 
 ---
 
-[< back to projects](/page/projects)
+[< back to projects](/page/projects.html)
 
