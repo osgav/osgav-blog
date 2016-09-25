@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "osgav"
 theme = "casper"
 paginate = 5
-canonifyurls = true
 uglyurls = true
 
 [params]
