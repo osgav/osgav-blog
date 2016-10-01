@@ -27,3 +27,4 @@ Project pages for content outside of or accompanying blog posts
 [Hugo Build and Publish Workflow](/page/projects/hugo-build-and-publish-workflow.html)<br />
 [Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet.html)<br />
 [blogpost] [hugo --> https://osgav.run](/post/hugo-to-https.html)<br />
+[blogpost] [hugo --> AWS --> https://osgav.run](/post/hugo-to-aws-to-https.html)<br />
