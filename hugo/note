@@ -1,6 +1,0 @@
-still not 100% if the following empty directories are required at top-level of source..
-archetypes
-data
-layouts
-
-(they also exist in themes/casper folder somewhere, perhaps that is all that is necessary)
