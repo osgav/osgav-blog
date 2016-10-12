@@ -141,9 +141,20 @@ GitHub issues:<br />
 
 #### www.osgav.run
 
-This is currently broken - `https://www.osgav.run` - I need to fix it so this redirects to: `https://osgav.run`
+<s>This is currently broken - `https://www.osgav.run` - I need to fix it so this redirects to: `https://osgav.run`</s>
 
-It may involve something along the lines of setting up a `www.osgav.run` S3 bucket with a redirect on it - we shall see, I will update the post when I've configured it.
+<s>It may involve something along the lines of setting up a `www.osgav.run` S3 bucket with a redirect on it - we shall see, I will update the post when I've configured it.</s>
+
+If you take the time to type `www.osgav.run` or even `https://www.osgav.run` into your browser address bar you will now get redirected to the apex domain, dropping the `www` portion.
+
+This was fairly straightforward to set up, along the lines of what I was thinking.
+
+Firstly to enable for just HTTP was only 3 steps - create new `www.osgav.run` S3 bucket, configure for static web hosting and set option to redirect to `osgav.run` S3 bucket, and then create a Route53 entry to point `www.osgav.run` at the S3 bucket with that name.
+
+But that didn't redirect you if you entered `https://www.osgav.run`. To fix that I needed to create a new CloudFront distribution, configured very similarly to the original one but with the origin set to the new `www` S3 bucket. I applied my wildcard SSL certificate `*.osgav.run` to this distribution to provide SSL - also there is a particular thing to note when adding the S3 origin here: you need to use the endpoint for the S3 website rather than the plain S3 reference that appears in the autosuggest dropdown when entering the origin. You can get that URL from the bucket properties in the S3 area of the console.
+
+After a deployment of the CloudFront distribution, now both `www.osgav.run` and `https://www.osgav.run` redirect to the apex domain - wahey!
+
 
 
 #### References
