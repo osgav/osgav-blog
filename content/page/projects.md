@@ -19,6 +19,7 @@ Project pages for content outside of or accompanying blog posts
 
 [Rundeck CloudFormation](/page/projects/rundeck-cloudformation.html)<br />
 [blogpost] [Rundeck on AWS Part I: CloudFormation](/post/rundeck-on-aws-part-i.html)<br />
+[blogpost] [Rundeck on AWS Part II: Ansible](/post/rundeck-on-aws-part-ii.html)<br />
 
 
 ##### this blog
