@@ -22,7 +22,7 @@ The playbook with extra VPC bits is [in my github](https://github.com/osgav/rund
 Basically at the moment my workflow boils down to:
 
 ```
-$ ansible-playbook -i hosts/coreinfx rundeck_control.yml -t "provision" -e "type=rundecck-test"
+$ ansible-playbook -i hosts/coreinfx rundeck_control.yml -t "provision" -e "type=rundeck-test"
 $ ansible-playbook -i hosts/coreinfx rundeck_control.yml -t "configure" -e "type=rundeck-test"
 $ ansible-playbook -i hosts/coreinfx rundeck_control.yml -t "terminate" -e "type=rundeck-test"
 ```
