@@ -8,16 +8,20 @@ title = "cheatsheet"
 
 +++
 
-https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsheet.md
+https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsheet.md<br />
+<br />
+<https://osgav.run><br />
+[text link](https://osgav.run)<br />
+[text link with hover text](https://osgav.run "hoverboard")<br />
 
-<https://osgav.run>
-[text link](https://osgav.run)
-[text link with hover text](https://osgav.run "hoverboard")
+*italic*<br />
+**bold**<br />
+***bold italic***<br />
+<s>strikethrough</s><br />
+<br />
+Use the following `more` tag to manually create the "summary" block of content for the front page...
 
-*italic*
-**bold**
-***bold italic***
-<s>strikethrough</s>
+<!--more-->
 
 
 *italic text* and \*escaped asterisks\*

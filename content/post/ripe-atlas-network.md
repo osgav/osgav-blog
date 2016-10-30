@@ -22,8 +22,10 @@ title = "RIPE Atlas Network"
 Probes connected to RIPE Atlas: **9364**<br />
 Measurements currently running: **11719**<br />
 Results collected per second: **4082**<br />
+<br />
+A couple of months ago I stumbled across an interesting [blog](https://blog.webernetz.net/2016/06/02/ripe-atlas-measurements/) [post](https://blog.webernetz.net/2016/06/07/ripe-atlas-probe-stats/) about the [RIPE](https://atlas.ripe.net/) [Atlas](https://atlas.ripe.net/about/) [Network](https://atlas.ripe.net/campaigns/8a5cceb1-bf51-49b6-a72b-a005a05dcafe/) - ***a global network of probes that measure Internet connectivity and reachability*** - and was very intrigued to discover this was something I could join, both physically and virtually by obtaining an Atlas probe and completing a typical account registration...
 
-A couple of months ago I stumbled across an interesting [blog](https://blog.webernetz.net/2016/06/02/ripe-atlas-measurements/) [post](https://blog.webernetz.net/2016/06/07/ripe-atlas-probe-stats/) about the [RIPE](https://atlas.ripe.net/) [Atlas](https://atlas.ripe.net/about/) [Network](https://atlas.ripe.net/campaigns/8a5cceb1-bf51-49b6-a72b-a005a05dcafe/) - ***a global network of probes that measure Internet connectivity and reachability*** - and was very intrigued to discover this was something I could join, both physically and virtually by obtaining an Atlas probe and completing a typical account registration.
+<!--more-->
 
 Why did I want to join? By hosting a probe you become part of the global measurement network. Your probe will be used in tests configured by RIPE NCC and the users of the RIPE Atlas Network to perform connectivity and reachability tests - pings, traceroutes, DNS lookups, etc - and in doing so it earns you credits which allow you to run your own tests on the global network. Nice! A global synthetic testing network I can use for my own research and debugging purposes, while contributing to other peoples experimenting. And yet another electronic device to fiddle around with.
 

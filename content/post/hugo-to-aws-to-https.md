@@ -26,6 +26,8 @@ title = "hugo --> AWS --> https://osgav.run"
 
 As well as [catching up](/post/rundeck-on-aws-part-i.html) on drafted blog posts last weekend, I migrated this blog from GitHub Pages, KloudSec, Domain Registrar's DNS & Let's Encrypt to Amazon Web Services: S3, CloudFront, Route53 & Certificate Manager. I also introduced Travis CI and continued using GitHub for version control (but no longer hosting). This migration to AWS was in light of one of my apprehensions about KloudSec unfortunately materializing - it was a fairly small and new company and has recently ceased to exist. As such my Let's Encrypt certificate had expired and was no longer auto-renewed by KloudSec so my blog was showing a HTTPS error when you visited it - boo. Time to pay for a risky design choice...
 
+<!--more-->
+
 <a href="/images/posts/hugo-to-aws-to-https/ssl_expired.png"><img src="/images/posts/hugo-to-aws-to-https/ssl_expired.png" /></a>
 
 So here goes a ***how I set up this blog*** take II:

@@ -11,7 +11,9 @@ title = "Rundeck on AWS Part II: Ansible"
 
 +++
 
-Following on from [Part I](/post/rundeck-on-aws-part-i.html), I've now starting writing an Ansible playbook for creating a Rundeck server in AWS - which can currently provision and terminate a Rundeck server . No more CloudFormation to deploy a new instance woohoo!
+Following on from [Part I](/post/rundeck-on-aws-part-i.html), I've now starting writing an Ansible playbook for creating a Rundeck server in AWS - which can currently provision and terminate a Rundeck server. No more CloudFormation to deploy a new instance woohoo!
+
+<!--more-->
 
 [Ansible](http://docs.ansible.com/) playbooks are a lot more readable and easier to interpret and write. As I'd come to understand Ansible is very flexible and writing my first playbook really brought that home. There are various ways actions and data can be divided up amongst playbooks and additional files, which lead to different sets of ansible commands to achieve your objectives. Anything you'd like to do with Ansible, well there is probably an Ansible module for doing it. The [module index](http://docs.ansible.com/ansible/modules_by_category.html) is extensive!
 

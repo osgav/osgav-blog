@@ -15,5 +15,9 @@ title = "ZER0D0TS"
 
 For now, this [hugo markdown cheatsheet](/page/projects/hugo-markdown-cheatsheet.html) is a taster of the sort of things I'm going to do to make blogging easier for myself.
 
+<!--more-->
+
 ![rest in peace](/images/rip.png "rip")
+
+
 

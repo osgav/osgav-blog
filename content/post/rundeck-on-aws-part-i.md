@@ -16,7 +16,10 @@ title = "Rundeck on AWS Part I: CloudFormation"
 
 A few months ago I started playing around with [Rundeck](http://rundeck.org/) - a platform for *runbook automation, job scheduling, incident response, post-build deployment automation, environment provisioning, data processing jobs* and anything you like really it seems, according to its website.
 
-This all sounded very interesting so I set about trying out the [vagrant image](http://rundeck.org/downloads.html) locally at first, then quickly decided I'd like to get an instance running in AWS with the [EC2 plugin](http://rundeck.org/plugins/2013/01/01/aws-ec2-nodes.html) so I could control a few nodes with it and really test it out.
+
+This all sounded very interesting so I set about trying out the [vagrant image](http://rundeck.org/downloads.html) locally at first, then quickly decided I'd like to get an instance running in AWS with the [EC2 plugin](http://rundeck.org/plugins/2013/01/01/aws-ec2-nodes.html) so I could control a few nodes with it and really test it out...
+
+<!--more-->
 
 So how can I get an instance running in AWS? I'd heard lots about [CloudFormation](https://aws.amazon.com/cloudformation/) at this point but hadn't delved into it before - now seemed like a good opportunity. After a few hours of reading up and fiddling around I had a working CloudFormation template that would create a Security Group and place an EC2 instance in it with the Rundeck application installed and running.
 
