@@ -38,19 +38,34 @@
         <small>{{.Description}}</small>
 
         <section class="post-meta">
-        {{ if eq .Section "post"}}
-          <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            {{ .Date.Format "Jan 2, 2006" }}
-          </time>
+        {{$author := index .Site.Data.authors .Params.author }}
+        {{ if isset $author "thumbnail" }}
+            <img class="author-thumb" src="{{ .Site.BaseURL }}{{ $author.thumbnail }}" alt="Author image" nopin="nopin" />
+        {{else if .Site.Params.logo }}
+            <img class="author-thumb" src="{{ .Site.BaseURL }}{{.Site.Params.logo}}" alt="Author image" nopin="nopin" />
         {{end}}
-         {{ range .Params.tags }}
-          <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}.html">#{{ . }}</a></span>
-         {{ end }}
+        {{if and (ne .Params.author .Site.Params.author) .Params.author}}
+        {{$author := index .Site.Data.authors .Params.author }}
+            {{$author.name}}
+        {{else if .Site.Params.author}}
+            {{.Site.Params.author}}
+        {{end}}
+        {{if .Params.tags }}on
+            {{ range $index, $tag := .Params.tags }}
+                <a href="{{$baseurl}}tags/{{ $tag | urlize }}.html">#{{ $tag }}</a>
+            {{ end }}
+        {{end}}
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }} 
+        </time>
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            reading time: <b>{{ .ReadingTime }} mins</b>
+        </time>
         </section>
     </header>
 
     <section class="post-content">
-      {{ .Content }}
+      &nbsp;{{ .Content }}
     </section>
 
 
