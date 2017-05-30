@@ -4,7 +4,7 @@ go:
 install:
 - go get github.com/kardianos/govendor
 - govendor get github.com/spf13/hugo
-script: $HOME/go/bin/hugo -t casper
+script: $HOME/gopath/bin/hugo -t casper
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
