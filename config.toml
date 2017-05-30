@@ -6,8 +6,8 @@ paginate = 5
 uglyurls = true
 
 [params]
-	description = "systems engineer interested in operations, security & development"
-	cover = "images/flowmap.png"
+	description = "systems engineer interested in operations, security, development, linux, automation, monitoring, python & bots"
+	cover = "images/headimg.jpg"
 	author = "osgav"
 	authorlocation = "the internet"
 	authorwebsite = "https://osgav.run/"

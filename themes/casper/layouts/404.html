@@ -1,14 +1,16 @@
 {{ partial "header.html" . }}
 
+
 {{if .Site.Params.cover}}
 <header class="main-header " style="background-image: url({{.Site.BaseURL}}{{.Site.Params.cover}})">
 {{else}}
 <header class="main-header no-cover">
 {{end}}
 
+
 <nav class="main-nav overlay clearfix">
         {{ if .Site.Params.logo }}
-            <a class="blog-logo" href="{{ .Permalink }}"><img src="{{.Site.BaseURL}}{{ .Site.Params.logo }}" alt="Blog Logo" /></a>
+            <a class="home-button" href="{{ .Site.BaseURL }}"><span class="burger">&#9754;</span><span class="word">404</span></a>
         {{end}}
         {{ if .Site.Menus.main }}
             <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
@@ -56,5 +58,7 @@
     <p>Go back <a href="/">home</a>.</p>
     <img src="/images/404.jpg" />
   </article>
+
+{{ partial "suggestions.html" . }}
 
 {{ partial "footer.html" . }}
