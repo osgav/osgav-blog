@@ -1,14 +1,13 @@
 +++
 author = "osgav"
 comments = false
-date = "2016-06-11T16:39:58Z"
+date = "2017-05-30T18:50:42Z"
 draft = false
-#image = "images/zerodots_wordle.png"
+image = "images/halfheadimg.jpg"
 menu = "main"
 weight = "10"
 share = false
 slug = "projects"
-#tags = ["projects"]
 title = "$ cd projects"
 
 +++
@@ -29,3 +28,4 @@ Project pages for content outside of or accompanying blog posts
 [Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet.html)<br />
 [blogpost] [hugo --> https://osgav.run](/post/hugo-to-https.html)<br />
 [blogpost] [hugo --> AWS --> https://osgav.run](/post/hugo-to-aws-to-https.html)<br />
+[blogpost] [Hugo TravisCI Pipeline Broken?](/post/hugo-travis-broken.html)<br />
