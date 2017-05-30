@@ -4,7 +4,7 @@ go:
 install:
 - go get -u -v github.com/kardianos/govendor
 - govendor get github.com/spf13/hugo
-- cd $GOPATH/src/github.com/spf13/hugo && govendor sync && go install
+- cd $GOPATH/src/github.com/spf13/hugo && govendor sync
 script: cd $GOPATH/src/github.com/osgav/osgav-blog && hugo -t casper
 deploy:
   provider: s3
