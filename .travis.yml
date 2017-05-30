@@ -2,10 +2,10 @@ language: go
 go:
 - 1.4
 install:
-- go get -u -v github.com/kardianos/govendor
-- govendor get github.com/spf13/hugo
-- cd $GOPATH/src/github.com/spf13/hugo && govendor sync
-script: cd $GOPATH/src/github.com/osgav/osgav-blog && hugo -t casper
+- wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz
+- tar xvzf hugo_0.18.1_Linux-64bit.tar.gz
+- cp hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 $GOPATH/bin/hugo
+script: hugo -t casper
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
