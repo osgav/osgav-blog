@@ -1,9 +1,9 @@
 <aside class="read-next">
   {{ with .PrevInSection }}
-      <a class="read-next-story" style="{{ if .Params.image }}background-image: url({{ .Site.BaseURL }}{{ .Params.image }}){{ else }}no-cover{{ end }}" href="{{ .RelPermalink }}">
+      <a class="read-next-story" style="{{ if .Params.image }}background-image: url({{ .Site.BaseURL }}{{ .Params.image }}){{ else }}no-cover{{ end }}; content: 'reading time {{ .ReadingTime }} mins';" href="{{ .RelPermalink }}">
           <section class="post">
               <h2>{{.Title}}</h2>
-              <!-- <p>{{ substr .Summary 0  }}</p> -->
+              <font color="white">reading time {{ .ReadingTime }} mins</font>
           </section>
       </a>
   {{ end }}
@@ -11,6 +11,7 @@
       <a class="read-next-story prev" style="{{ if .Params.image }}background-image: url({{ .Site.BaseURL }}{{ .Params.image }}){{ else }}no-cover{{ end }}" href="{{ .RelPermalink }}">
           <section class="post">
               <h2>{{.Title}}</h2>
+              <font color="white">reading time {{ .ReadingTime }} mins</font>
           </section>
       </a>
   {{ end }}
