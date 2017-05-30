@@ -4,6 +4,7 @@ go:
 install:
 - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz
 - tar xvzf hugo_0.18.1_Linux-64bit.tar.gz
+- mkdir -p $GOPATH/bin
 - cp hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 $GOPATH/bin/hugo
 script: hugo -t casper
 deploy:
