@@ -3,6 +3,7 @@ author = "osgav"
 date = "2016-06-05T13:41:15Z"
 draft = false
 title = "$ whois osgav"
+image = "images/halfheadimg.jpg"
 menu = "main"
 weight = "0"
 share = false
@@ -19,7 +20,7 @@ So who am I? And what do I do?<br />
 
 ### gavin mcgough 
 
-I've been interested in computers and the internet for a little over a decade, began "studying" them about 8 years ago and in the last few years started a career in Operations...
+I've been interested in computers and the internet for a little over a decade, began "studying" them about 9 years ago and in the last few years started a career in Operations...
 
 As a Global Availability & Performance Engineer, or more generally a Systems Engineer, I find myself using a multitude of web portals, tools and API integrations to monitor, analyze and optimize the health of a high traffic global travel search engine: Skyscanner
 
