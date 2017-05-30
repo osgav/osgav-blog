@@ -3,7 +3,7 @@ go:
 - 1.4
 install:
 - go get -u -v github.com/kardianos/govendor
-- go get -u -v github.com/spf13/hugo
+- govendor get github.com/spf13/hugo
 - cd $GOPATH/src/github.com/spf13/hugo && govendor sync && go install
 script: cd $GOPATH/src/github.com/osgav/osgav-blog && hugo -t casper
 deploy:
