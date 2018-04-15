@@ -4,6 +4,7 @@ title = "osgav"
 theme = "casper"
 paginate = 5
 uglyurls = true
+enableEmoji = true
 
 [params]
 	description = "systems engineer interested in operations, security, development, linux, automation, monitoring, python & bots"
@@ -18,22 +19,23 @@ uglyurls = true
 	hideHUGOSupport = false
 
 [[menu.main]]
-	name = "$ curl https://blog"
-	pre = "<h4><span class=\"icon-cog\"></span> osgav</h4>"
+	name = "blog"
+	post = "<span class=\"icon-edit\"></span>"
+	pre = "<h4 class=\"menutitle\"><span class=\"icon-cog\"></span> osgav</h4>"
 	weight = -100
 	identifier = "blog"
 	url = "/"
 
 [[menu.main]]
-	name = "photo blog"
-	pre = "<br /><h4><span class=\"icon-website\"></span> outside</h4>"
+	name = "photos"
+	pre = "<br /><h4 class=\"menutitle\"><span class=\"icon-website\"></span> outside</h4>"
 	post = "<span class=\"icon-image\"></span>"
 	weight = 90 
 	url = "https://outside.osgav.run"
 
 [[menu.main]]
 	name = "github"
-	pre = "<br /><h4><span class=\"icon-search\"></span> find</h4>"
+	pre = "<br /><h4 class=\"menutitle\"><span class=\"icon-search\"></span> connect</h4>"
 	post = "<span class=\"icon-github\"></span>"
 	url = "https://github.com/osgav"
 	weight = 110

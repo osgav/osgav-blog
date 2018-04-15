@@ -4,9 +4,11 @@ date = "2016-06-05T13:41:15Z"
 draft = false
 title = "$ whois osgav"
 image = "images/halfheadimg.jpg"
-menu = "main"
-weight = "0"
 share = false
+[menu.main]
+name = "whois"
+post = "<span class=\"icon-help\"></span>"
+weight = 0
 
 +++
 

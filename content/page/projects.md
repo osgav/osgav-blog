@@ -4,11 +4,14 @@ comments = false
 date = "2017-05-30T18:50:42Z"
 draft = false
 image = "images/halfheadimg.jpg"
-menu = "main"
-weight = "10"
 share = false
 slug = "projects"
 title = "$ cd projects"
+[menu.main]
+name = "browse..."
+post = "<span class=\"icon-cog\"></span>"
+pre = "<br /><h4 class=\"menutitle\"><span class=\"icon-code\"></span> projects</h4>"
+weight = 10
 
 +++
 
