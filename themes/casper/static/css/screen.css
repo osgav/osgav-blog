@@ -574,7 +574,8 @@ body.nav-opened .site-wrapper {
 /* Navigation */
 
 .menutitle {
-    color: #003B00;
+    color: #5e5e5e;
+    font-family: monospace, sans-serif;
 }
 
 body.nav-opened .nav-cover {
@@ -683,6 +684,7 @@ body.nav-opened .nav {
     padding: 90px 9% 5%;
     list-style: none;
     counter-reset: item;
+    font-family: monospace, sans-serif;
 }
 
 .nav li:before {
