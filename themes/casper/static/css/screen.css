@@ -578,8 +578,15 @@ body.nav-opened .site-wrapper {
     font-family: sans-serif;
 }
 
+.sticky {
+    position: fixed;
+    top: 35px;
+    width: 93.45%;
+}
 
-
+.sticky + .content {
+    padding-top: 35px;
+}
 
 body.nav-opened .nav-cover {
     position: fixed;
@@ -1694,6 +1701,15 @@ body:not(.post-template) .post-title {
     .blog-logo img {
         height: 30px;
     }
+
+    .sticky {
+        position: fixed;
+        top: 5px;
+        width: 98%;
+
+
+        
+    }    
 
     .menu-button {
         padding: 0 5px;

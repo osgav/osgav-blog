@@ -10,6 +10,7 @@
         {{ if .Site.Params.logo }}
             <a class="home-button" href="{{ .Permalink }}"><span class="burger">&#8679;</span><span class="word">Home</span></a>
         {{end}}
+        <div id="stickymenu">
         {{ if .Site.Menus.main }}
             <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">osgav</span></a>
         {{else}}
@@ -19,6 +20,7 @@
               <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
             {{end}}
         {{end}}
+        </div>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
@@ -106,5 +108,24 @@
     {{ partial "pagination.html" $paginator }}
 
 </main>
+
+
+<script>
+
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("stickymenu");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+
+</script>
+
 
 {{ partial "footer.html" . }}
