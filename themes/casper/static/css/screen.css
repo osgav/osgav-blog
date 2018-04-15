@@ -131,6 +131,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
+
+.icon-image:before{
+    content:"\f102";
+}   
+
+
 .icon-github:before {
     content: "\f200";
 }
@@ -670,12 +676,13 @@ body.nav-opened .nav {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.nav li a:after {
-    display: inline-block;
-    content: " .......................................................";
-    color: rgba(255,255,255,0.2);
-    margin-left: 5px;
-}
+
+
+
+
+
+
+
 .nav .nav-current:before {
     color: #fff;
 }

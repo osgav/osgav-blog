@@ -25,19 +25,21 @@ uglyurls = true
 	url = "/"
 
 [[menu.main]]
-	name = "travel photo blog"
+	name = "photo blog"
 	pre = "<h4>$ outside</h4>"
+	post = "<span class=\"icon-image\"></span>"
 	weight = 90 
 	url = "https://outside.osgav.run"
-
 
 [[menu.main]]
 	name = "github"
 	pre = "<h4>$ find</h4>"
+	post = "<span class=\"icon-github\"></span>"
 	url = "https://github.com/osgav"
 	weight = 110
 
 [[menu.main]]
 	name = "twitter"
+	post = "<span class=\"icon-twitter\"></span>"
 	url = "https://twitter.com/ZER0D0TS"
 	weight = 110

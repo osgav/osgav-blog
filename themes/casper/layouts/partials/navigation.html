@@ -9,7 +9,7 @@
         {{ range .Site.Menus.main }}
             {{.Pre}}
             <li class="nav-opened{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .)}} nav-current{{end}}" role="presentation">
-            	<a href="{{.URL}}">{{.Name}}</a>
+            	<a href="{{.URL}}">{{.Post}}&nbsp;&nbsp;&nbsp;{{.Name}}</a>
             </li>
         {{end}}
     </ul>
