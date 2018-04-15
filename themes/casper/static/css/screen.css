@@ -758,8 +758,11 @@ body.nav-opened .nav {
     text-decoration: none;
     line-height: 35px;
     border-radius: 3px;
-    background: #fff;
+    background: #B8B8B8;
     transition: all ease 0.3s;
+}
+.subscribe-button:hover {
+    background: #FFD700;
 }
 .subscribe-button:before {
     font-size: 9px;
