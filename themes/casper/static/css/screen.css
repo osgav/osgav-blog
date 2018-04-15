@@ -952,7 +952,7 @@ body.nav-opened .menu-button .word {
     letter-spacing: -1px;
     font-weight: 700;
     font-family: sans-serif;
-    color: #fff;
+    color: rgba(255,255,255,0.9);
 }
 
 .page-description {
@@ -962,7 +962,7 @@ body.nav-opened .menu-button .word {
     font-weight: 400;
     font-family: monospace, serif;
 
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.6);
 }
 
 .no-cover.main-header {
