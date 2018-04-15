@@ -14,8 +14,6 @@ enableEmoji = true
 	authorwebsite = "https://osgav.run/"
 	bio = "Global Availability & Performance Engineer"
 	logo = "images/tux.jpg"
-	githubName = "osgav"
-	twitterName = "ZER0D0TS"
 	hideHUGOSupport = false
 
 [[menu.main]]

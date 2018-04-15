@@ -575,8 +575,11 @@ body.nav-opened .site-wrapper {
 
 .menutitle {
     color: #5e5e5e;
-    font-family: monospace, sans-serif;
+    font-family: sans-serif;
 }
+
+
+
 
 body.nav-opened .nav-cover {
     position: fixed;
@@ -718,7 +721,7 @@ body.nav-opened .nav {
 
 
 .nav .nav-current:before {
-    color: #008F11;
+    color: #ac393f;
 }
 .nav .nav-current a:after {
     content: " ";
@@ -736,7 +739,7 @@ body.nav-opened .nav {
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-    color: #008F11;
+    color: #ac393f;
 }
 
 .subscribe-button {
@@ -758,11 +761,11 @@ body.nav-opened .nav {
     text-decoration: none;
     line-height: 35px;
     border-radius: 3px;
-    background: #008F11;
+    background: #ac393f;
     transition: all ease 0.3s;
 }
 .subscribe-button:hover {
-    background: #00FF41;
+    background: #FFD811;
 }
 .subscribe-button:before {
     font-size: 9px;
@@ -948,7 +951,7 @@ body.nav-opened .menu-button .word {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: sans-serif;
     color: #fff;
 }
 
@@ -957,8 +960,8 @@ body.nav-opened .menu-button .word {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
+    font-family: monospace, serif;
+
     color: rgba(255,255,255,0.8);
 }
 
