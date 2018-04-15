@@ -715,10 +715,8 @@ body.nav-opened .nav {
 
 
 
-
-
 .nav .nav-current:before {
-    color: #fff;
+    color: #FFD700;
 }
 .nav .nav-current a:after {
     content: " ";
@@ -736,7 +734,7 @@ body.nav-opened .nav {
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-    color: #fff;
+    color: #FFD700;
 }
 
 .subscribe-button {
