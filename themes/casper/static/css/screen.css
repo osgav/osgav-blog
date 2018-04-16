@@ -565,7 +565,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav {
     position: relative;
-    padding: 35px 40px;
+    padding: 15px 40px;
     margin: 0 0 30px 0;
 }
 
@@ -583,28 +583,26 @@ body.nav-opened .site-wrapper {
 
 .sticky {
     position: fixed;
-    top: 0px;
+    top: 15px;
     width: 93.45%;
-}
-
-.sticky {
-    padding-top: 35px;
+    z-index: 20;
 }
 
 .menuholder {
     background: #ac393f;
-    height: 80px;
-    z-index: 4;
+    height: 65px;
+    z-index: 10;
   }
 
 .stickymenuholder {
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 10;
 }
 
 .stickymenuholder + .content {
-    padding-top: 80px;
+    padding-top: 65px;
 }
 
 
@@ -874,7 +872,7 @@ body.nav-opened .nav {
     box-sizing: border-box;
     display: inline-block;
     float: right;
-    height: 38px;
+    height: 28px;
     padding: 0 15px;
     border: #bfc8cd 1px solid;
     opacity: 1;
@@ -882,11 +880,12 @@ body.nav-opened .nav {
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
-    line-height: 35px;
+    line-height: 25px;
     white-space: nowrap;
     border-radius: 3px;
     background: rgba(0,0,0,0.1);
     transition: all 0.5s ease;
+    z-index: 20;
 }
 .menu-button:focus {
     outline: 0;
@@ -902,7 +901,7 @@ body.nav-opened .nav {
     box-sizing: border-box;
     display: inline-block;
     float: left;
-    height: 38px;
+    height: 28px;
     padding: 0 15px;
     border: #bfc8cd 1px solid;
     opacity: 1;
@@ -910,7 +909,7 @@ body.nav-opened .nav {
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
-    line-height: 35px;
+    line-height: 25px;
     white-space: nowrap;
     border-radius: 3px;
     background: rgba(0,0,0,0.1);
@@ -1698,9 +1697,11 @@ body:not(.post-template) .post-title {
 @media only screen and (max-width: 500px) {
 
     .main-header {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         height: 40vh;
     }
+
+    /* changing margin from 15px to 9px for main-header above*/
 
     .no-cover.main-header {
         height: 30vh;
@@ -1729,10 +1730,13 @@ body:not(.post-template) .post-title {
         position: fixed;
         top: 5px;
         width: 98%;
-
-
-        
     }    
+
+    .stickymenuholder {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
 
     .menu-button {
         padding: 0 5px;
