@@ -969,7 +969,8 @@ body.nav-opened .menu-button .word {
     font-weight: 400;
     font-family: monospace, serif;
 
-    color: rgba(255,255,255,0.6);
+    color: rgba(172,57,63,1);
+    background-color: rgba(0,0,0, 1);
 }
 
 .no-cover.main-header {
