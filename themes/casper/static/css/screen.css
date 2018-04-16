@@ -565,7 +565,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav {
     position: relative;
-    padding: 15px 40px;
+    padding: 8px 40px;
     margin: 0 0 30px 0;
 }
 
@@ -583,14 +583,15 @@ body.nav-opened .site-wrapper {
 
 .sticky {
     position: fixed;
-    top: 15px;
+    /* top: 8px; */
     width: 93.45%;
     z-index: 20;
 }
 
-.menuholder {
-    background: #ac393f;
-    height: 60px;
+.proceed {
+    position: relative;
+    background: #000000;
+    height: 44px;
     z-index: 10;
   }
 
@@ -602,10 +603,12 @@ body.nav-opened .site-wrapper {
 }
 
 .stickymenuholder + .content {
-    padding-top: 60px;
+    padding-top: 44px;
 }
 
-
+/* .sticky + body.nav-opened .menu-button {
+    padding-top: 0px;
+} */
 
 
 body.nav-opened .nav-cover {
@@ -874,9 +877,9 @@ body.nav-opened .nav {
     float: right;
     height: 28px;
     padding: 0 15px;
-    border: #bfc8cd 1px solid;
+    border: #ac393f 1px solid;
     opacity: 1;
-    color: #9EABB3;
+    color: #ac393f;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
@@ -892,7 +895,12 @@ body.nav-opened .nav {
 }
 .menu-button .burger {
     font-size: 12px;
+    color: #ac393f;
     margin-right: 6px;
+}
+
+.burger {
+    color: #ac393f;
 }
 
 .home-button {
@@ -903,7 +911,7 @@ body.nav-opened .nav {
     float: left;
     height: 28px;
     padding: 0 15px;
-    border: #bfc8cd 1px solid;
+    border: #ac393f 1px solid;
     opacity: 1;
     color: #9EABB3;
     text-align: center;
@@ -924,10 +932,11 @@ body.nav-opened .nav {
 }
 
 body.nav-opened .menu-button {
-    padding: 0 12px;
+    /* padding: 0 12px; */
+    position: relative;
     background: #111 !important;
     border-color: #111 !important;
-    color: #fff !important;
+    color: #ac393f !important;
     -webkit-transform: translate3D(94px, 0, 0);
         -ms-transform: translate3D(94px, 0, 0);
             transform: translate3D(94px, 0, 0);
@@ -950,7 +959,7 @@ body.nav-opened .menu-button .word {
 }
 .no-cover .main-nav.overlay,
 .no-cover .menu-button {
-    background: none;
+    background: #ac393f;
 }
 
 .main-nav.overlay a {
@@ -958,13 +967,13 @@ body.nav-opened .menu-button .word {
 }
 
 .main-nav.overlay .menu-button {
-    border-color: rgba(255,255,255,0.6);
+    border-color: #ac393f;
 }
 
 .main-nav.overlay a:hover {
     color: #222;
-    border-color: #fff;
-    background: #fff;
+    border-color: #ac393f;
+    background: #ac393f;
 }
 
 /* Add a border to the buttons on hover */

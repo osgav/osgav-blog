@@ -7,10 +7,11 @@
 {{end}}
 
     <nav class="main-nav overlay clearfix">
+        <div id="stickymenu">
         {{ if .Site.Params.logo }}
             <a class="home-button" href="{{ .Permalink }}"><span class="burger">&#8679;</span><span class="word">Home</span></a>
         {{end}}
-        <div id="stickymenu">
+        
         {{ if .Site.Menus.main }}
             <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">osgav</span></a>
         {{else}}
@@ -71,10 +72,10 @@
             <h2 style="line-height: 1px;"><span class="page-description">{{ .Site.Params.description }}</span></h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#menuholder"><span class="hidden">Scroll Down</span></a>
+    <a class="scroll-down icon-arrow-left" href="#proceed"><span class="hidden">Scroll Down</span></a>
 </header>
 
-<div id="menuholder" class="menuholder"></div>
+<div id="proceed" class="proceed"></div>
 
 <main id="content" class="content" role="main">
 
@@ -118,7 +119,7 @@
         var header = document.getElementById("stickymenu");
         // var sticky = header.offsetTop;
 
-        var header2 = document.getElementById("menuholder");
+        var header2 = document.getElementById("proceed");
         var sticky2 = header2.offsetTop;        
         
         function myFunction() {
