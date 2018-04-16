@@ -1747,6 +1747,14 @@ body:not(.post-template) .post-title {
         width: 100%;
     }
 
+    .home-button {
+        padding: 0 5px;
+        border-radius: 0;
+        border-color: transparent;
+        color: #2e2e2e;
+        background: transparent;
+    }
+
     .menu-button {
         padding: 0 5px;
         border-radius: 0;
