@@ -74,6 +74,7 @@
     <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
 </header>
 
+<div id="menuholder" class="menuholder"></div>
 
 <main id="content" class="content" role="main">
 
@@ -115,7 +116,10 @@
         window.onscroll = function() {myFunction()};
         
         var header = document.getElementById("stickymenu");
-        var sticky = header.offsetTop;
+        // var sticky = header.offsetTop;
+
+        var header2 = document.getElementById("menuholder");
+        var sticky2 = header2.offsetTop;        
         
         function myFunction() {
           if (window.pageYOffset >= 0) {
@@ -123,7 +127,14 @@
           } else {
             header.classList.remove("sticky");
           }
+          if (window.pageYOffset >= sticky2) {
+            header2.classList.add("stickymenuholder");
+          } else {
+            header2.classList.remove("stickymenuholder");
+          }          
         }
+
+     
 
 </script>
 
