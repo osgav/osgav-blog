@@ -39,7 +39,7 @@
 
     <div class="vertical">
             <div class="main-header-content inner main-nav overlay">
-                <h1 class="page-title">osgav by #Tags</h1>
+                <h1 class="page-title">osgav by #Tag</h1>
                 <h2 class="page-description">
                     {{if .Params.description}}
                         {{.Params.description}}
@@ -61,11 +61,11 @@
 
   <div class="terms">
   {{ $data := .Data }}
-  {{ range $key, $value := .Data.Terms }}
+  {{ range $key, $value := .Data.Terms.ByCount }}
 
     <div class="term">
-      <a href="{{ $data.Plural }}/{{ $key | urlize }}.html">
-        <div class="term-title">{{ $key }} ({{ len $value }}) </div> 
+      <a href="{{ $data.Plural }}/{{ $value.Name | urlize }}.html">
+        <div class="term-title">{{ $value.Name }} ({{ $value.Count }}) </div> 
       </a>
 
     </div> <!-- term -->
@@ -78,3 +78,4 @@
 </main>
 
 {{ partial "footer.html" . }}
+
