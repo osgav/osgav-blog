@@ -31,11 +31,10 @@
           <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
         {{end}}
       {{end}}
-      </div>
-    </nav>
+    
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">Tagged #{{.Title}}</h1>
+            <h1 class="page-title">osgav <a href="{{ .Site.BaseURL }}/tags.html">#{{.Title}}</a></h1>
             <h2 class="page-description">
                 {{if .Params.description}}
                     {{.Params.description}}
@@ -43,6 +42,7 @@
             </h2>
         </div>
     </div>
+</nav>
 </header>
 
 <div id="proceedpostpage" class="proceedpostpage"></div>
