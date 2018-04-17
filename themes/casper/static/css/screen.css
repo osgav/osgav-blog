@@ -590,7 +590,7 @@ body.nav-opened .site-wrapper {
 
 .proceed {
     position: relative;
-    background: #000000;
+    background: #222;
     height: 44px;
     z-index: 10;
   }
@@ -901,7 +901,21 @@ body.nav-opened .nav {
 
 .burger {
     color: #ac393f;
+    transition: all 0.5s ease;
 }
+
+.menu-button:hover .burger {
+    color: #222;
+    transition: all 0.5s ease;
+}
+
+/* 5.5s transition not working on the way out for menu button. burger flicks back to red immediately.. */
+
+.home-button:hover .burger {
+    color: #222;
+    transition: all 0.5s ease;
+}
+
 
 .home-button {
     -webkit-box-sizing: border-box;
@@ -989,7 +1003,7 @@ body.nav-opened .menu-button .word {
     letter-spacing: -1px;
     font-weight: 700;
     font-family: sans-serif;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.8);
 }
 
 .page-description {
@@ -1000,7 +1014,7 @@ body.nav-opened .menu-button .word {
     font-family: monospace, serif;
 
     color: rgba(172,57,63,1);
-    background-color: rgba(0,0,0, 1);
+    background-color: rgba(34,34,34,0.8);
 }
 
 .no-cover.main-header {
