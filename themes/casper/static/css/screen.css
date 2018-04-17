@@ -590,16 +590,26 @@ body.nav-opened .site-wrapper {
 
 .proceed {
     position: relative;
-    background: #222;
+    background: #FFF;
     height: 44px;
     z-index: 10;
   }
 
+.proceedpostpage {
+    position: relative;
+    background: #FFF;
+    height: 44px;
+    z-index: 10;
+  }
+
+
 .stickymenuholder {
     position: fixed;
+    background: rgba(34,34,34,0.8);
     top: 0px;
     width: 100%;
     z-index: 10;
+    transition: all 1.0s ease;
 }
 
 .stickymenuholder + .content {

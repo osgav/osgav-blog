@@ -111,7 +111,32 @@
 
 </main>
 
+<script>
 
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("stickymenu");
+        // var sticky = header.offsetTop;
+
+        var header2 = document.getElementById("proceed");
+        var sticky2 = header2.offsetTop;        
+        
+        function myFunction() {
+          if (window.pageYOffset >= 0) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+          if (window.pageYOffset >= (sticky2 - 25)) {
+            header2.classList.add("stickymenuholder");
+          } else {
+            header2.classList.remove("stickymenuholder");
+          }          
+        }
+
+     
+
+</script>
 
 
 
