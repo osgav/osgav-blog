@@ -13,6 +13,7 @@
   <nav class="main-nav clearfix">
 {{end}}
 
+  <div id="stickymenu">
   {{ if .Site.Params.logo }}
       <a class="home-button" href="{{ .Site.BaseURL }}"><span class="burger">&#8679;</span><span class="word">Home</span></a>
   {{end}}
@@ -21,10 +22,13 @@
   {{else}}
       <a class="menu-button icon-feed" href="{{ .Site.BaseURL }}index.xml">&nbsp;&nbsp;Subscribe</a>
   {{end}}
+  </div>
   </nav>
 </header>
 
 
+
+<div id="proceed" class="proceed"></div>
 
 <main class="content" role="main">
 
