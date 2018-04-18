@@ -5,7 +5,7 @@ date = "2017-05-30T18:50:42Z"
 draft = false
 share = false
 slug = "projects"
-title = "osgav > lab"
+title = "Lab"
 description = "hi im a description"
 index = true
 [menu.main]

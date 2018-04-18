@@ -1,3 +1,5 @@
+<!-- this is the template for /page/projects.html and content under /page/projects/* -->
+
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL }}
 
@@ -36,7 +38,7 @@
     {{if eq .Params.index true}}
     <div class="vertical">
         <div class="main-header-content inner main-nav ainvert">
-            <h1 class="page-title">{{.Title}}</h1>
+            <h1 class="page-title">osgav <a href="#">> {{.Title}}</a></h1>
             <h2 class="page-description">
                 {{if .Params.description}}
                     {{.Params.description}}
@@ -84,8 +86,11 @@
       </nav>
 
 
+      {{if eq .Params.index true}}
+      {{else}}
         <h1 class="post-title">{{.Title}}</h1>
         <small>{{.Description}}</small>
+      {{end}}
 
         <section class="post-meta">
         {{ if eq .Section "post"}}
