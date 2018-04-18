@@ -52,29 +52,29 @@
 <article class="post {{ .Section }}">
 
 
-  <h2 class="term-list-title">
+  <!-- <h2 class="term-list-title">
       <a href="{{ .Permalink }}" class="linktopost">{{ .Title }}</a>
-  </h2>
-
-  <div class="terms">
+  </h2> -->
+  <br />
+  <!-- <div class="terms">
   {{ $data := .Data }}
   {{ range $key, $value := .Data.Terms.ByCount }}
-
     <div class="term">
       <a href="{{ $data.Plural }}/{{ $value.Name | urlize }}.html">
         <div class="term-title">{{ $value.Name }} ({{ $value.Count }}) </div> 
       </a>
-
-    </div> <!-- term -->
-
+    </div>
   {{ end }}
-  </div> <!-- terms -->
+  </div> -->
 
+  {{ partial "tagcloud.html" . }}
+
+  <br />
 
 </article>   
 </main>
 
-{{ partial "tagcloud.html" . }}
+
 
 {{ partial "footer.html" . }}
 

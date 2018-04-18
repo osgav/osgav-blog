@@ -12,16 +12,16 @@
     {{- $.Scratch.Set "sizeStep" ( div $sizeSpread $countSpread ) -}}
   {{- end -}}
 
-  <ul class='term-cloud'>
+
   {{- range .Data.Terms.Alphabetical -}}
     {{- $count := .Count -}}
     {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
     {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
-    <li>
-      <a href='{{ $.Data.Plural | relURL }}/{{ .Term | urlize }}' style='font-size:{{ $size }}em'>
+
+      <a href='{{ $.Data.Plural | relURL }}/{{ .Term | urlize }}.html' style='font-size:{{ $size }}em'>
         {{- .Term -}}
-      </a> ({{- .Count -}})
-    </li>
+      </a> ({{- .Count -}})&nbsp;&nbsp;
+
   {{- end -}}
-</ul>
+
 {{- end -}}  
