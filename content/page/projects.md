@@ -6,7 +6,7 @@ draft = false
 share = false
 slug = "projects"
 title = "Lab"
-description = "hi im a description"
+description = "non-chronological content"
 index = true
 [menu.main]
 name = "lab"
