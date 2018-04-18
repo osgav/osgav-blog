@@ -6,6 +6,8 @@ image = "images/hugo-logo2.png"
 share = true
 slug = "hugo-build-and-publish-workflow"
 title = "Hugo Build and Publish Workflow"
+[menu.main]
+parent = "lab"
 
 +++
 

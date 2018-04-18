@@ -106,22 +106,24 @@
 {{ .Content }}
 
 
-{{if ne .Params.index true}}
+<!-- {{if ne .Params.index true}}
 {{if .Menus.main.HasChildren }}
 <nav class="navchildren">
-  <ul>
+  <ul> -->
+
     <!-- Children contents -->
 
-    {{ range .Menus.main.Children }}
+    <!-- {{ range .Menus.main.Children }}
     <li><a href="{{.URL}}" >{{ .Name }}</a></li>
     {{ end }}
 
   </ul>
 </nav>
 {{ end }}
-{{ end }}
+{{ end }} -->
 
-{{if eq .Params.index true}}
+
+<!-- {{if eq .Params.index true}}
 <nav class="navpage">
 
 {{ $currentNode := . }}
@@ -153,7 +155,7 @@
 {{end}}
 
 </nav>
-{{end}}
+{{end}} -->
 
     </section>
 

@@ -10,7 +10,7 @@ description = "non-chronological content"
 index = true
 [menu.main]
 name = "lab"
-identifier = "projects"
+identifier = "lab"
 post = "<span class=\"icon-code\"></span>"
 weight = -80
 

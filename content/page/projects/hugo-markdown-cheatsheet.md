@@ -7,6 +7,8 @@ image = "images/hugo-logo2.png"
 share = true
 slug = "hugo-markdown-cheatsheet"
 title = "Hugo Markdown Cheatsheet"
+[menu.main]
+parent = "lab"
 
 +++
 

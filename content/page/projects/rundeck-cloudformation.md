@@ -6,6 +6,8 @@ image = "images/rundeck-logo2.png"
 share = true
 slug = "rundeck-cloudformation"
 title = "Rundeck CloudFormation"
+[menu.main]
+parent = "lab"
 
 +++
 
