@@ -8,6 +8,8 @@ share = true
 slug = "rundeck-on-aws-part-ii"
 tags = ["rundeck", "AWS", "ansible"]
 title = "Rundeck on AWS Part II: Ansible"
+[menu.main]
+parent = "blog"
 
 +++
 

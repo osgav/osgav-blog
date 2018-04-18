@@ -4,11 +4,12 @@ comments = true
 date = "2016-09-25T11:37:09Z"
 draft = false
 image = "images/rundeck-logo2.png"
-menu = ""
 share = true
 slug = "rundeck-on-aws-part-i"
 tags = ["rundeck", "AWS"]
 title = "Rundeck on AWS Part I: CloudFormation"
+[menu.main]
+parent = "blog"
 
 +++
 

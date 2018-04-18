@@ -3,11 +3,12 @@ author = "osgav"
 date = "2017-05-30T17:51:59Z"
 draft = false
 image = "images/posts/hugo-travis-broken/hugo-travis.png"
-menu = ""
 share = true
 slug = "hugo-travis-broken"
 tags = ["hugo", "TravisCI"]
 title = "Hugo TravisCI Pipeline Broken?"
+[menu.main]
+parent = "blog"
 
 +++
 

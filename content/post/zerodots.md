@@ -7,7 +7,9 @@ image = "images/zerodots_wordle.png"
 share = true
 slug = "zerodots"
 tags = ["ZER0D0TS", "hugo"]
-title = "ZER0D0TS" 
+title = "ZER0D0TS"
+[menu.main]
+parent = "blog"
 
 +++
 

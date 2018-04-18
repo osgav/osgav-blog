@@ -5,6 +5,8 @@ draft = true
 slug = "cheatsheet"
 tags = ["formatting-cheatsheet-dont-undraft"]
 title = "cheatsheet" 
+[menu.main]
+parent = "blog"
 
 +++
 

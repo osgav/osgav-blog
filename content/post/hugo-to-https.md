@@ -8,6 +8,8 @@ share = true
 slug = "hugo-to-https"
 tags = ["hugo"]
 title = "hugo --> https://osgav.run"
+[menu.main]
+parent = "blog"
 
 +++
 

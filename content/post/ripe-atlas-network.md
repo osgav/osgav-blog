@@ -8,6 +8,8 @@ share = true
 slug = "ripe-atlas-network"
 tags = ["ripe_atlas", "raspberry_pi"]
 title = "RIPE Atlas Network"
+[menu.main]
+parent = "blog"
 
 +++
 

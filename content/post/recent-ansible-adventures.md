@@ -3,11 +3,12 @@ author = "osgav"
 date = "2017-05-30T12:51:59Z"
 draft = false
 image = "images/ansible_logo-tile.png"
-menu = ""
 share = true
 slug = "recent-ansible-adventures"
 tags = ["ansible", "rundeck", "AWS", "ELB", "ACM"]
 title = "Recent Ansible Adventures"
+[menu.main]
+parent = "blog"
 
 +++
 
