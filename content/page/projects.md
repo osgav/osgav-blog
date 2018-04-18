@@ -3,10 +3,11 @@ author = "osgav"
 comments = false
 date = "2017-05-30T18:50:42Z"
 draft = false
-image = "images/headimg.jpg"
 share = false
 slug = "projects"
-title = "$ cd projects"
+title = "osgav > lab"
+description = "hi im a description"
+index = true
 [menu.main]
 name = "lab"
 identifier = "projects"
@@ -15,13 +16,10 @@ weight = -80
 
 +++
 
-Project pages for content outside of or accompanying blog posts
-
 ##### rundeck
 
 [Rundeck CloudFormation](/page/projects/rundeck-cloudformation.html)<br />
-[blogpost] [Rundeck on AWS Part I: CloudFormation](/post/rundeck-on-aws-part-i.html)<br />
-[blogpost] [Rundeck on AWS Part II: Ansible](/post/rundeck-on-aws-part-ii.html)<br />
+[see [#Rundeck](/tags/rundeck.html) for blog posts]
 
 
 ##### this blog

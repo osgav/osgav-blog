@@ -4,15 +4,18 @@
 
 {{if .Params.image}}
   {{if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://")}}
-  <header class="main-header post-head" style="background-image: url({{.Params.image}})">
+    <header class="main-header post-head" style="background-image: url({{.Params.image}})">
   {{ else }}
-  <header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
+    <header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
   {{ end }}
-  <nav class="main-nav overlay clearfix">
 {{else}}
-<header class="main-header post-head no-cover">
-    <nav class="main-nav overlay clearfix">
+<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Site.Params.cover}})">
 {{end}}
+
+
+<nav class="main-nav overlay clearfix">
+
+
 
       <div id="stickymenu">
       {{ if .Site.Params.logo }}
@@ -32,7 +35,7 @@
 
     {{if eq .Params.index true}}
     <div class="vertical">
-        <div class="main-header-content inner">
+        <div class="main-header-content inner main-nav ainvert">
             <h1 class="page-title">{{.Title}}</h1>
             <h2 class="page-description">
                 {{if .Params.description}}
