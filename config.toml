@@ -40,7 +40,7 @@ enableEmoji = true
 
 [[menu.main]]
 	name = "github"
-	pre = "<h4 class=\"menutitle\"><span class=\"icon-search\"></span> connect</h4>"
+	pre = "<br /><h4 class=\"menutitle\"><span class=\"icon-search\"></span> connect</h4>"
 	post = "<span class=\"icon-github\"></span>"
 	url = "https://github.com/osgav"
 	weight = 110

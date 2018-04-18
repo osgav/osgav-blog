@@ -1002,13 +1002,13 @@ body.nav-opened .menu-button .word {
     background: #ac393f;
 }
 
-.main-nav.overlay.ainvert a {
+.main-nav.ainvert a {
     color: #222;
     border-color: #ac393f;
     background: #ac393f;    
 }
 
-.main-nav.overlay.ainvert a:hover {
+.main-nav.ainvert a:hover {
     color: #fff;
     background: none;
 }

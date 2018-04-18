@@ -8,7 +8,7 @@ share = false
 slug = "projects"
 title = "$ cd projects"
 [menu.main]
-name = "projects"
+name = "lab"
 identifier = "projects"
 post = "<span class=\"icon-code\"></span>"
 weight = -80
