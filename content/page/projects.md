@@ -8,10 +8,10 @@ share = false
 slug = "projects"
 title = "$ cd projects"
 [menu.main]
-name = "browse..."
-post = "<span class=\"icon-cog\"></span>"
-pre = "<h4 class=\"menutitle\"><span class=\"icon-code\"></span> projects</h4>"
-weight = 10
+name = "projects"
+identifier = "projects"
+post = "<span class=\"icon-code\"></span>"
+weight = -80
 
 +++
 
