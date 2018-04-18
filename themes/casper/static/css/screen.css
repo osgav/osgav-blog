@@ -996,15 +996,27 @@ body.nav-opened .menu-button .word {
     color: #fff;
 }
 
-.main-nav.overlay .menu-button {
-    border-color: #ac393f;
-}
-
 .main-nav.overlay a:hover {
     color: #222;
     border-color: #ac393f;
     background: #ac393f;
 }
+
+.main-nav.overlay.ainvert a {
+    color: #222;
+    border-color: #ac393f;
+    background: #ac393f;    
+}
+
+.main-nav.overlay.ainvert a:hover {
+    color: #fff;
+    background: none;
+}
+
+.main-nav.overlay .menu-button {
+    border-color: #ac393f;
+}
+
 
 /* Add a border to the buttons on hover */
 .menu-button:hover {
