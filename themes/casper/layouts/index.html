@@ -111,7 +111,6 @@
 
 </main>
 
-
 <script>
 
         window.onscroll = function() {myFunction()};
@@ -128,7 +127,7 @@
           } else {
             header.classList.remove("sticky");
           }
-          if (window.pageYOffset >= sticky2) {
+          if (window.pageYOffset >= (sticky2)) {
             header2.classList.add("stickymenuholder");
           } else {
             header2.classList.remove("stickymenuholder");
@@ -138,6 +137,7 @@
      
 
 </script>
+
 
 
 {{ partial "footer.html" . }}

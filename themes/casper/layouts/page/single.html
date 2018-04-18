@@ -1,19 +1,25 @@
+<!-- this is the template for /page/projects.html and content under /page/projects/* -->
+
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL }}
 
 
 {{if .Params.image}}
   {{if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://")}}
-  <header class="main-header post-head" style="background-image: url({{.Params.image}})">
+    <header class="main-header post-head" style="background-image: url({{.Params.image}})">
   {{ else }}
-  <header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
+    <header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
   {{ end }}
-  <nav class="main-nav overlay clearfix">
 {{else}}
-<header class="main-header post-head no-cover">
-    <nav class="main-nav overlay clearfix">
+<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Site.Params.cover}})">
 {{end}}
 
+
+<nav class="main-nav overlay clearfix">
+
+
+
+      <div id="stickymenu">
       {{ if .Site.Params.logo }}
         <a class="home-button" href="{{ .Site.BaseURL }}"><span class="burger">&#8679;</span><span class="word">Home</span></a>
       {{end}}
@@ -26,17 +32,14 @@
           <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
         {{end}}
       {{end}}
+      </div>
     </nav>
 
     {{if eq .Params.index true}}
     <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{.Title}}</h1>
-            <h2 class="page-description">
-                {{if .Params.description}}
-                    {{.Params.description}}
-                {{end}}
-            </h2>
+        <div class="main-header-content inner main-nav ainvert">
+            <h1 class="page-title">osgav <a href="#">> {{.Title}}</a></h1>
+            <h2 style="line-height: 1px;"><span class="page-description">{{ .Params.description }}</span></h2>
         </div>
     </div>
     {{end}}
@@ -45,6 +48,7 @@
 </header>
 
 
+<div id="proceedpostpage" class="proceedpostpage"></div>
 
 <main class="content" role="main">
 
@@ -78,8 +82,11 @@
       </nav>
 
 
+      {{if eq .Params.index true}}
+      {{else}}
         <h1 class="post-title">{{.Title}}</h1>
         <small>{{.Description}}</small>
+      {{end}}
 
         <section class="post-meta">
         {{ if eq .Section "post"}}
@@ -171,6 +178,31 @@
 
 </main>
 
-{{ partial "suggestions.html" . }}
+<script>
+
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("stickymenu");
+    // var sticky = header.offsetTop;
+
+    var header2 = document.getElementById("proceedpostpage");
+    var sticky2 = header2.offsetTop;        
+    
+    function myFunction() {
+      if (window.pageYOffset >= 0) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+      if (window.pageYOffset >= sticky2) {
+        header2.classList.add("stickymenuholder");
+      } else {
+        header2.classList.remove("stickymenuholder");
+      }          
+    }
+
+ 
+
+</script>
 
 {{ partial "footer.html" . }}

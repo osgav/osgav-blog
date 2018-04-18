@@ -1,3 +1,5 @@
+<!-- this is the template for pages under /tags/*  -->
+
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL }}
 
@@ -17,6 +19,8 @@
 	<header class="main-header tag-head no-cover">
 {{end}}
     <nav class="main-nav overlay clearfix">
+
+      <div id="stickymenu">
       {{ if .Site.Params.logo }}
         <a class="home-button" href="{{ .Site.BaseURL }}"><span class="burger">&#8679;</span><span class="word">Home</span></a>
       {{end}}
@@ -29,19 +33,26 @@
           <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
         {{end}}
       {{end}}
+      </div>
+
+    </nav>
     
     <div class="vertical">
-        <div class="main-header-content inner">
+        <div class="main-header-content inner main-nav ainvert">
+            <!-- ADDING/REMOVING overlay FROM <DIV> ABOVE APPLIES/REMOVES FORMATTING TO BE INVERTED... -->
             <h1 class="page-title">osgav <a href="{{ .Site.BaseURL }}/tags.html">#{{.Title}}</a></h1>
+            <!-- <h2 style="line-height: 1px;"><span class="page-description">{{ .Params.description }}</span></h2>
             <h2 class="page-description">
                 {{if .Params.description}}
                     {{.Params.description}}
                 {{end}}
-            </h2>
+            </h2> -->
         </div>
     </div>
-</nav>
+
 </header>
+
+<div id="proceedpostpage" class="proceedpostpage"></div>
 
 <main class="content" role="main">
     {{ $paginator := .Paginator }}
@@ -56,6 +67,34 @@
 
 	{{ partial "pagination.html" $paginator }}
 </main>
+
+<script>
+
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("stickymenu");
+        // var sticky = header.offsetTop;
+
+        var header2 = document.getElementById("proceedpostpage");
+        var sticky2 = header2.offsetTop;        
+        
+        function myFunction() {
+          if (window.pageYOffset >= 0) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+          if (window.pageYOffset >= sticky2) {
+            header2.classList.add("stickymenuholder");
+          } else {
+            header2.classList.remove("stickymenuholder");
+          }          
+        }
+
+     
+
+</script>
+
 
 {{ partial "suggestions.html" . }}
 

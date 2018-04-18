@@ -25,6 +25,13 @@ enableEmoji = true
 	url = "/"
 
 [[menu.main]]
+	name = "tags"
+	post = "<span class=\"icon-tag\"></span>"
+	weight = -90
+	identifier = "tags"
+	url = "/tags.html"
+
+[[menu.main]]
 	name = "photos"
 	pre = "<br /><h4 class=\"menutitle\"><span class=\"icon-website\"></span> outside</h4>"
 	post = "<span class=\"icon-image\"></span>"

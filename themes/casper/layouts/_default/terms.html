@@ -1,3 +1,4 @@
+<!-- this is the template for /tags.html -->
 
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL }}
@@ -38,13 +39,9 @@
     </nav>
 
     <div class="vertical">
-            <div class="main-header-content inner">
-                <h1 class="page-title">osgav by #Tags</h1>
-                <h2 class="page-description">
-                    {{if .Params.description}}
-                        {{.Params.description}}
-                    {{end}}
-                </h2>
+            <div class="main-header-content inner main-nav ainvert">
+                <h1 class="page-title">osgav <a href="#">> Tags</a></h1>
+                <!-- <h2 style="line-height: 1px;"><span class="page-description">{{ .Params.description }}</span></h2> -->
             </div>
         </div>    
 
@@ -61,11 +58,11 @@
 
   <div class="terms">
   {{ $data := .Data }}
-  {{ range $key, $value := .Data.Terms }}
+  {{ range $key, $value := .Data.Terms.ByCount }}
 
     <div class="term">
-      <a href="{{ $data.Plural }}/{{ $key | urlize }}.html">
-        <div class="term-title">{{ $key }} ({{ len $value }}) </div> 
+      <a href="{{ $data.Plural }}/{{ $value.Name | urlize }}.html">
+        <div class="term-title">{{ $value.Name }} ({{ $value.Count }}) </div> 
       </a>
 
     </div> <!-- term -->
@@ -78,3 +75,4 @@
 </main>
 
 {{ partial "footer.html" . }}
+
