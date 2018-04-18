@@ -5,6 +5,7 @@ theme = "casper"
 paginate = 5
 uglyurls = true
 enableEmoji = true
+preserveTaxonomyNames = true
 
 [params]
 	description = "systems engineer interested in operations, security, development, linux, automation, monitoring, python & bots"
