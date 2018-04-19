@@ -18,9 +18,11 @@
     {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
     {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
 
-      <a href='{{ $.Data.Plural | relURL }}/{{ .Term | urlize }}.html' style='font-size:{{ $size }}em; font-family:monospace; text-decoration: none;'>
-        {{- .Term -}}
-      </a> ({{- .Count -}})&nbsp;&nbsp;
+    <span style='font-size:{{ $size }}em; font-family:monospace; text-decoration: none;'>
+    
+      <a style='text-decoration: none;' href='{{ $.Data.Plural | relURL }}/{{ .Term | urlize }}.html'>{{- .Term -}} </a>
+    
+    </span>  
 
   {{- end -}}
 
