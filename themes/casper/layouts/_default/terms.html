@@ -49,9 +49,15 @@
     </header>
 
 
+<div id="proceedpostpage" class="proceedpostpage"></div>
+
 <main class="content" role="main">
+
+
+
 <article class="post {{ .Section }}">
 
+  <section class="post-content">
 
   <!-- <h2 class="term-list-title">
       <a href="{{ .Permalink }}" class="linktopost">{{ .Title }}</a>
@@ -69,12 +75,59 @@
   </div> -->
 
   {{ partial "tagcloud.html" . }}
+  <br />  <br />
 
-  <br />
+
+
+</section>    
+
+
+
+
+<footer class="post-footer">
+
+  {{if .Site.Params.logo}}
+    <figure class="author-image">
+        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
+    </figure>
+    {{end}}
+
+    {{ partial "author.html" . }}    
+
+  </footer>
+
+
 
 </article>   
+
 </main>
 
+<script>
+
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("stickymenu");
+    // var sticky = header.offsetTop;
+
+    var header2 = document.getElementById("proceedpostpage");
+    var sticky2 = header2.offsetTop;        
+    
+    function myFunction() {
+      if (window.pageYOffset >= 0) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+      if (window.pageYOffset >= sticky2) {
+        header2.classList.add("stickymenuholder");
+      } else {
+        header2.classList.remove("stickymenuholder");
+      }          
+    }
+
+ 
+
+</script>
 
 
 {{ partial "footer.html" . }}
