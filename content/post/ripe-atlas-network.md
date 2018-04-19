@@ -6,7 +6,7 @@ draft = false
 image = "images/posts/ripe-atlas-network/atlas.png"
 share = true
 slug = "ripe-atlas-network"
-tags = ["ripe_atlas", "raspberry_pi"]
+tags = ["ripe_atlas", "probe", "raspberry_pi", "networking", "synthetic_testing"]
 title = "RIPE Atlas Network"
 [menu.main]
 parent = "blog"

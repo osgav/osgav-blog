@@ -6,7 +6,7 @@ draft = false
 image = "images/rundeck-logo2.png"
 share = true
 slug = "rundeck-on-aws-part-ii"
-tags = ["rundeck", "AWS", "ansible"]
+tags = ["rundeck", "AWS", "ansible", "EC2"]
 title = "Rundeck on AWS Part II: Ansible"
 [menu.main]
 parent = "blog"

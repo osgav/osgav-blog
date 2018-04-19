@@ -6,7 +6,7 @@ draft = false
 image = "images/hugo-logo2.png"
 share = true
 slug = "hugo-to-https"
-tags = ["hugo"]
+tags = ["hugo", "GitHub"]
 title = "hugo --> https://osgav.run"
 [menu.main]
 parent = "blog"
