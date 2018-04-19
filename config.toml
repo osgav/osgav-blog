@@ -28,7 +28,7 @@ preserveTaxonomyNames = true
 [[menu.main]]
 	name = "tags"
 	post = "<span class=\"icon-tag\"></span>"
-	weight = -90
+	weight = -80
 	identifier = "tags"
 	url = "/tags.html"
 
