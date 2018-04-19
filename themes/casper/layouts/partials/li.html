@@ -14,19 +14,22 @@
         {{$author := index .Site.Data.authors .Params.author }}
             {{$author.name}}
         {{else if .Site.Params.author}}
-            {{.Site.Params.author}}
-        {{end}}
-        {{if .Params.tags }}on
+            <span style="font-family:monospace;">{{.Site.Params.author}}</span>
+        {{end}} | 
+        <time style="font-family:monospace;" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }} 
+        </time> | 
+        <time style="font-family:monospace;" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+                reading time: <b>{{ .ReadingTime }} mins</b>
+        </time>
+        <span class="post-date">
+        {{if .Params.tags }}
             {{ range $index, $tag := .Params.tags }}
-                <a href="{{$baseurl}}tags/{{ $tag | urlize }}.html">#{{ $tag }}</a>
+                <a style="font-family:monospace;" href="{{$baseurl}}tags/{{ $tag | urlize }}.html">#{{ $tag }}</a>
             {{ end }}
         {{end}}
-        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            {{ .Date.Format "2 Jan 2006" }} 
-        </time>
-        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            reading time: <b>{{ .ReadingTime }} mins</b>
-        </time>
+        </span>
+
     </footer>    
     <section class="post-excerpt">
         &nbsp;{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a>
