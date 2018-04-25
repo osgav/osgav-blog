@@ -558,7 +558,7 @@ body.nav-opened .site-wrapper {
     background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
-    z-index: 2;
+
 }
 
 /* removed margin-bottom: 5rem; from .main-header above */
