@@ -55,7 +55,7 @@
 
 
 
-  <article class="newsposthead">
+  <!-- <article class="newsposthead">
       <header class="post-header">
 
           {{if eq .Params.index true}}
@@ -68,14 +68,16 @@
           {{ .Content }}
     
         </header>
-  </article>
+  </article> -->
 
   <article class="newspost {{ .Section }}">
 
 
 
     <section class="post-content">
-      <div style="top:-50px;">
+
+      <div style="width:100%; overflow:hidden; position:relative;">
+      <div style="width:100%; top:-100px;">
 
 
         <script type="text/javascript" src="http://widgets.paper.li/javascripts/sr.iframe.min.js"></script>
@@ -86,9 +88,8 @@
           });
         </script>
         
+      </div>        
       </div>
-        
-
     
 
 
@@ -154,6 +155,24 @@
         <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
     </figure>
     {{end}}
+
+    <center>
+
+    <a href="https://paper.li/e-1524660287#/" target="_blank">View on paper.li</a>
+    <br /><br />
+
+    <script type="text/javascript" src="http://widgets.paper.li/javascripts/sr.subscribe.min.js"></script>
+    <script type="text/javascript">
+  paperli.subscribe.show({
+    id: 'c70dc6e0-37cb-4788-b540-029fb57928e9',
+    domain: 'paper.li',
+    width: '50%',
+    locale: {"title":"Subscribe to the Email Newsletter","email.placeholder":"enter your email address","subscribe":"Subscribe"},
+    style: '.subscribe-widget{background-color:#e5e5e5;}.btn-info{background-color:#ac393F;border-color:#ac393F;}'
+  });
+    </script>
+
+    </center>
 
 
   </footer>
