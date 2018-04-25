@@ -1,0 +1,187 @@
+<!-- this is the template for /news/paper.html and content under /news/* -->
+
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+
+{{if .Params.image}}
+  {{if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://")}}
+    <header class="main-header post-head" style="background-image: url({{.Params.image}})">
+  {{ else }}
+    <header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
+  {{ end }}
+{{else}}
+<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Site.Params.cover}})">
+{{end}}
+
+
+<nav class="main-nav overlay clearfix">
+
+
+
+      <div id="stickymenu">
+      {{ if .Site.Params.logo }}
+        <a class="home-button" href="{{ .Site.BaseURL }}"><span class="burger">&#8679;</span><span class="word">Home</span></a>
+      {{end}}
+      {{ if .Site.Menus.main }}
+          <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">osgav</span></a>
+      {{else}}
+        {{ if .Site.Params.RSSLink}}
+          <a class="menu-button icon-feed" href="{{.Site.Params.RSSLink }}">&nbsp;&nbsp;Subscribe</a>
+        {{else}}
+          <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
+        {{end}}
+      {{end}}
+      </div>
+    </nav>
+
+    {{if eq .Params.index true}}
+    <div class="vertical">
+        <div class="main-header-content inner main-nav ainvert">
+            <h1 class="page-title">osgav <a href="#">> {{.Title}}</a></h1>
+            <h2 style="line-height: 1px;"><span class="page-description">{{ .Params.description }}</span></h2>
+        </div>
+    </div>
+    {{end}}
+
+
+</header>
+
+
+<div id="proceedpostpage" class="proceedpostpage"></div>
+
+<main class="content" role="main">
+
+
+
+
+  <article class="newsposthead">
+      <header class="post-header">
+
+          <!-- {{if eq .Params.index true}}
+          {{else}}
+            <h1 class="post-title">{{.Title}}</h1>
+            <small>{{.Description}}</small>
+          {{end}} -->
+          hello
+    
+        </header>
+  </article>
+
+  <article class="newspost {{ .Section }}">
+
+
+
+    <section class="post-content">
+
+
+        <script type="text/javascript" src="http://widgets.paper.li/javascripts/sr.iframe.min.js"></script>
+        <script type="text/javascript">
+          Paperli.PaperFrame.Show({
+            domain: 'paper.li',
+            pid: '422b5d7f-81f3-451e-b09f-c9605ab2144b', width: '100%'
+          });
+        </script>
+        
+        
+
+    <!-- {{ .Content }} -->
+
+
+<!-- {{if ne .Params.index true}}
+{{if .Menus.main.HasChildren }}
+<nav class="navchildren">
+  <ul> -->
+
+    <!-- Children contents -->
+
+    <!-- {{ range .Menus.main.Children }}
+    <li><a href="{{.URL}}" >{{ .Name }}</a></li>
+    {{ end }}
+
+  </ul>
+</nav>
+{{ end }}
+{{ end }} -->
+
+
+<!-- {{if eq .Params.index true}}
+<nav class="navpage">
+
+{{ $currentNode := . }}
+{{ range .Site.Menus.main }}
+{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .)}}
+      {{ range .Children }}
+      <ul>
+      <li><a href="{{.URL}}">{{.Name}}</a>
+      {{ if .HasChildren }}
+        <ul>
+        {{ range .Children }}
+          <li><a href="{{.URL}}">{{.Name}}</a>
+          {{ if .HasChildren }}
+            <ul>
+            {{ range .Children }}
+            <li><a href="{{.URL}}">{{ .Name }}</a></li>
+            {{ end }}
+            </ul>
+          {{ end }}
+        {{ end }}
+        </ul>
+      {{ end }}
+      </li>
+      </ul>
+      {{ end }}
+
+
+{{end}}
+{{end}}
+
+</nav>
+{{end}} -->
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    {{if .Site.Params.logo}}
+    <figure class="author-image">
+        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
+    </figure>
+    {{end}}
+
+
+  </footer>
+</article>
+
+</main>
+
+<script>
+
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("stickymenu");
+    // var sticky = header.offsetTop;
+
+    var header2 = document.getElementById("proceedpostpage");
+    var sticky2 = header2.offsetTop;        
+    
+    function myFunction() {
+      if (window.pageYOffset >= 0) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+      if (window.pageYOffset >= sticky2) {
+        header2.classList.add("stickymenuholder");
+      } else {
+        header2.classList.remove("stickymenuholder");
+      }          
+    }
+
+ 
+
+</script>
+
+{{ partial "footer.html" . }}
