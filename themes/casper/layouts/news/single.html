@@ -70,14 +70,12 @@
         </header>
   </article> -->
 
+
   <article class="newspost {{ .Section }}">
-
-
 
     <section class="post-content">
 
-      <div style="width:100%; height: 6250px; overflow:hidden; position:relative; z-index: -1">
-
+      <div style="width:100%; height: 6250px; overflow:hidden; position:relative; z-index: 1">
 
         <script type="text/javascript" src="http://widgets.paper.li/javascripts/sr.iframe.min.js"></script>
         <script type="text/javascript">
@@ -88,65 +86,11 @@
         </script>
         
       </div>
-    
-
-
-<!-- {{if ne .Params.index true}}
-{{if .Menus.main.HasChildren }}
-<nav class="navchildren">
-  <ul> -->
-
-    <!-- Children contents -->
-
-    <!-- {{ range .Menus.main.Children }}
-    <li><a href="{{.URL}}" >{{ .Name }}</a></li>
-    {{ end }}
-
-  </ul>
-</nav>
-{{ end }}
-{{ end }} -->
-
-
-<!-- {{if eq .Params.index true}}
-<nav class="navpage">
-
-{{ $currentNode := . }}
-{{ range .Site.Menus.main }}
-{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .)}}
-      {{ range .Children }}
-      <ul>
-      <li><a href="{{.URL}}">{{.Name}}</a>
-      {{ if .HasChildren }}
-        <ul>
-        {{ range .Children }}
-          <li><a href="{{.URL}}">{{.Name}}</a>
-          {{ if .HasChildren }}
-            <ul>
-            {{ range .Children }}
-            <li><a href="{{.URL}}">{{ .Name }}</a></li>
-            {{ end }}
-            </ul>
-          {{ end }}
-        {{ end }}
-        </ul>
-      {{ end }}
-      </li>
-      </ul>
-      {{ end }}
-
-
-{{end}}
-{{end}}
-
-</nav>
-{{end}} -->
 
     </section>
 
 
   <footer class="post-footer">
-
 
     {{if .Site.Params.logo}}
     <figure class="author-image">
@@ -155,10 +99,8 @@
     {{end}}
 
     <center>
-
     <a href="https://paper.li/e-1524660287#/" target="_blank">View on paper.li</a>
     <br /><br />
-
     <script type="text/javascript" src="http://widgets.paper.li/javascripts/sr.subscribe.min.js"></script>
     <script type="text/javascript">
   paperli.subscribe.show({
@@ -169,11 +111,10 @@
     style: '.subscribe-widget{background-color:#e5e5e5;}.btn-info{background-color:#ac393F;border-color:#ac393F;}'
   });
     </script>
-
     </center>
 
-
   </footer>
+
 </article>
 
 </main>
