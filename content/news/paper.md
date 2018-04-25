@@ -6,7 +6,7 @@ draft = false
 share = false
 slug = "paper"
 title = "News"
-description = "powered by paper.li Genius"
+description = "(s)lightly curated content"
 index = true
 [menu.main]
 name = "newspaper"
