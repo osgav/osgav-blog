@@ -479,7 +479,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 iframe, .fluid-width-video-wrapper {
     display: block;
-    margin: 1.75em 0;
+    margin: 0 0;
 }
 
 /* When a video is inside the fitvids wrapper, drop the
@@ -1116,8 +1116,7 @@ body.nav-opened .menu-button .word {
     position: relative;
     width: 80%;
     max-width: 710px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
+    margin: 2rem auto;
     word-wrap: break-word;
     -moz-hyphens: auto;
     -ms-hyphens: auto;

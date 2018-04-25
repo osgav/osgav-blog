@@ -4,9 +4,9 @@ comments = false
 date = "2018-04-19T18:50:42Z"
 draft = false
 share = false
-slug = "newspaper"
+slug = "paper"
 title = "News"
-description = "paper.li Genius"
+description = "powered by paper.li Genius"
 index = true
 [menu.main]
 name = "newspaper"
@@ -16,18 +16,9 @@ weight = -99
 
 +++
 
-##### weclome
+##### weclome to The News
 
-add this to frontmatter for spot on menu:
-
-```
-[menu.main]
-name = "newspaper"
-identifier = "newspaper"
-post = "<span class=\"icon-gallery\"></span>"
-weight = -99
-```
-
-add css for icon code f103 for 'gallery'
-
+Below you can find my [paper.li](https://paper.li/learn-more.html) news feed - powered by paper.li [Genius](https://blog.paper.li/2016/01/14/find-the-best-content-with-paper-lis-genius-source/)<br />
+It is sourced from the following keywords:<br />
+`AWS` `ansible` `raspberry pi` `python` `chatops` `visualization` `site reliability engineering`
 
