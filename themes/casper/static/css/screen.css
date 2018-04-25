@@ -1125,6 +1125,12 @@ body.nav-opened .menu-button .word {
     hyphens: auto;
 }
 
+#sr-paper-frame-1 {
+    top:-150px;
+    position: absolute;
+
+}
+
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
 .post:after {
