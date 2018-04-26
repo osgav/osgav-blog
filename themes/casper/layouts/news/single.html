@@ -48,6 +48,10 @@
 </header>
 
 
+<!-- TRYING FLEX METHOD STARTING HERE -->
+<div class="ifrowcontainer">
+
+
 <div id="proceedpostpage" class="proceedpostpage"></div>
 
 <main class="content" role="main">
@@ -73,9 +77,12 @@
 
   <article class="newspost {{ .Section }}">
 
+    <!-- FLEX  METHOD 2 -->
+<div class="ifrowbefore">    
+
     <section class="post-content">
 
-      <div style="width:100%; height: 6500px; overflow:hidden; position:relative; z-index: 0">
+      <!-- <div style="width:100%; height: 6500px; overflow:hidden; position:relative; z-index: 0"> -->
 
         <!-- <script type="text/javascript" src="http://widgets.paper.li/javascripts/sr.iframe.min.js"></script> -->
         <script type="text/javascript" src="{{.Site.BaseURL}}js/sr.iframe.js"></script>
@@ -86,10 +93,12 @@
           });
         </script>
         
-      </div>
+      <!-- </div> -->
 
     </section>
 
+  </div>
+  <!--  FLEX METHOD 2 -->
 
   <footer class="post-footer">
 
@@ -118,7 +127,18 @@
 
 </article>
 
+
+
+
+
 </main>
+
+
+</div>
+<!-- TRYING FLEX METHOD ENDING HERE -->
+
+
+
 
 <script>
 
