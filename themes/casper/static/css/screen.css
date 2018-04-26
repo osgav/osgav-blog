@@ -132,6 +132,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
 
+.icon-gallery:before{
+    content:"\f103";
+}
+
 .icon-tag:before{
     content:"\f302";
 }
@@ -475,7 +479,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 iframe, .fluid-width-video-wrapper {
     display: block;
-    margin: 1.75em 0;
+    margin: 0 0;
 }
 
 /* When a video is inside the fitvids wrapper, drop the
@@ -549,11 +553,12 @@ body.nav-opened .site-wrapper {
     display: table;
     width: 100%;
     height: 100vh;
-    
+    z-index: inherit;
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
+
 }
 
 /* removed margin-bottom: 5rem; from .main-header above */
@@ -596,7 +601,7 @@ body.nav-opened .site-wrapper {
     position: relative;
     background: #FFF;
     height: 44px;
-    z-index: 10;
+    z-index: 2;
     transition: all 0.6s ease;
   }
 
@@ -604,7 +609,7 @@ body.nav-opened .site-wrapper {
     position: relative;
     background: #FFF;
     height: 44px;
-    z-index: 10;
+    z-index: 2;
     transition: all 1.0s ease;
   }
 
@@ -614,7 +619,7 @@ body.nav-opened .site-wrapper {
     background: rgba(34,34,34,0.8);
     top: 0px;
     width: 100%;
-    z-index: 10;
+    z-index: 2;
     transition: all 1.0s ease;
 }
 
@@ -1093,6 +1098,43 @@ body.nav-opened .menu-button .word {
     -webkit-hyphens: auto;
     hyphens: auto;
 }
+
+.newspost {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+    border-bottom: #EBF2F6 1px solid;
+    word-wrap: break-word;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.newsposthead {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: 2rem auto;
+    word-wrap: break-word;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+/* #sr-paper-frame-1 {
+    top:-150px;
+    position: absolute;
+
+} */
+
+.ifrowcontainer {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: transparent; overflow: hidden;}
+.ifrowbefore {background-color: transparent; position: relative; top:-170px;}
+#sr-paper-frame-1 { flex-grow: 1; border: none; margin: 0; padding: 0; }
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
@@ -1747,6 +1789,8 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+
+    .ifrowbefore {background-color: transparent; position: relative; top:-150px;}
 
     .main-header {
         margin-bottom: 0px;
