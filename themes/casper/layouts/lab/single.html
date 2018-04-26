@@ -78,14 +78,17 @@
               {{end}}
         {{end}}
         {{end}}
-        <!-- <li>{{.Title}}</li> -->
-      </nav>
 
+        {{if ne .Params.index true}}
+          <li><b>{{.Title}}</b></li>
+        {{else}}
+        {{end}}
+      </nav>
 
       {{if eq .Params.index true}}
       {{else}}
-        <h1 class="post-title">{{.Title}}</h1>
-        <small>{{.Description}}</small>
+        <!-- <h1 class="post-title">{{.Title}}</h1>
+        <small>{{.Description}}</small> -->
       {{end}}
 
         <section class="post-meta">
