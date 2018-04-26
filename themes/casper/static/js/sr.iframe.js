@@ -66,7 +66,7 @@ Paperli.PaperFrame = function() { // hide the namespace
         iframe_src = 'about:blank';
       }
 
-      document.write('<iframe id="' + id + '" src="' + iframe_src + '" width="100%" height="1000" scrolling="yes" frameBorder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" style="width:1px;min-width:100%;*width:100%;height:100vh;"></iframe>');
+      document.write('<iframe id="' + id + '" src="' + iframe_src + '" width="100%" height="800" scrolling="no" frameBorder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" style="width:1px;min-width:100%;*width:100%;"></iframe>');
       
       // setup a callback to handle the dispatched MessageEvent. if window.postMessage is supported the passed
       // event will have .data, .origin and .source properties. otherwise, it will only have the .data property.
