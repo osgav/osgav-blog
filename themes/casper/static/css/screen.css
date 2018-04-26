@@ -1790,6 +1790,8 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 500px) {
 
+    .ifrowbefore {background-color: transparent; position: relative; top:-150px;}
+
     .main-header {
         margin-bottom: 0px;
         height: 40vh;
