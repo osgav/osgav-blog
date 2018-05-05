@@ -40,14 +40,26 @@ preserveTaxonomyNames = true
 	url = "https://outside.osgav.run"
 
 [[menu.main]]
-	name = "github"
-	pre = "<br /><h4 class=\"menutitle\"><span class=\"icon-search\"></span> connect</h4>"
-	post = "<span class=\"icon-github\"></span>"
-	url = "https://github.com/osgav"
-	weight = 110
-
-[[menu.main]]
 	name = "twitter"
+	pre = "<br /><h4 class=\"menutitle\"><span class=\"icon-search\"></span> connect</h4>"
 	post = "<span class=\"icon-twitter\"></span>"
 	url = "https://twitter.com/ZER0D0TS"
 	weight = 110
+
+[[menu.main]]
+	name = "github"
+	post = "<span class=\"icon-github\"></span>"
+	url = "https://github.com/osgav"
+	weight = 120
+
+[[menu.main]]
+    name = "newspaper rss"
+	post = "<span class=\"icon-feed\"></span>"
+	url = "http://paper.li/~api/papers/c70dc6e0-37cb-4788-b540-029fb57928e9/rss"
+	weight = 130
+
+[[menu.main]]
+    name = "site rss"
+	post = "<span class=\"icon-feed\"></span>"
+	url = "/index.xml"
+	weight = 140
