@@ -53,9 +53,9 @@ preserveTaxonomyNames = true
 	weight = 120
 
 [[menu.main]]
-    name = "newspaper rss"
-	post = "<span class=\"icon-feed\"></span>"
-	url = "http://paper.li/~api/papers/c70dc6e0-37cb-4788-b540-029fb57928e9/rss"
+    name = "paper.li"
+	post = "<span class=\"icon-print\"></span>"
+	url = "https://paper.li/e-1524660287#/"
 	weight = 130
 
 [[menu.main]]

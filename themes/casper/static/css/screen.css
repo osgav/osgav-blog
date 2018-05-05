@@ -132,6 +132,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
 
+.icon-print:before{
+    content:"\f469";
+}
+
+
 .icon-gallery:before{
     content:"\f103";
 }
