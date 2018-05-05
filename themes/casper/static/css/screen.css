@@ -1042,7 +1042,8 @@ body.nav-opened .menu-button .word {
     letter-spacing: -1px;
     font-weight: 700;
     font-family: sans-serif;
-    color: rgba(255,255,255,0.8);
+    color: #ac393f;
+    background-color: rgba(34,34,34,0.8);
 }
 
 .page-description {
@@ -1563,14 +1564,15 @@ body:not(.post-template) .post-title {
     max-width: 710px;
     margin: 4rem auto;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.3rem;
+    font-size: 12px;
+    text-transform: uppercase;
     color: #9EABB3;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
-    transition: all 0.2s ease;
+    color: #ac393f;
+    transition: all 0.5s ease;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -1579,10 +1581,10 @@ body:not(.post-template) .post-title {
     position: absolute;
     display: inline-block;
     padding: 0 15px;
-    border: #bfc8cd 1px solid;
+    border: #ac393f 1px solid;
     text-decoration: none;
     border-radius: 4px;
-    transition: border 0.3s ease;
+    transition: border 0.5s ease;
 }
 
 .older-posts {
@@ -1593,6 +1595,7 @@ body:not(.post-template) .post-title {
     display: inline-block;
     padding: 2px 0;
     min-width: 100px;
+    color: #ac393f;
 }
 
 .newer-posts {
@@ -1601,8 +1604,9 @@ body:not(.post-template) .post-title {
 
 .older-posts:hover,
 .newer-posts:hover {
-    color: #889093;
-    border-color: #98a0a4;
+    color: #fff;
+    border-color: #ac393f;
+    background-color: #ac393f;
 }
 
 .extra-pagination {
@@ -2185,7 +2189,8 @@ body:not(.post-template) .post-title {
 }
 .read-next-story:hover .post:before {
     color: #222;
-    background: #fff;
+    background: #ac393f;
+    border-color: #ac393f;
     transition: all 0.2s ease;
 }
 
