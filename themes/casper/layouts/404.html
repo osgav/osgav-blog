@@ -8,12 +8,13 @@
 {{end}}
 
 
+
 <nav class="main-nav overlay clearfix">
         {{ if .Site.Params.logo }}
             <a class="home-button" href="{{ .Site.BaseURL }}"><span class="burger">&#9754;</span><span class="word">404</span></a>
         {{end}}
         {{ if .Site.Menus.main }}
-            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">osgav</span></a>
+            <a class="menu-button" href="#"><span class="icon-cog"> </span><span class="word">osgav</span></a>
         {{else}}
             {{ if .Site.Params.RSSLink}}
               <a class="menu-button icon-feed" href="{{.Site.Params.RSSLink }}">&nbsp;&nbsp;Subscribe</a>
@@ -43,8 +44,8 @@
             &nbsp;
             {{end}}
 
-            <h1 class="page-title">{{ .Site.Title }}</h1>
-            <h2 class="page-description">{{ .Site.Params.description }}</h2>
+            <h1><span class="page-title">{{ .Site.Title }}</span></h1>
+            <h2 style="line-height: 1px;"><span class="page-description">{{ .Site.Params.description }}</span></h2>
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>

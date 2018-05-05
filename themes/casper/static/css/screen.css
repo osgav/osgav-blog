@@ -132,10 +132,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
 
+.icon-standard:before{
+    content:"\f100";
+}
+
 .icon-print:before{
     content:"\f469";
 }
-
 
 .icon-gallery:before{
     content:"\f103";
@@ -909,7 +912,7 @@ body.nav-opened .nav {
     color: #ac393f;
     text-align: center;
     font-size: 12px;
-    text-transform: uppercase;
+
     line-height: 25px;
     white-space: nowrap;
     border-radius: 3px;
@@ -957,7 +960,7 @@ body.nav-opened .nav {
     color: #9EABB3;
     text-align: center;
     font-size: 12px;
-    text-transform: uppercase;
+
     line-height: 25px;
     white-space: nowrap;
     border-radius: 3px;
@@ -1565,7 +1568,6 @@ body:not(.post-template) .post-title {
     margin: 4rem auto;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    text-transform: uppercase;
     color: #9EABB3;
     text-align: center;
 }
@@ -1651,20 +1653,23 @@ body:not(.post-template) .post-title {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     /*border-top: #EBF2F6 1px solid;*/
-    font-family: "Open Sans", sans-serif;
+    font-family: monospace;
     font-size: 1rem;
     line-height: 1.75em;
-    color: #BBC7CC;
+    color: #ac393f;
 }
 
 .site-footer a {
-    color: #BBC7CC;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #ac393f;
+    
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .poweredby {

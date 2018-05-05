@@ -22,10 +22,10 @@
 
       <div id="stickymenu">
       {{ if .Site.Params.logo }}
-        <a class="home-button" href="{{ .Site.BaseURL }}"><span class="burger">&#8679;</span><span class="word">Home</span></a>
+        <a class="home-button" href="{{ .Site.BaseURL }}"><span class="icon-standard"> </span><span class="word">home</span></a>
       {{end}}
       {{ if .Site.Menus.main }}
-          <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">osgav</span></a>
+          <a class="menu-button" href="#"><span class="icon-cog"> </span><span class="word">osgav</span></a>
       {{else}}
         {{ if .Site.Params.RSSLink}}
           <a class="menu-button icon-feed" href="{{.Site.Params.RSSLink }}">&nbsp;&nbsp;Subscribe</a>
