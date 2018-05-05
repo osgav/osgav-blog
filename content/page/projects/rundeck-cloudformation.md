@@ -8,6 +8,8 @@ slug = "rundeck-cloudformation"
 title = "Rundeck CloudFormation"
 [menu.main]
 parent = "lab"
+identifier = "rundeck-cloudformation"
+
 
 +++
 

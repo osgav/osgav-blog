@@ -8,6 +8,7 @@ slug = "hugo-platform-runbook"
 title = "Hugo Platform Runbook"
 [menu.main]
 parent = "lab"
+identifier = "hugo-platform-runbook"
 
 +++
 
