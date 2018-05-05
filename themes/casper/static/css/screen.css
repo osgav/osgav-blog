@@ -846,14 +846,14 @@ body.nav-opened .nav {
     font-size: 44px;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #ac393f;
     -webkit-animation: bounce 4s 2s infinite;
     animation: bounce 4s 2s infinite;
 }
 
 /* Stop it bouncing and increase contrast when hovered */
 .scroll-down:hover {
-    color: #ac393f;
+    color: #fff;
     -webkit-animation: none;
     animation: none;
 }
