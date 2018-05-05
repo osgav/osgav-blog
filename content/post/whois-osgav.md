@@ -5,10 +5,7 @@ draft = false
 title = "$ whois osgav"
 image = "images/halfheadimg.jpg"
 share = false
-[menu.main]
-name = "whois"
-post = "<span class=\"icon-help\"></span>"
-weight = 0
+
 
 +++
 
