@@ -14,18 +14,18 @@
         {{$author := index .Site.Data.authors .Params.author }}
             {{$author.name}}
         {{else if .Site.Params.author}}
-            <span style="font-family:monospace;">{{.Site.Params.author}}</span>
+            <span>{{.Site.Params.author}}</span>
         {{end}} | 
-        <time style="font-family:monospace;" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Format "2 Jan 2006" }} 
         </time> | 
-        <time style="font-family:monospace;" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
                 reading time: <b>{{ .ReadingTime }} mins</b>
-        </time>
-        <span class="post-date">
+        </time><br />
+        <span class="post-tags">
         {{if .Params.tags }}
             {{ range $index, $tag := .Params.tags }}
-                <a style="font-family:monospace;" href="{{$baseurl}}tags/{{ $tag | urlize }}.html">#{{ $tag }}</a>
+            &nbsp;<a href="{{$baseurl}}tags/{{ $tag | urlize }}.html">#{{ $tag }}</a>
             {{ end }}
         {{end}}
         </span>
@@ -35,3 +35,4 @@
         &nbsp;{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a>
     </section>
 </article>
+
