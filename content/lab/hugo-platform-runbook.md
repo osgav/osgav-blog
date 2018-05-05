@@ -11,7 +11,6 @@ parent = "lab"
 
 +++
 
-[< back to projects](/page/projects.html)<br />
 **`created: 12/06/2016`**
 
 ---

@@ -18,13 +18,13 @@ weight = -90
 
 ##### rundeck
 
-[Rundeck CloudFormation](/page/projects/rundeck-cloudformation.html)<br />
+[Rundeck CloudFormation](/lab/rundeck-cloudformation.html)<br />
 [see [#Rundeck](/tags/rundeck.html) for blog posts]
 
 
 ##### this blog
 
-[Hugo Platform Runbook](/page/projects/hugo-platform-runbook.html)<br />
-[Hugo Build and Publish Workflow](/page/projects/hugo-build-and-publish-workflow.html)<br />
-[Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet.html)<br />
+[Hugo Platform Runbook](/lab/hugo-platform-runbook.html)<br />
+[Hugo Build and Publish Workflow](/lab/hugo-build-and-publish-workflow.html)<br />
+[Hugo Markdown Cheatsheet](/lab/hugo-markdown-cheatsheet.html)<br />
 [see [#Hugo](/tags/hugo.html) for blog posts]

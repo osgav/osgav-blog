@@ -838,7 +838,7 @@ body.nav-opened .nav {
     font-size: 44px;
     text-align: center;
     text-decoration: none;
-    color: rgba(255,255,255,0.7);
+    color: #ac393f;
     -webkit-animation: bounce 4s 2s infinite;
     animation: bounce 4s 2s infinite;
 }
@@ -1214,11 +1214,11 @@ body:not(.post-template) .post-title {
 }
 
 .post-tags a {
-    color: #E0E0E0;
+    color: #ac393f;
 }
 
 .post-tags a:hover {
-    color: #ac393f;
+    color: #E0E0E0;
 }
 
 

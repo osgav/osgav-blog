@@ -6,9 +6,6 @@ image = "images/hugo-logo2.png"
 share = true
 slug = "hugo-platform-runbook"
 title = "Hugo Platform Runbook"
-[menu.main]
-parent = "lab"
-identifier = "hugo-platform-runbook"
 
 +++
 
