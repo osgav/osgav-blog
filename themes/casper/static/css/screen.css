@@ -2315,6 +2315,20 @@ body:not(.post-template) .post-title {
   }
 }
 
+
+.tagcloudtag {
+    transition: all 0.5s ease;
+    background-color: transparent;
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+.tagcloudtag:hover {
+    color: rgba(255,255,255,1);
+    background-color:rgba(172,57,63,1);
+
+}
+
+
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
