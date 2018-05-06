@@ -26,7 +26,7 @@ So how can I get an instance running in AWS? I'd heard lots about [CloudFormatio
 
 Taking the [example CloudFormation](https://aws.amazon.com/cloudformation/aws-cloudformation-templates/) for a [basic LAMP stack](https://s3-us-west-2.amazonaws.com/cloudformation-templates-us-west-2/LAMP_Single_Instance.template), I was able to make a few simple changes to have it install Rundeck instead and return the URL to access Rundeck in its Output.
 
-I've described the changes I made to the example CloudFormation on [my project page.](/page/projects/rundeck-cloudformation.html)
+I've described the changes I made to the example CloudFormation on [my project page.](/lab/rundeck-cloudformation.html)
 
 You can find the Rundeck CloudFormation [in my github](https://github.com/osgav/rundeck/blob/master/rundeck_basic_cloudformation.template) if you would like to try it out.
 

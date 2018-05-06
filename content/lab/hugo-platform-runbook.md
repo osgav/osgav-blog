@@ -17,8 +17,8 @@ parent = "lab"
 
 This is my runbook for operating my blog, based on the scripts I wrote to help with hugo building and publishing, you can read about these here:
 
-[Hugo Build and Publish Workflow](/page/projects/hugo-build-and-publish-workflow.html)<br />
-[Hugo Markdown Cheatsheet](/page/projects/hugo-markdown-cheatsheet.html)
+[Hugo Build and Publish Workflow](/lab/hugo-build-and-publish-workflow.html)<br />
+[Hugo Markdown Cheatsheet](/lab/hugo-markdown-cheatsheet.html)
 
 > download source and website --><br />
 

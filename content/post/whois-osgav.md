@@ -11,7 +11,7 @@ share = false
 
 ### osgav.run
 
-`https://osgav.run/` is my personal blog - a place for me to ramble and write about projects I'm working on. Historically I've not been an avid blogger, but this changes now! Starting with a shiny new lightweight blogging framework and polished [writing and publishing workflow...](/page/projects/hugo-build-and-publish-workflow.html)<br />
+`https://osgav.run/` is my personal blog - a place for me to ramble and write about projects I'm working on. Historically I've not been an avid blogger, but this changes now! Starting with a shiny new lightweight blogging framework and polished [writing and publishing workflow...](/lab/hugo-build-and-publish-workflow.html)<br />
 <br />
 So who am I? And what do I do?<br />
 <br />
