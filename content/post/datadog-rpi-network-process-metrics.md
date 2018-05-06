@@ -31,7 +31,7 @@ Note: this was for Raspbian GNU/Linux 8 (jessie)
 -- Install missing module
 
 ```
-sudo apt-get install python-psutil
+$ sudo apt-get install python-psutil
 ```
 
 -- Reinstall agent
@@ -47,7 +47,7 @@ If you have already installed header files during a previous endeavour your prob
 -- Install missing header files
 
 ```
-sudo apt-get install \
+$ sudo apt-get install \
 python-dev \
 libpython-dev \
 libpython2.7-dev \
@@ -61,7 +61,7 @@ Your Network traffic graph is now working!
 
 ##### Still got an empty Network graph?
 
-According to my slighly sparse notes I had also ran `pip install datadog` by the time I had fixed the Network traffic graph (and before I'd fixed the Process graph) - though I'm unsure that this helped. If your graphs are still not populating, then maybe `pip install datadog` did help me...
+According to my slighly sparse notes I had also ran `$ pip install datadog` by the time I had fixed the Network traffic graph (and before I'd fixed the Process graph) - though I'm unsure that this helped. If your graphs are still not populating, then maybe `$ pip install datadog` did help me...
 
 
 ### The Process Metrics
@@ -71,8 +71,8 @@ According to my slighly sparse notes I had also ran `pip install datadog` by the
 -- Install a `go` environment
 
 ```
-wget https://storage.googleapis.com/golang/go1.7.4.linux-armv6l.tar.gz
-sudo tar -C /usr/local -xzvf go1.7.4.linux-armv6l.tar.gz
+$ wget https://storage.googleapis.com/golang/go1.7.4.linux-armv6l.tar.gz
+$ sudo tar -C /usr/local -xzvf go1.7.4.linux-armv6l.tar.gz
 ```
 
 *(these were helpful)*<br />
@@ -82,8 +82,8 @@ https://dave.cheney.net/unofficial-arm-tarballs
 -- Ensure `go` environment is in the `$PATH` for account running agent
 
 ```
-mkdir ~/go
-vi ~/.profile
+$ mkdir ~/go
+$ vi ~/.profile
 >   export PATH=$PATH:/usr/local/go/bin
 >   export GOPATH=$HOME/go
 >   export PATH=$PATH:$GOPATH/bin
@@ -94,7 +94,7 @@ As I was running the agent as `root`... this was `root`'s home directory. This w
 -- Install `gohai`
 
 ```
-go get github.com/DataDog/gohai
+$ go get github.com/DataDog/gohai
 ```
 
 -- Restart Raspberry Pi (possibly not necessary - I was ensuring agent started correctly at boot time too)
@@ -105,8 +105,7 @@ Your Process memory graph is now working!
 
 Hopefully.
 
-
-
+![process and network graphs in datadog](/images/posts/datadog-rpi-network-process-metrics/dd-graphs.png "process and network graphs in datadog")
 
 ### Disclaimer
 
