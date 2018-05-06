@@ -3,7 +3,7 @@ author = "osgav"
 date = "2016-09-25T11:37:09Z"
 draft = false
 image = "images/rundeck-logo2.png"
-share = true
+share = false
 slug = "rundeck-cloudformation"
 title = "Rundeck CloudFormation"
 [menu.main]

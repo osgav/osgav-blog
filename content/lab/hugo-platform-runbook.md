@@ -3,7 +3,7 @@ author = "osgav"
 date = "2016-06-12T21:33:09Z"
 draft = false
 image = "images/hugo-logo2.png"
-share = true
+share = false
 slug = "hugo-platform-runbook"
 title = "Hugo Platform Runbook"
 [menu.main]

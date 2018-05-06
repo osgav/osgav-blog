@@ -4,7 +4,7 @@ comments = false
 date = "2016-06-11T16:40:05Z"
 draft = false
 image = "images/hugo-logo2.png"
-share = true
+share = false
 slug = "hugo-markdown-cheatsheet"
 title = "Hugo Markdown Cheatsheet"
 [menu.main]
