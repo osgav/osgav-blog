@@ -6,7 +6,7 @@ draft = false
 image = "images/zerodots_wordle.png"
 share = true
 slug = "zerodots"
-tags = ["ZER0D0TS", "hugo"]
+tags = ["ZER0D0TS", "Hugo"]
 title = "ZER0D0TS"
 [menu.main]
 parent = "blog"

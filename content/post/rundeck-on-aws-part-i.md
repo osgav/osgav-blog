@@ -6,7 +6,7 @@ draft = false
 image = "images/rundeck-logo2.png"
 share = true
 slug = "rundeck-on-aws-part-i"
-tags = ["rundeck", "AWS", "CloudFormation", "EC2"]
+tags = ["Rundeck", "AWS", "CloudFormation", "EC2"]
 title = "Rundeck on AWS Part I: CloudFormation"
 [menu.main]
 parent = "blog"
