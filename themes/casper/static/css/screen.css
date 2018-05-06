@@ -1224,10 +1224,13 @@ body:not(.post-template) .post-title {
 
 .post-tags a {
     color: #ac393f;
+    transition: all ease 0.5s;
 }
 
 .post-tags a:hover {
-    color: #E0E0E0;
+    text-decoration: none;
+    background-color: #ac393f;
+    color: #fff;
 }
 
 
@@ -1328,11 +1331,11 @@ body:not(.post-template) .post-title {
     transform: translateX(-50%);
 }
 
-.post-content a {
+.post-content a, .post-excerpt a {
     transition: all ease 0.5s;
 }
 
-.post-content a:hover {
+.post-content a:hover, .post-excerpt a:hover {
     text-decoration: none;
     color: #fff;
     background-color: #ac393f;
