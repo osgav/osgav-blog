@@ -8,6 +8,7 @@ install:
 - mkdir -p $GOPATH/bin
 - cp hugo_${HUGO_DOWNLOAD}_linux_amd64/hugo_${HUGO_DOWNLOAD}_linux_amd64 $GOPATH/bin/hugo
 script: hugo -t casper
+before_deploy: ./build/post-build-script.sh
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
