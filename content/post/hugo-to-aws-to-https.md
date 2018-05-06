@@ -6,7 +6,7 @@ draft = false
 image = "images/posts/hugo-to-aws-to-https/aws.jpg"
 share = true
 slug = "hugo-to-aws-to-https"
-tags = ["Hugo", "AWS", "GitHub", "TravisCI", "S3", "CloudFront", "Route53", "ACM"]
+tags = ["Hugo", "AWS", "GitHub", "TravisCI", "S3", "CloudFront", "CDN", "Route53", "DNS", "ACM", "HTTPS", "graphs"]
 title = "hugo --> AWS --> https://osgav.run"
 [menu.main]
 parent = "blog"

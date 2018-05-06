@@ -5,7 +5,7 @@ draft = false
 image = "images/posts/hugo-travis-broken/hugo-travis.png"
 share = true
 slug = "hugo-travis-broken"
-tags = ["Hugo", "TravisCI"]
+tags = ["Hugo", "TravisCI", "go"]
 title = "Hugo TravisCI Pipeline Broken?"
 [menu.main]
 parent = "blog"

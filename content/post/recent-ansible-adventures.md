@@ -5,7 +5,7 @@ draft = false
 image = "images/ansible_logo-tile.png"
 share = true
 slug = "recent-ansible-adventures"
-tags = ["Ansible", "Rundeck", "AWS", "ELB", "ACM", "configuration"]
+tags = ["Ansible", "configuration", "Rundeck", "AWS", "ELB", "ACM"]
 title = "Recent Ansible Adventures"
 [menu.main]
 parent = "blog"
