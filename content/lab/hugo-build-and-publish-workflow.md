@@ -225,8 +225,7 @@ echo -e "\n---------------------------------------------\n"
 As you can see I've also numbered the scripts so it is obvious which order they should be getting used in. I still have some steps to add here - don't want `osgav-source` to get out of sync. Currently I've been catching it up manually meaning more than 1 commit to the site could be reverted if I checkout the previous version of the source. Not so great! 
 
 
----
 
-[< back to projects](/page/projects.html)
+
 
 

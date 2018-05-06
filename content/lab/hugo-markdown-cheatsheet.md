@@ -50,7 +50,4 @@ title = "cheatsheet"
 ![hugo cheatsheet draft](/images/hugo_cheatsheet_draft.png)
 ![hugo cheatsheet](/images/hugo_cheatsheet.png)
 
----
-
-[< back to projects](/page/projects.html)
 
