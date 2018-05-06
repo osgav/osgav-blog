@@ -5,7 +5,7 @@
 {{$authorlocation := or $author.location .Site.Params.authorlocation }}
 {{$authorwebsite := or $author.website .Site.Params.authorwebsite }}
 <section class="author">
-  <h4><a href="{{.Site.BaseURL}}">{{$authorname}}</a></h4>
+  <h4>{{$authorname}}</h4>
   {{if $authorbio}}
   <p>{{$authorbio}}</p>
   {{else}}

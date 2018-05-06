@@ -1328,6 +1328,17 @@ body:not(.post-template) .post-title {
     transform: translateX(-50%);
 }
 
+.post-content a {
+    transition: all ease 0.5s;
+}
+
+.post-content a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ac393f;
+
+}
+
 /* The author credit area after the post */
 .post-footer {
     position: relative;
