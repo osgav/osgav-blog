@@ -19,6 +19,9 @@ rm public/fonts/example.html
 rm public/post.html
 rm -rf public/post/page/
 
+rm public/page.html
+rm -rf public/page/
+
 rm public/lab.html
 rm -rf public/lab/page/
 
