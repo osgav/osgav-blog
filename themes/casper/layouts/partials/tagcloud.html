@@ -18,7 +18,7 @@
     {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
     {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
 
-    <span style='font-size:{{ $size }}em; font-family:monospace; text-decoration: none;'>
+    <span style='line-height:0px; vertical-align:middle; font-size:{{ $size }}em; font-family:monospace; text-decoration: none;'>
   <a class="tagcloudtag" href='{{ $.Data.Plural | relURL }}/{{ .Term | urlize }}.html'>&nbsp;{{- .Term -}}&nbsp;</a></span>  
 
   {{- end -}}
