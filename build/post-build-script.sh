@@ -20,7 +20,7 @@ rm public/post.html
 rm -rf public/post/page/
 
 rm public/page.html
-rm -rf public/page/
+#rm -rf public/page/ # doh, this folder is necessary. deleting it broke page 2 of blog feed.
 
 rm public/lab.html
 rm -rf public/lab/page/
