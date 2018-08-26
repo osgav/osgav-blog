@@ -83,6 +83,20 @@
 
 </section>    
 
+<section class="post">
+  <br /><br /><br />
+  <h6>blog archive</h6>
+  <br />
+    {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+    {{ range first 99 $pages }}
+    <span class="post-meta">
+    <span class="post-tags">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </span>
+    </span>        
+    {{ end }}
+  </section>
+
 
 
 
