@@ -3,14 +3,19 @@ author = "osgav"
 date = "2070-01-01T00:00:00Z"
 draft = true
 slug = "cheatsheet"
-tags = ["formatting-cheatsheet-dont-undraft"]
+tags = ["draft"]
 title = "cheatsheet" 
 [menu.main]
 parent = "blog"
 
 +++
 
-https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsheet.md<br />
+https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsheet.md
+<br /><br />
+Use the following `more` tag to manually create the "summary" block of content for the front page...
+
+<!--more-->
+
 <br />
 <https://osgav.run><br />
 [text link](https://osgav.run)<br />
@@ -21,9 +26,7 @@ https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsh
 ***bold italic***<br />
 <s>strikethrough</s><br />
 <br />
-Use the following `more` tag to manually create the "summary" block of content for the front page...
 
-<!--more-->
 
 
 *italic text* and \*escaped asterisks\*
@@ -125,6 +128,7 @@ First header | Second Header
 ------------ | -------------
 Content Cell | Content Cell
 Content Cell | Content Cell
+
 
 
 ---

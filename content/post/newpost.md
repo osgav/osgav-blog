@@ -6,7 +6,7 @@ draft = true
 image = ""
 share = true
 slug = "new-post-template"
-tags = ["tag1", "tag2"]
+tags = ["draft"]
 title = "new post template"
 [menu.main]
 parent = "blog"
