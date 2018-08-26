@@ -1,2 +1,4 @@
 exec/
 hugo/
+content/lab/internal_*
+content/post/internal_*
