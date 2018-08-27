@@ -97,10 +97,13 @@
     <span class="post-meta">
     <span class="post-tags">
         {{ $t := (time "2016-06-05") }}
+        <!-- date of osgav.run first post -->
         {{ $delta := $t.Sub (time .Date) }}
         {{ $osgav_epoch_negative := int (div $delta.Hours 24)}}
         {{ $osgav_epoch := int (sub 0 $osgav_epoch_negative) }}      
     <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] {{ .Title }}</a>
+    <!-- .Format string needs to be actual specific date in 2006 -->
+    <!-- https://gohugo.io/functions/format/ -->
     </span>
     </span>        
     {{ end }}
