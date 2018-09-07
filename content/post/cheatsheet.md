@@ -10,101 +10,192 @@ parent = "blog"
 
 +++
 
-https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsheet.md
-<br /><br />
-Use the following `more` tag to manually create the "summary" block of content for the front page...
+[***view raw source***](https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsheet.md)
+<br />
+
+- https://sourceforge.net/p/hugo-generator/wiki/markdown_syntax/
+- http://assemble.io/docs/Cheatsheet-Markdown.html
+
+
+Use the following `more` html comment to manually create the "summary" block of content for the front page...
 
 <!--more-->
 
-<br />
+---
+**Headers**
+----
+
+huge header
+============
+
+smaller header
+--------------
+
+
+
+# header 1
+## header 2
+### header 3
+#### header 4
+##### header 5
+###### header 6
+
+
+---
+**Hyperlinks**
+---
+
+https://osgav.run<br />
 <https://osgav.run><br />
 [text link](https://osgav.run)<br />
 [text link with hover text](https://osgav.run "hoverboard")<br />
 
+---
+**Text formatting**
+---
+
 *italic*<br />
 **bold**<br />
 ***bold italic***<br />
-<s>strikethrough</s><br />
-<br />
+~~strikethrough~~<br />
+<s>also strikethrough</s>
 
 
-
-*italic text* and \*escaped asterisks\*
+<i>italic text</i> and \*escaped asterisks\*
 
 <b>bold text</b> and &lt;html&gt; tags
 
-&copy; special entity and `&copy;` or &amp;copy; to escape a special entity 
+&copy; for a special entity, and `&copy;` or &amp;copy; to escape a special entity 
 
 
 > these are
 >
 > blockquotes
 
+
+> these are still part
+> of the same blockquotes
+, this line too
+and this
+
+...
+
+> other text and linebreaks required to separate them<br />
+> also, use `<br />` for closer linebreaks
+
+
+---
+**Code formatting**
+---
+
+**Standard**
+
 This is `inline preformatted text` and...
 
-    This is an entire
-    block of preformatted
-    text
+    This is a block of
+    preformatted text
+    using indentation
 
-An easier way to do a block of text:
+and...
 
 ```
-<a href="#">hyperlink</a>
+This is a block of
+preformatted text
+using backticks
 ```
-There is also code highlighting...
 
-{{< highlight go "linenos=inline" >}}
+**Highlighted**
+
+There is also code highlighting,  `hljs` provides the following...
+
+``` bash
+$ grep -Ro -e 'registerLanguage("\w\{1,14\}"' .
+
+./themes/casper/static/js/hljs8.4_highlight.min.js:registerLanguage("apache"
+registerLanguage("bash"
+registerLanguage("coffeescript"
+registerLanguage("cpp"
+registerLanguage("cs"
+registerLanguage("css"
+registerLanguage("diff"
+registerLanguage("http"
+registerLanguage("ini"
+registerLanguage("java"
+registerLanguage("javascript"
+registerLanguage("json"
+registerLanguage("makefile"
+registerLanguage("xml"
+registerLanguage("markdown"
+registerLanguage("nginx"
+registerLanguage("objectivec"
+registerLanguage("perl"
+registerLanguage("php"
+registerLanguage("python"
+registerLanguage("ruby"
+registerLanguage("sql"
+```
+
+``` python
 import os
 
+print("hi")
 with open("log.txt", "r") as log_handle:
-	log_content = log_handle.read()
-{{< / highlight >}}
+    log_content = log_handle.read()
+```
+
+``` http
+status: 200
+Date: Wed, 01 Aug 2018 20:50:43 GMT
+Server: Apache/2.2.3 (SLES ES platform)
+Strict-Transport-Security: max-age=15768000
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+```
+
+``` diff
+diff --git a/themes/casper/layouts/partials/tagcloud.html b/themes/casper/layouts/partials/tagcloud.html
+index b9c821d..c030de7 100644
+--- a/themes/casper/layouts/partials/tagcloud.html
++++ b/themes/casper/layouts/partials/tagcloud.html
+@@ -18,7 +18,7 @@
+     {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
+     {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
+ 
+-    <span style='font-size:{{ $size }}em; font-family:monospace; text-decoration: none;'>
++    <span style='line-height:0px; vertical-align:middle; font-size:{{ $size }}em; font-family:monospace; text-decoration: none;'>
+   <a class="tagcloudtag" href='{{ $.Data.Plural | relURL }}/{{ .Term | urlize }}.html'>&nbsp;{{- .Term -}}&nbsp;</a></span>  
+ 
+   {{- end -}}
+```
 
 
-{{< highlight go "linenos=inline,hl_lines=2 6" >}}
-import os
-import json
 
-with open("log.txt", "r") as log_handle:
-	log_content = log_handle.read()
-	log_json = json.load(log_content)
-{{< / highlight >}}
-
-
-{{< highlight html >}}
-<a href="#">hallo</a>
-{{< /highlight >}}
-
-{{< highlight python >}}
-    #!/usr/bin/python
-    import os
-    import json
-    print "this is python formatting"
-    print "but it doesn't seem to work"
-{{< /highlight >}}
-
-Python highlighting doesn't seem too great though...
 
 ---
-
-horizontal rulez
-
+**Embedding images, tweets**
 ---
-
-embed a tweet!
-
-https://twitter.com/spf13/status/666616452582129664 
-
-{{< tweet 666616452582129664 >}}
-
----
-
-{{< figure src="/images/zerodots_wordle.png" title="zerodots wordle" >}}
-
----
+<br /><br />
+**an image:**
 
 ![rest in peace](/images/zerodots_wordle.png "rip")
 
+<br /><br />
+**a figure:**
+
+{{< figure src="/images/zerodots_wordle.png" title="exhibit A" >}}
+
+<br /><br />
+**a tweet:**
+
+<!-- https://twitter.com/spf13/status/666616452582129664  -->
+
+{{< tweet 666616452582129664 >}}
+
+
+
+---
+**Lists**
 ---
 
 how about a list?
@@ -118,9 +209,13 @@ new list!
 1. Numbered lists use numbers
 +  But they don't need to continue using numbers
 *  + * - or another number will do the trick
-+  while keeping the numbering correct for you...
+7.  while keeping the numbering correct for you...
+
 
 ---
+**Tables**
+---
+
 
 Tables can be done in markdown and you can also use `HTML` tables:
 
@@ -131,25 +226,6 @@ Content Cell | Content Cell
 
 
 
----
-
-
-# header 1
-## header 2
-### header 3
-#### header 4
-##### header 5
-###### header 6
-
----
-
-huge header
-============
-
-smaller header
---------------
-
----
 
 
 
