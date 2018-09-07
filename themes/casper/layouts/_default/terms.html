@@ -84,9 +84,8 @@
 </section>    
 
 <section class="post-content">
-  <br /><br /><br />
-  <h6>blog archive</h6>
   <br />
+  <h6>blog archive</h6>
     <span class="post-meta">
     {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
     {{ range first 99 $pages }}
