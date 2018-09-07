@@ -85,6 +85,36 @@ and this
 
 
 ---
+**Embedding images, tweets, gists**
+---
+
+**a gist:**
+<!-- https://gohugo.io/content-management/shortcodes/#example-gist-input -->
+<!-- gist with 1 file -->
+{{< gist spf13 7896402 >}}
+<!-- gist with multiple files -->
+{{< gist lastminute84 be5e979d863fcf6d90aba82d4f1fb6b8 "activity_main.xml" >}}
+{{< gist lastminute84 be5e979d863fcf6d90aba82d4f1fb6b8 "ListItemClickListener.java" >}}
+
+<br /><br />
+**an image:**
+
+![rest in peace](/images/zerodots_wordle.png "rip")
+
+<br /><br />
+**a figure:**
+
+{{< figure src="/images/zerodots_wordle.png" title="exhibit A" >}}
+
+<br /><br />
+**a tweet:**
+
+<!-- https://twitter.com/spf13/status/666616452582129664  -->
+
+{{< tweet 666616452582129664 >}}
+
+
+---
 **Code formatting**
 ---
 
@@ -156,8 +186,8 @@ Content-Type: text/html; charset=UTF-8
 ``` diff
 diff --git a/themes/casper/layouts/partials/tagcloud.html b/themes/casper/layouts/partials/tagcloud.html
 index b9c821d..c030de7 100644
---- a/themes/casper/layouts/partials/tagcloud.html
-+++ b/themes/casper/layouts/partials/tagcloud.html
+-- a/themes/casper/layouts/partials/tagcloud.html
+++ b/themes/casper/layouts/partials/tagcloud.html
 @@ -18,7 +18,7 @@
      {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
      {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
@@ -168,30 +198,6 @@ index b9c821d..c030de7 100644
  
    {{- end -}}
 ```
-
-
-
-
----
-**Embedding images, tweets**
----
-<br /><br />
-**an image:**
-
-![rest in peace](/images/zerodots_wordle.png "rip")
-
-<br /><br />
-**a figure:**
-
-{{< figure src="/images/zerodots_wordle.png" title="exhibit A" >}}
-
-<br /><br />
-**a tweet:**
-
-<!-- https://twitter.com/spf13/status/666616452582129664  -->
-
-{{< tweet 666616452582129664 >}}
-
 
 
 ---
