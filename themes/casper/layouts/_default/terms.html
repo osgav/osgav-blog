@@ -75,13 +75,35 @@
   </div> -->
 
   <center>
-  {{ partial "tagcloud.html" . }}
+  {{ partial "tagcloudlog.html" . }}
   </center>
   <br />  <br />
 
 
 
 </section>    
+
+<section class="post-content">
+  <br />
+  <h6>blog archive</h6>
+    <span class="post-meta">
+    {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+    {{ range first 99 $pages }}
+    <span class="post-tags">
+        {{ $t := (time "2016-06-05") }}
+        <!-- date of osgav.run first post -->
+        {{ $delta := $t.Sub (time .Date) }}
+        {{ $osgav_epoch_negative := int (div $delta.Hours 24)}}
+        {{ $osgav_epoch := int (sub 0 $osgav_epoch_negative) }}      
+    <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] {{ .Title }}</a>
+    <br />
+    <!-- .Format string needs to be actual specific date in 2006 -->
+    <!-- https://gohugo.io/functions/format/ -->
+    <!-- https://www.madboa.com/blog/2016/08/24/hugo-dateformat/ -->
+    </span>
+    {{ end }}
+    </span>
+  </section>
 
 
 
