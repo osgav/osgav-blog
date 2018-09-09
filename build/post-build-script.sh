@@ -19,14 +19,17 @@ rm public/fonts/example.html
 rm public/post.html
 rm -rf public/post/page/
 
-rm public/page.html
-#rm -rf public/page/ # doh, this folder is necessary. deleting it broke page 2 of blog feed.
-
 rm public/lab.html
 rm -rf public/lab/page/
 
 rm public/news.html
+rm public/news/index.xml
 rm -rf public/news/page/
 
 rm public/whois.html
+rm public/whois/index.xml
 rm -rf public/whois/page/
+
+rm public/tags/index.xml
+rm public/categories.html
+rm -rf public/categories/
