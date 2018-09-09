@@ -1,7 +1,6 @@
 +++
 author = "osgav"
-comments = true
-date = "2070-09-25T17:44:41Z"
+date = "2070-12-24T00:00:00Z"
 draft = true
 image = ""
 share = true
@@ -13,3 +12,6 @@ parent = "blog"
 
 +++
 
+preview text
+
+<!--more-->

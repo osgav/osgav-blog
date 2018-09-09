@@ -1,4 +1,6 @@
 exec/
 hugo/
 content/lab/internal_*
+content/lab/_*
 content/post/internal_*
+content/post/_*
