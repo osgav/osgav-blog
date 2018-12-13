@@ -117,7 +117,7 @@ paper.li:
 
 There are 2 of S3, CloudFront and Route53. This is to handle serving the website from the apex domain only.
 
-1 bucket for `osgav.run` and 1 bucket for `www.osgav.run` each with their own CloudFront distribution. The `www.osgav.run` bucket is configured to redirect to the apex bucket.
+1 bucket for `osgav.run` and 1 bucket for `www.osgav.run` each with their own CloudFront distribution. The `www.osgav.run` bucket is configured (at S3 level) to redirect to the apex bucket.
 
 ### Resilience and High Availability
 
@@ -210,19 +210,20 @@ Browse all pages and click all links on the website
 
 > How should troubleshooting happen? What tools are available?
 
-_(e.g. Use a combination of the `/health` endpoint checks and the `abc-*.sh` scripts for diagnosing typical problems)_
+Use your noggin
 
 ## Maintenance tasks
 
 ### Patching
 
-Currently several versions behind the latest for Hugo.
+Update Sept 2018:
 
-Working on upgrading website to the latest version, then will sort out updating Hugo regularly (as [releases](https://github.com/gohugoio/hugo/releases) page shows it updates *quite* regularly now...)
+- upgraded from Hugo 0.18.1 to 0.48
+- will be adding more JS libraries soon (markdeep, mermaid): catalogue verions in use...
 
 #### Normal patch cycle
 
-See above.
+Following upgrade to Hugo 0.48 I shall try to keep more up-to-date with new [releases](https://github.com/gohugoio/hugo/releases)...
 
 ### Daylight-saving time changes
 
