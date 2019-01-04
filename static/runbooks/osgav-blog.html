@@ -1,0 +1,277 @@
+<meta charset="utf-8" emacsmode="-*- markdown -*-">
+**osgav.run Blog**
+
+A Runbook and System Operations Manual for **osgav.run Blog**
+
+----
+
+*This Document:*
+
+- [https://osgav.run/runbooks/osgav-blog.html](https://osgav.run/runbooks/osgav-blog.html)
+
+*osgav.run Blog:*
+
+- [https://osgav.run](https://osgav.run)
+
+*System Consoles:*
+
+- [GitHub](https://github.com/osgav/osgav-blog)
+- [TravisCI](https://travis-ci.org/osgav/osgav-blog)
+- [AWS S3](https://s3.console.aws.amazon.com/s3/buckets/osgav.run/?region=us-east-1&tab=overview)
+- [AWS CloudFront](https://console.aws.amazon.com/cloudfront/home?region=us-east-1#distribution-settings:E2S0AO7ZL3XT8X)
+- [paper.li](https://paper.li/e-1524660287#/)
+
+----
+
+## About this Document
+
+A Runbook / Operations Manual template for modern software systems.
+
+- [runbookcollab.net](http://runbookcollab.net)
+
+# System Operations Manual
+
+## System overview
+
+**Service or system name:** `osgav-blog`
+
+**Description:** HTTPS website served by CloudFront CDN
+
+### Technical overview
+
+<style>
+        .md .inverse svg.diagram {
+          background: #333;
+          stroke: #FFF;
+          fill: #FFF;
+        }
+        
+        .md .inverse svg.diagram .opendot {
+          fill: #333;
+        }
+</style>
+<div class="inverse">
+****************************************************************************************
+*                                 ACM                 +--Hugo                          *
+*                                  ^                  |    ^                           *
+*                                  |                  +--+ |                           *
+* (web browser)                    v                     v |                           *
+*   osgav.run --> Route53 --> CloudFront <--> S3 <-- TravisCI <-- GitHub <-- Hugo <--+ *
+*       |                                             ^  |                           | *
+*       |             +---+                    +------+  |                    +------+ *
+*       |             |   v                    |         v                    |        *
+*       +---------> paper.li <--+              +--post-build-script.sh        |        *
+*                     ^   |     |                                             |        *
+*                     +---+     |                                             |        *
+*                               +-------------------------------osgav---------+        *
+*                                                                (me)                  *
+****************************************************************************************
+</div>
+
+### Contributing applications and services
+
+**Hugo** is the application that builds the website: a static website generator written in `go`. It takes a config file and a theme then mixes them with markdown-formatted content files to produce the HTML files that make up the website.
+
+AWS **Route53, CloudFront, ACM** and **S3** are responsible for `osgav.run` DNS, CDN, HTTPS and hosting respectively. Together they provide fast HTTPS-based access to `osgav.run` from everywhere.
+
+**GitHub** and **TravisCI** make up the deployment components of the system. GitHub version controls the blog source code and TravisCI builds and publishes a new copy of the website on pushes to the `master` branch of `osgav-blog`.
+
+**paper.li** is a Content Aggregation feed integrated via an IFrame, so its content is retrieved by the browser. The paper.li feed updates periodically and can be added to manually.
+
+## System characteristics
+
+### Data and processing flows
+
+upload: 
+
+- **New content developed** locally with Hugo
+- Changes pushed to GitHub `osgav-blog` repository
+- TravisCI triggers on push to GitHub
+- TravisCI builds Hugo site based on latest changes in `osgav-blog`
+- TravisCI runs `post-build-script.sh`
+- TravisCI publishes Hugo site to `osgav.run` S3 bucket
+- Manual `Invalidate` request(s) may or may not be submitted in CloudFront
+- **New content is LIVE**
+
+download:
+
+- Web browser makes request to `https://osgav.run`
+- Route53 points them to CloudFront distribution
+- CloudFront distribution serves content of `osgav.run` S3 bucket
+- **Content is consumed...**
+
+paper.li:
+
+- paper.li Genius sources are refreshed once a week creating a new issue on Fridays
+- additional articles can be manually published via paper.li console on-demand
+
+
+### Infrastructure and network design
+
+- 1x GitHub repository
+- 1x TravisCI integration
+- 2x S3 bucket
+- 2x CloudFront distribution
+- 2x Route53 records
+- 1x ACM certificate (maybe 2 actually)
+
+There are 2 of S3, CloudFront and Route53. This is to handle serving the website from the apex domain only.
+
+1 bucket for `osgav.run` and 1 bucket for `www.osgav.run` each with their own CloudFront distribution. The `www.osgav.run` bucket is configured (at S3 level) to redirect to the apex bucket.
+
+### Resilience and High Availability
+
+To the degree with which CloudFront and S3 can provide it.
+
+### Expected traffic and load
+
+Very little beyond constant ping of Monitis monitors.
+
+### Tools
+
+- `git` for version controlling (static) content, application and deployment configuration
+- AWS Console for manually configuring DNS, CDN, HTTPS and hosting
+- paper.li for curating (dynamic) content
+
+
+## Required resources
+
+### Required resources - storage
+
+Minimal amounts of S3 usage.
+
+### Required resources - metrics
+
+Default CloudFront metrics are enabled.
+
+## Security and access control
+
+### "Known Issues"
+
+- S3 origin can be accessed directly over HTTP
+
+## System configuration
+
+### Configuration management
+
+Configuration is partially stored within GitHub repository (application and deployment) and the remainder is configured manually (DNS, CDN, HTTPS and hosting).
+
+### Secrets management
+
+AWS S3 access and secret keys are stored within TravisCI. They are referenced via variables in `.travis.yml` which TravisCI makes available to the build container.
+
+## System backup and restore
+
+### Backup requirements
+
+Blog content should be backed up. It currently lives in GitHub (`osgav-blog` repository), local machine and there is a very old backup on a raspberry pi somewhere...
+
+Manual configuration should be backed up but does not currently have a backup.
+
+### Backup procedures
+
+Take copy of `osgav-blog` GitHub repository and store in additional location(s).
+
+Record / export manual configuration items.
+
+### Restore procedures
+
+Reconfigure manual configuration items and redeploy application...
+
+## Monitoring and alerting
+
+### Events and error messages
+
+Monitis alerts in Slack `#uptime` channel
+
+### Metrics
+
+HTTP Response Status Codes in CloudFront / CloudWatch
+
+### Health checks
+
+Monitis and *is the website working?*
+
+## Operational tasks
+
+### Deployment
+
+Hugo application is deployed via committing and pushing changes to `osgav-blog` GitHub repository. Push events trigger TravisCI which runs a Hugo build and publishes the output to S3.
+
+TravisCI also runs a custom script after the build and before publishing to S3 (`post-build-script.sh`).
+
+### Routine and sanity checks
+
+Look at Monitis uptime monitors for osgav.run
+
+Browse all pages and click all links on the website
+
+### Troubleshooting
+
+> How should troubleshooting happen? What tools are available?
+
+Use your noggin
+
+## Maintenance tasks
+
+### Patching
+
+Update Sept 2018:
+
+- upgraded from Hugo 0.18.1 to 0.48
+- will be adding more JS libraries soon (markdeep, mermaid): catalogue verions in use...
+
+#### Normal patch cycle
+
+Following upgrade to Hugo 0.48 I shall try to keep more up-to-date with new [releases](https://github.com/gohugoio/hugo/releases)...
+
+### Daylight-saving time changes
+
+Should not affect anything. Who cares what the timestamp on blog posts is.
+
+### Data cleardown
+
+TODO: write script for cleaning up old versions of CSS from S3.
+
+
+# Runbook
+
+"runbook-specific" items can go here, under its own bold heading in the contents....
+
+## CloudFront / CloudWatch Dashboards
+
+- list
+- of
+- links
+
+and some info.
+
+## Monitis Alerts
+
+An alert has appeared in `#uptime` ? Uh oh...
+
+## Monitis Dashboards
+
+- list
+- of
+- links
+
+and some info.
+
+## paper.li Adding content
+
+- log into paper.li console (link at top of document)
+- open the cog menu in the top right
+
+## paper.li Removing content
+
+- log into paper.li console (link at top of document)
+- click the edit button in the top right
+- find content to be removed and hover your mouse over it
+- click the trash icon to remove content from paper.li feed
+
+
+
+
+<script>markdeepOptions={tocStyle:'medium'};</script>
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
