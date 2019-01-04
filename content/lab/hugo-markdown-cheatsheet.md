@@ -13,7 +13,11 @@ parent = "lab"
 +++
 
 **`created: 11/06/2016`**<br />
-**`updated: 12/06/2016`**
+**`updated: 04/01/2019`**
+
+---
+
+**update:** Hugo doesn't seem to like blog posts with dates far in the future anymore. Sticking the actual cheatsheet [in the *lab*](/lab/cheatsheet.html) now.
 
 ---
 

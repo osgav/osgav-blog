@@ -1,20 +1,21 @@
 +++
 author = "osgav"
-date = "2070-01-01T00:00:00Z"
-draft = true
+date = "2019-01-01T12:30:00Z"
+draft = false
 slug = "cheatsheet"
-tags = ["draft"]
+tags = ["Hugo"]
 title = "cheatsheet" 
 [menu.main]
-parent = "blog"
+parent = "lab"
 
 +++
 
-[***view raw source***](https://raw.githubusercontent.com/osgav/osgav-source/master/content/post/cheatsheet.md)
+[***view source on Github***](https://raw.githubusercontent.com/osgav/osgav-source/master/content/lab/cheatsheet.md)
 <br />
 
 - https://sourceforge.net/p/hugo-generator/wiki/markdown_syntax/
 - http://assemble.io/docs/Cheatsheet-Markdown.html
+- https://www.webpagefx.com/tools/emoji-cheat-sheet/
 
 
 Use the following `more` html comment to manually create the "summary" block of content for the front page...
