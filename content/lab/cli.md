@@ -34,3 +34,7 @@ compgen
 ```    
 
 
+- `tree -J` : output the directory tree as JSON formatted array
+- `tree -J | jq -c .` : make nice green and blue art in your terminal
+
+- [Convert curl syntax to Python, Node.js, R, PHP, Go](https://curl.trillworks.com/)
