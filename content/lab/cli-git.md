@@ -4,9 +4,9 @@ date = "2019-01-04T11:20:08Z"
 draft = false
 image = ""
 share = false
-slug = "git"
-title = "Git"
-tags = ["git"]
+slug = "cli-git"
+title = "CLI git"
+tags = ["git", "GitHub", "version_control"]
 [menu.main]
 parent = "lab"
 
@@ -15,13 +15,12 @@ parent = "lab"
 **`created: 04/01/2019`**<br />
 **`updated: 04/01/2019`**
 
+##### git
+
 ---
 
-# git cheatsheet
 
-
-
-**history**
+***history***
 
 ```
 compact:
@@ -41,16 +40,21 @@ git log --graph --oneline --decorate --date=relative --all
 git log --graph --pretty=format:'\''%C(auto) %h | %s | %an | %ar%d'\'''
 ```
 
-<!-- https://twitter.com/copyconstruct/status/1033852879529017346?s=19 -->
+# inspiration
 
-***tweet thread with lots of `git log` commands***
+***twitter thread with lots of `git log` commands***
 
 {{< tweet 1033852879529017346 >}}
+<!-- https://twitter.com/copyconstruct/status/1033852879529017346?s=19 -->
 
-**reverting**
+***reverting***
 
 - https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git
 
-**other cheatsheets**
+***other cheatsheets***
 
 - https://gist.github.com/hofmannsven/6814451
+
+***jessfraz dotfiles***
+
+- https://github.com/jessfraz/dotfiles/blob/master/.gitconfig

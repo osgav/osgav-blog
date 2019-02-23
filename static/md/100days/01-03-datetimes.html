@@ -1,0 +1,133 @@
+<meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/apidoc.css?">
+
+# 01-03-datetimes
+
+# Resources
+
+- 2 source files in [github](https://github.com/talkpython/100daysofcode-with-python-course/tree/master/days/01-03-datetimes)
+- [pymotw](https://pymotw.com/2/datetime/) for datetime
+- and [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) on wikipedia
+
+
+
+
+# A Pomodoro in Python
+
+```python
+pomodoro_time   = timedelta(minutes=6)
+shortbreak_time = timedelta(minutes=2)
+longbreak_time  = timedelta(minutes=4)
+
+
+
+def run_a_pomodoro(pd_count):
+    '''
+    sleep for duration of one pomodoro
+    '''
+    pd_start_time = datetime.today()
+    print "%s --- pomodoro [%s] start time" % (pd_start_time, pd_count)
+    
+    time.sleep(pomodoro_time.seconds)
+    
+    pd_end_time = datetime.today()
+    duration = pd_end_time - pd_start_time
+    duration_mins = duration.seconds / 60
+    print "%s --- pomodoro [%s] end time\tduration: %smins" % (pd_end_time, pd_count, duration_mins)
+    
+    if pd_count < 3:
+        print "%s --- short break start time" % pd_end_time
+        time.sleep(shortbreak_time.seconds)
+        sb_end_time = datetime.today()
+        duration = sb_end_time - pd_end_time
+        duration_mins = duration.seconds / 60
+        print "%s --- short break end time\tduration: %smins" % (sb_end_time, duration_mins)
+        return pd_count
+    else:
+        print "%s --- long break start time" % pd_end_time
+        time.sleep(longbreak_time.seconds)
+        lb_end_time = datetime.today()
+        duration = lb_end_time - pd_end_time
+        duration_mins = duration.seconds / 60
+        print "%s --- long break end time\tduration: %smins" % (lb_end_time, duration_mins)
+        pd_count = 666
+        return pd_count
+
+    
+pd_count = 0
+while True:
+    counter = run_a_pomodoro(pd_count)
+    if counter == 666:
+        pd_count = 0
+    else:
+        pd_count += 1 
+```
+
+example output:
+
+```
+2019-01-20 17:07:02.781594 --- pomodoro [0] start time
+2019-01-20 17:13:02.803643 --- pomodoro [0] end time	duration: 6mins
+2019-01-20 17:13:02.803643 --- short break start time
+2019-01-20 17:15:02.812960 --- short break end time	duration: 2mins
+2019-01-20 17:15:02.813649 --- pomodoro [1] start time
+2019-01-20 17:21:02.828968 --- pomodoro [1] end time	duration: 6mins
+2019-01-20 17:21:02.828968 --- short break start time
+2019-01-20 17:23:02.835815 --- short break end time	duration: 2mins
+2019-01-20 17:23:02.836067 --- pomodoro [2] start time
+2019-01-20 17:29:02.857269 --- pomodoro [2] end time	duration: 6mins
+2019-01-20 17:29:02.857269 --- short break start time
+2019-01-20 17:31:02.862963 --- short break end time	duration: 2mins
+2019-01-20 17:31:02.863665 --- pomodoro [3] start time
+2019-01-20 17:37:02.875465 --- pomodoro [3] end time	duration: 6mins
+2019-01-20 17:37:02.875465 --- long break start time
+2019-01-20 17:41:02.891220 --- long break end time	duration: 4mins
+2019-01-20 17:41:02.891483 --- pomodoro [0] start time
+2019-01-20 17:47:02.906060 --- pomodoro [0] end time	duration: 6mins
+2019-01-20 17:47:02.906060 --- short break start time
+2019-01-20 17:49:02.910049 --- short break end time	duration: 2mins
+2019-01-20 17:49:02.910347 --- pomodoro [1] start time
+```
+
+## Next...
+
+it would be useful to take this out of its jupyter notebook and turn into a CLI tool perhaps...
+
+```
+$ pomodoro.py -c 1 -p 2 -s 3 -l 4
+
+    -c, --count     number of pomodoro sessions
+    -p, --pomodoro  length of single pomodoro
+    -s, --short     length of short break
+    -l, --long      length of long break
+```
+
+and providing a summary based on numbers provided...
+
+```
+one pomodoro session:
+
+            pomodoro + short break
+            pomodoro + short break
+            pomodoro + short break
+            pomodoro + long break
+
+how many pomodoro sessions would you like to run?
+how long would you like a single pomodoro to be?
+how long would you like a short break to be?
+how long would you like a long break to be?
+```
+
+- ***by providing "pomodoro sessions" an estimated end time could be provided...***
+- i.e. you want to run 3 sessions, at 15mins-2mins-5mins ?
+- that'll be (3*15)+(3*2)+5 all multiplied by 3...
+- so 56mins per session, making estimated end time `timedelta(minutes=168)` !
+- ...
+- maybe you want: 15mins-5mins-15mins, making 1 pomodoro session = 90mins
+- 2 sessions is 3hrs
+- 4 sessions is 6hrs
+- ...
+
+
+
+<script>markdeepOptions={tocStyle:'medium'};</script>
+<!-- Markdeep: --><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?"></script>

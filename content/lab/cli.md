@@ -6,7 +6,7 @@ image = ""
 share = false
 slug = "cli"
 title = "Command Line Interface"
-tags = ["bash", "which", "compgen"]
+tags = ["bash"]
 [menu.main]
 parent = "lab"
 
@@ -17,24 +17,4 @@ parent = "lab"
 
 ---
 
-when `which` doesn't find a command... remember `compgen`
-
-https://michael-kehoe.io/post/command-of-the-day-1-compgen/
-
-```
-compgen
-
-    -a: List of user aliases
-    -b: List of built-in shell commands
-    -c: List of all commands you can run
-    -e: List of shell variables
-    -k: List of built-in shell keywords
-    -A function: List of available bash functions
-
-```    
-
-
-- `tree -J` : output the directory tree as JSON formatted array
-- `tree -J | jq -c .` : make nice green and blue art in your terminal
-
-- [Convert curl syntax to Python, Node.js, R, PHP, Go](https://curl.trillworks.com/)
+I started with a single CLI Lab note but then split them out - I'll almost definitely make changes to this again in future, so leaving this currently useless page here.
