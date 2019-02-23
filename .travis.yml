@@ -15,7 +15,7 @@ deploy:
   secret_access_key: $AWS_SECRET_KEY
   bucket: osgav.run
   region: eu-central-1
-  endpoint: osgav.run.s3-website.eu-central-1.amazonaws.com
+  endpoint: http://osgav.run.s3-website.eu-central-1.amazonaws.com
   local-dir: public
   skip_cleanup: true
   acl: public_read
