@@ -21,7 +21,11 @@ I've been swithering about how to use this portion of my website - I knew I want
 
 > If it’s worth writing, it’s worth keeping. The only safe bet at this stage is markdown and git.
 
-And so in my Lab I shall maintain a collection of **notes, references, cheatsheets and links** - which I shall add to and update over time, separately and/or alongside blog posts... 
+Similarly the words on `blogumentation` over [here](https://www.jvt.me/posts/2017/06/25/blogumentation/) also resonated with me - and so in my Lab I shall maintain a collection of **notes, references, cheatsheets and links** - which I shall add to and update over time, separately and/or alongside blog posts...
+
+<!-- stumbled across blogumentation post here -->
+<!-- https://twitter.com/vvoyer/status/1087705536714412032?s=19 -->
+<!-- https://twitter.com/JamieTanna/status/1087979178522222593 -->
 
 ---
 
@@ -31,7 +35,10 @@ And so in my Lab I shall maintain a collection of **notes, references, cheatshee
 
 
 # command line
+[CLI cheatsheet](/md/cli-cheatsheet.html)
+
 > [CLI](/lab/cli.html) &bull;
+[database](/lab/cli-database.html) &bull;
 [docker](/lab/cli-docker.html) &bull;
 [environment & shell](/lab/cli-env-shell.html) &bull;
 [git](/lab/cli-git.html) &bull;
@@ -61,6 +68,7 @@ osgav.run Blog: [Cheatsheet](/lab/cheatsheet.html)<br />
 
 # visualization
 [ELK](/lab/elk.html)<br />
+[Mermaid](/lab/mermaid.html)<br />
 
 
 # #100DaysOfCode

@@ -1,0 +1,115 @@
+<!-- Markdeep header -->
+<meta charset="utf-8" emacsmode="-*- markdown -*-">
+<link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/apidoc.css?">
+
+# ***CLI cheatsheet***
+
+**`created: 09/03/2019`**<br />
+**`updated: 09/03/2019`**
+
+[[back to Lab: root](/lab/root.html)]
+
+---
+
+# **environment & shell**
+
+[[back to Lab: CLI environment & shell](/lab/cli-env-shell.html)]
+
+## compgen
+
+```
+compgen
+    -a: List of user aliases
+    -b: List of built-in shell commands
+    -c: List of all commands you can run
+    -e: List of shell variables
+    -k: List of built-in shell keywords
+    -A function: List of available bash functions
+```
+
+
+
+# **docker**
+
+[[back to Lab: CLI docker](/lab/cli-docker.html)]
+
+## remove dangling images
+
+```
+docker rmi $(docker images -q -f dangling=true)
+```
+
+
+
+
+# **git**
+
+[[back to Lab: CLI git](/lab/cli-git.html)]
+
+## history
+
+```
+compact:
+git log --oneline       just commit messages
+
+increasing verbosity:
+git log                 can also see author/date
+git log --nameonly      can also see filenames
+git log --stat          can also see insertions/deletions
+
+more details:
+git whatchanged         'git log' +  file permissions changes
+git log -p              'git log' + diffs
+
+graphs:
+git log --graph --oneline --decorate --date=relative --all
+git log --graph --pretty=format:'\''%C(auto) %h | %s | %an | %ar%d'\'''
+```
+
+
+
+
+# **tmux**
+
+[[back to Lab: CLI tmux](/lab/cli-tmux.html)]
+
+```
+Ctrl-b c        create new window
+Ctrl-b w        list windows
+Ctrl-b s        list sessions
+
+Ctrl-b z        maximize/restore panel
+Ctrl-b %        split panel vertically
+Ctrl-b "        split panel horizontally
+
+```
+
+
+
+
+# **tree**
+
+[[back to Lab: CLI tree](/lab/cli-tree.html)]
+
+
+
+
+# **web**
+
+[[back to Lab: CLI web](/lab/cli-web.html)]
+
+## wget
+
+```
+{ wget -S osgav.run -O - > /dev/null; } 2>&1 | grep HTTP/
+```
+
+
+
+
+<!-- Markdeep footer -->
+<script>markdeepOptions={tocStyle:'medium'};</script>
+<script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?"></script>
+
+<!-- Monitis RUM -->
+<script src='//rum.monitis.com/get/jsbenchmark.min.js?id=113608' type='text/javascript' async='async'></script>

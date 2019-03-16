@@ -14,7 +14,7 @@ parent = "lab"
 +++
 
 **`created: 17/02/2019`**<br />
-**`updated: 17/02/2019`**
+**`updated: 09/03/2019`**
 
 ##### tmux and friends
 
@@ -26,27 +26,16 @@ parent = "lab"
 - https://gist.github.com/henrik/1967800
 - https://gist.github.com/MohamedAlaa/2961058
 
-**teamocil**
+- https://leanpub.com/the-tao-of-tmux/read
+- https://sanctum.geek.nz/arabesque/watching-with-tmux/
+
+
+**"automating tmux"**
 
 - http://www.teamocil.com/
-
-```
-Ctrl-b c        create new window
-Ctrl-b w        list windows
-Ctrl-b s        list sessions
-
-Ctrl-b z        maximize/restore panel
-Ctrl-b %        split panel vertically
-Ctrl-b "        split panel horizontally
-
-```
-
-https://sanctum.geek.nz/arabesque/watching-with-tmux/
-
-
-
-
-
+- https://tmuxp.readthedocs.io/en/latest/index.html
+- https://github.com/oxidane/tmuxomatic
+- https://github.com/tmuxinator/tmuxinator
 
 
 
@@ -84,4 +73,17 @@ tmux: set -g mouse on
 tmux
 to --list
 to lab
+```
+
+**cheatsheet**
+
+```
+Ctrl-b c        create new window
+Ctrl-b w        list windows
+Ctrl-b s        list sessions
+
+Ctrl-b z        maximize/restore panel
+Ctrl-b %        split panel vertically
+Ctrl-b "        split panel horizontally
+
 ```

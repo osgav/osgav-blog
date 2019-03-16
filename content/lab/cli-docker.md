@@ -14,22 +14,18 @@ parent = "lab"
 +++
 
 **`created: 01/02/2019`**<br />
-**`updated: 23/02/2019`**
+**`updated: 09/03/2019`**
 
 ##### containers and such...
 
 ---
 
 - https://github.com/wsargent/docker-cheat-sheet
+
+
+**remove containers and images** 
+
 - https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
-
-
-**remove dangling images** 
-
-```
-$ docker rmi $(docker images -q -f dangling=true)
-```
-
 - https://docs.docker.com/engine/reference/commandline/image_prune/
 
 

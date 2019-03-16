@@ -14,12 +14,26 @@ parent = "lab"
 +++
 
 **`created: 27/01/2019`**<br />
-**`updated: 27/01/2019`**
+**`updated: 09/03/2019`**
 
 ##### python things
 
 ---
 
+# General
+
+- https://kite.com/python
+- https://security.openstack.org/#secure-development-guidelines
+
+
+# Specific
+
+### async
+
+- https://stackoverflow.com/questions/37278647/fire-and-forget-python-async-await
+- https://medium.com/python-pandemonium/asyncio-coroutine-patterns-beyond-await-a6121486656f
+- https://medium.freecodecamp.org/a-guide-to-asynchronous-programming-in-python-with-asyncio-232e2afa44f6
+- https://www.aeracode.org/2018/02/19/python-async-simplified/
 
 ### cheatsheets
 
@@ -32,6 +46,14 @@ https://www.pythonsheets.com/
 
 - CmdModule https://wiki.python.org/moin/CmdModule
 
+### database
+
+- sqlalchemy https://docs.sqlalchemy.org/en/latest/
+- alembic: https://alembic.sqlalchemy.org/en/latest/tutorial.html
+
+### eval
+
+- https://nedbatchelder.com/blog/201206/eval_really_is_dangerous.html
 
 ### formatting strings
 
@@ -57,6 +79,11 @@ https://www.pythonsheets.com/
 ### NLP
 
 - https://www.oreilly.com/learning/how-do-i-compare-document-similarity-using-python
+- https://www.kdnuggets.com/2018/03/text-data-preprocessing-walkthrough-python.html
+
+### numpy (and scipy, pandas, matplotlib)
+
+- https://morioh.com/p/7b3460b53126/deep-learning-prerequisites-the-numpy-stack-in-python
 
 ### processes
 
