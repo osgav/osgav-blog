@@ -2,7 +2,7 @@
 +++
 author = "osgav"
 date = "2019-03-09T16:35:49Z"
-draft = true
+draft = false
 image = ""
 share = false
 slug = "mermaid"

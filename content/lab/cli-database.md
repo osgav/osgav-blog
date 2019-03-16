@@ -2,7 +2,7 @@
 +++
 author = "osgav"
 date = "2019-03-09T15:47:31Z"
-draft = true
+draft = false
 image = ""
 share = false
 slug = "cli-database"
