@@ -19,7 +19,6 @@ A Runbook and System Operations Manual for **osgav.run Blog**
 - [TravisCI](https://travis-ci.org/osgav/osgav-blog)
 - [AWS S3](https://s3.console.aws.amazon.com/s3/buckets/osgav.run/?region=us-east-1&tab=overview)
 - [AWS CloudFront](https://console.aws.amazon.com/cloudfront/home?region=us-east-1#distribution-settings:E2S0AO7ZL3XT8X)
-- [paper.li](https://paper.li/e-1524660287#/)
 
 ----
 
@@ -57,13 +56,13 @@ A Runbook / Operations Manual template for modern software systems.
 *                                  |                  +--+ |                           *
 * (web browser)                    v                     v |                           *
 *   osgav.run --> Route53 --> CloudFront <--> S3 <-- TravisCI <-- GitHub <-- Hugo <--+ *
-*       |                                             ^  |                           | *
-*       |             +---+                    +------+  |                    +------+ *
-*       |             |   v                    |         v                    |        *
-*       +---------> paper.li <--+              +--post-build-script.sh        |        *
-*                     ^   |     |                                             |        *
-*                     +---+     |                                             |        *
-*                               +-------------------------------osgav---------+        *
+*                                                     ^  |                           | *
+*                                              +------+  |                    +------+ *
+*                                              |         v                    |        *
+*                                              +--post-build-script.sh        |        *
+*                                                                             |        *
+*                                                                             |        *
+*                                                               osgav---------+        *
 *                                                                (me)                  *
 ****************************************************************************************
 </div>
@@ -75,8 +74,6 @@ A Runbook / Operations Manual template for modern software systems.
 AWS **Route53, CloudFront, ACM** and **S3** are responsible for `osgav.run` DNS, CDN, HTTPS and hosting respectively. Together they provide fast HTTPS-based access to `osgav.run` from everywhere.
 
 **GitHub** and **TravisCI** make up the deployment components of the system. GitHub version controls the blog source code and TravisCI builds and publishes a new copy of the website on pushes to the `master` branch of `osgav-blog`.
-
-**paper.li** is a Content Aggregation feed integrated via an IFrame, so its content is retrieved by the browser. The paper.li feed updates periodically and can be added to manually.
 
 ## System characteristics
 
@@ -99,11 +96,6 @@ download:
 - Route53 points them to CloudFront distribution
 - CloudFront distribution serves content of `osgav.run` S3 bucket
 - **Content is consumed...**
-
-paper.li:
-
-- paper.li Genius sources are refreshed once a week creating a new issue on Fridays
-- additional articles can be manually published via paper.li console on-demand
 
 
 ### Infrastructure and network design
@@ -131,7 +123,6 @@ Very little beyond constant ping of Monitis monitors.
 
 - `git` for version controlling (static) content, application and deployment configuration
 - AWS Console for manually configuring DNS, CDN, HTTPS and hosting
-- paper.li for curating (dynamic) content
 
 
 ## Required resources
@@ -262,18 +253,6 @@ An alert has appeared in `#uptime` ? Uh oh...
 - links
 
 and some info.
-
-## paper.li Adding content
-
-- log into paper.li console (link at top of document)
-- open the cog menu in the top right
-
-## paper.li Removing content
-
-- log into paper.li console (link at top of document)
-- click the edit button in the top right
-- find content to be removed and hover your mouse over it
-- click the trash icon to remove content from paper.li feed
 
 
 
