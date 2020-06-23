@@ -53,13 +53,7 @@ preserveTaxonomyNames = true
 	weight = 120
 
 [[menu.main]]
-    name = "paper.li"
-	post = "<span class=\"icon-print\"></span>"
-	url = "https://paper.li/e-1524660287#/"
-	weight = 130
-
-[[menu.main]]
     name = "site rss"
 	post = "<span class=\"icon-feed\"></span>"
 	url = "/index.xml"
-	weight = 140
+	weight = 130
