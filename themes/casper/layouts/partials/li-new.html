@@ -1,9 +1,6 @@
 {{ $baseurl := .Site.BaseURL }}
 <article class="post {{ .Section }}">
     <span class="post-meta post-tags"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    </header>
     <footer class="post-meta">
         {{$author := index .Site.Data.authors .Params.author }}
         {{ if isset $author "thumbnail" }}

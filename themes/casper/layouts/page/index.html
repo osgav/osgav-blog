@@ -52,17 +52,14 @@
     {{.Content}}
   </div>
 
-  <center>
-    {{ partial "tagcloudlog.html" . }}
-  </center>
-  <br />  <br />
 
-  <section class="post-content">
+
+  <section class="post-content inner">
     <br />
     <h6>latest posts</h6>
       <span class="post-meta">
       {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
-      {{ range first 99 $pages }}
+      {{ range first 5 $pages }}
       <span class="post-tags">
           {{ $t := (time "2016-06-05") }}
           <!-- date of osgav.run first post -->
@@ -71,6 +68,13 @@
           {{ $osgav_epoch := int (sub 0 $osgav_epoch_negative) }}      
       <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] {{ .Title }}</a>
       <br />
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+        {{ .Date.Format "2 Jan 2006" }} 
+      </time> | 
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+        reading time: <b>{{ .ReadingTime }} mins</b>
+      </time><br />
+      <br />
       <!-- .Format string needs to be actual specific date in 2006 -->
       <!-- https://gohugo.io/functions/format/ -->
       <!-- https://www.madboa.com/blog/2016/08/24/hugo-dateformat/ -->
@@ -78,8 +82,14 @@
       {{ end }}
       </span>
     </section>
+    <br />  <br />
 
-
+    <div class="inner">
+      <center>
+        {{ partial "tagcloudlog.html" . }}
+      </center>
+    </div>
+      <br />  <br />
 
 
 {{ if not ($.Scratch.Get "paginatedSections") }}
