@@ -17,6 +17,12 @@ preserveTaxonomyNames = true
 	logo = "images/tux.jpg"
 	hideHUGOSupport = false
 
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [[menu.main]]
 	name = "blog"
 	post = "<span class=\"icon-edit\"></span>"
