@@ -51,11 +51,60 @@
     <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
     {{.Content}}
   </div>
-  <div>
-    {{ range first 10 .Site.Pages }}
-        {{ .Render "summary"}}
-    {{ end }}
-  </div>
+
+  <center>
+    {{ partial "tagcloudlog.html" . }}
+  </center>
+  <br />  <br />
+
+  <section class="post-content">
+    <br />
+    <h6>latest posts</h6>
+      <span class="post-meta">
+      {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+      {{ range first 99 $pages }}
+      <span class="post-tags">
+          {{ $t := (time "2016-06-05") }}
+          <!-- date of osgav.run first post -->
+          {{ $delta := $t.Sub (time .Date) }}
+          {{ $osgav_epoch_negative := int (div $delta.Hours 24)}}
+          {{ $osgav_epoch := int (sub 0 $osgav_epoch_negative) }}      
+      <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] {{ .Title }}</a>
+      <br />
+      <!-- .Format string needs to be actual specific date in 2006 -->
+      <!-- https://gohugo.io/functions/format/ -->
+      <!-- https://www.madboa.com/blog/2016/08/24/hugo-dateformat/ -->
+      </span>
+      {{ end }}
+      </span>
+    </section>
+
+
+
+
+{{ if not ($.Scratch.Get "paginatedSections") }}
+  {{ if isset .Site.Params "paginatedSections" }}
+      {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedSections }}
+  {{ else }}
+      {{ $.Scratch.Set "paginatedSections" "post" }}
+  {{ end }}
+{{ end }}
+
+{{ $list := where .Site.RegularPages "Section" "in" ($.Scratch.Get "paginatedSections") }}
+{{ $list := where $list "Section" "!=" "" }}
+{{ $paginator := .Paginate ( $list ) }}
+
+<div class="extra-pagination inner">
+  {{ partial "pagination.html" $paginator }}
+</div>
+
+{{ range $index, $page := $paginator.Pages }}
+  {{ partial "li-new.html" . }}
+{{ end }}
+
+{{ partial "pagination.html" $paginator }}
+
+
 </main>
 
 

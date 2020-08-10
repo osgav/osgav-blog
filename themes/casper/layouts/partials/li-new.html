@@ -1,0 +1,36 @@
+{{ $baseurl := .Site.BaseURL }}
+<article class="post {{ .Section }}">
+    <span class="post-meta post-tags"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </header>
+    <footer class="post-meta">
+        {{$author := index .Site.Data.authors .Params.author }}
+        {{ if isset $author "thumbnail" }}
+            <img class="author-thumb" src="{{ .Site.BaseURL }}{{ $author.thumbnail }}" alt="Author image" nopin="nopin" />
+        {{else if .Site.Params.logo }}
+            <img class="author-thumb" src="{{ .Site.BaseURL }}{{.Site.Params.logo}}" alt="Author image" nopin="nopin" />
+        {{end}}
+        {{if and (ne .Params.author .Site.Params.author) .Params.author}}
+        {{$author := index .Site.Data.authors .Params.author }}
+            {{$author.name}}
+        {{else if .Site.Params.author}}
+            <span>{{.Site.Params.author}}</span>
+        {{end}} | 
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }} 
+        </time> | 
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+                reading time: <b>{{ .ReadingTime }} mins</b>
+        </time><br />
+        <span class="post-tags">
+        {{if .Params.tags }}
+            {{ range $index, $tag := .Params.tags }}
+            &nbsp;<a href="{{$baseurl}}tags/{{ $tag | urlize }}.html">#{{ $tag }}</a>
+            {{ end }}
+        {{end}}
+        </span>
+
+    </footer>    
+</article>
+
