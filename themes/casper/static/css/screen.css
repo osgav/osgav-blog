@@ -1618,6 +1618,20 @@ body:not(.post-template) .post-title {
     left: 0;
 }
 
+.newer-posts-text {
+    position: absolute;
+    display: inline-block;
+    color: #ac393f;
+    left: 0;
+}
+
+.older-posts-text {
+    position: absolute;
+    display: inline-block;
+    color: #ac393f;
+    right: 0;
+}
+
 .older-posts:hover,
 .newer-posts:hover {
     color: #fff;
