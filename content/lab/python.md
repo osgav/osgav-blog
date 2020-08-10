@@ -24,6 +24,7 @@ parent = "lab"
 
 - https://kite.com/python
 - https://security.openstack.org/#secure-development-guidelines
+- https://www.oreilly.com/learning/20-python-libraries-you-arent-using-but-should (found `colorlog` here)
 
 
 # Specific
@@ -34,6 +35,7 @@ parent = "lab"
 - https://medium.com/python-pandemonium/asyncio-coroutine-patterns-beyond-await-a6121486656f
 - https://medium.freecodecamp.org/a-guide-to-asynchronous-programming-in-python-with-asyncio-232e2afa44f6
 - https://www.aeracode.org/2018/02/19/python-async-simplified/
+- https://pawelmhm.github.io/asyncio/python/aiohttp/2016/04/22/asyncio-aiohttp.html
 
 ### cheatsheets
 
@@ -45,6 +47,7 @@ https://www.pythonsheets.com/
 > [building beautiful command line interfaces with python](https://codeburst.io/building-beautiful-command-line-interfaces-with-python-26c7e1bb54df)
 
 - CmdModule https://wiki.python.org/moin/CmdModule
+- `begins` https://www.oreilly.com/learning/20-python-libraries-you-arent-using-but-should
 
 ### database
 

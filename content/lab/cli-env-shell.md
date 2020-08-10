@@ -33,6 +33,9 @@ compgen
     -A function: List of available bash functions
 ```
 
+- and `type`
+- https://salferrarello.com/command-line-which-wrong-result/
+
 **command-line python tool which combines *top commands**
 
 - https://www.jvt.me/posts/2017/04/26/glances/

@@ -24,6 +24,9 @@ parent = "lab"
 {{< tweet 1033852879529017346 >}}
 <!-- https://twitter.com/copyconstruct/status/1033852879529017346?s=19 -->
 
+- https://coderwall.com/p/euwpig/a-better-git-log
+- https://salferrarello.com/using-vim-view-git-commits/
+
 ***reverting***
 
 - https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git

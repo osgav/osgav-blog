@@ -76,3 +76,8 @@ osgav.run Blog: [Cheatsheet](/lab/cheatsheet.html)<br />
 days | [#100DaysOfCode in Python](/lab/100daysofcode.html)
 ---- | --------------
 01-03-datetimes | [code](/md/100days/01-03-datetimes.html)
+
+
+
+# software engineering
+https://github.com/kamranahmedse/design-patterns-for-humans
