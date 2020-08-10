@@ -54,7 +54,7 @@
 
 
 
-  <section class="post-content inner">
+  <section class="post post-content inner">
     <br />
     <h6>latest posts</h6>
       <span class="post-meta">
@@ -82,14 +82,20 @@
       {{ end }}
       </span>
     </section>
-    <br />  <br />
 
-    <div class="inner">
+    <div class="post pagination inner">
+      <a class="newer-posts" href="/post.html">browse posts &rarr;</a>
+      <a class="older-posts" href="/tags.html">view archive &rarr;</a>
+      <br />
+    </div>
+
+
+    <div class="post inner">
       <center>
         {{ partial "tagcloudlog.html" . }}
       </center>
     </div>
-      <br />  <br />
+
 
 
 {{ if not ($.Scratch.Get "paginatedSections") }}

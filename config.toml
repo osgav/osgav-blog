@@ -24,12 +24,19 @@ preserveTaxonomyNames = true
       unsafe = true
 
 [[menu.main]]
-	name = "blog"
+	name = "home"
 	post = "<span class=\"icon-edit\"></span>"
 	pre = "<h4 class=\"menutitle\"><span class=\"icon-cog\"></span> osgav</h4>"
 	weight = -100
-	identifier = "blog"
+	identifier = "home"
 	url = "/"
+
+[[menu.main]]
+	name = "blog"
+	post = "<span class=\"icon-edit\"></span>"
+	weight = -90
+	identifier = "blog"
+	url = "/post.html"
 
 [[menu.main]]
 	name = "tags"
