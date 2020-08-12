@@ -46,21 +46,14 @@
 
     <div class="innercolumn">
       <section class="post post-content inner">
-      yada yada yada<br />
-      blah blah blah<br />
-      <br />
-      this is where "managed content" will go, i.e. things managed by the <code>content/_index.md</code> file...
-      <br /><br />
 
-      <h1>{{.Title}}</h1>
+        <h1>{{.Title}}</h1>
 
       {{ with .Params.subtitle }}
       {{.}}
       {{ end }}
 
       <br /><br />
-      and then the actual file contents, after the frontmatter, comes as a giant blob:
-      <br />
       <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
       {{.Content}}
 
@@ -72,7 +65,7 @@
     <div class="innercolumn">
       <section class="post post-content inner">
 
-          <span class="post-meta">
+          <span class="post-list-homepage">
           {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
           {{ range first 5 $pages }}
           <span class="post-tags">
@@ -81,13 +74,13 @@
               {{ $delta := $t.Sub (time .Date) }}
               {{ $osgav_epoch_negative := int (div $delta.Hours 24)}}
               {{ $osgav_epoch := int (sub 0 $osgav_epoch_negative) }}      
-          <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] {{ .Title }}</a>
+          <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] <b>{{ .Title }}</b></a>
           <br />
           <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Format "2 Jan 2006" }} 
           </time> | 
           <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            reading time: <b>{{ .ReadingTime }} mins</b>
+            read time: <b>{{ .ReadingTime }} mins</b>
           </time><br />
           <br />
           <!-- .Format string needs to be actual specific date in 2006 -->
@@ -98,7 +91,7 @@
           </span>
         </section>
 
-        <div class="post pagination inner">
+        <div class="post pagination-home-buttons inner">
           <a class="newer-posts" href="/post.html">browse my blog &rarr;</a>
           <a class="older-posts" href="/tags.html">view blog archive &rarr;</a>
           <br />
@@ -116,31 +109,27 @@
 
 
 
+<!-- {{ if not ($.Scratch.Get "paginatedSections") }} -->
+  <!-- {{ if isset .Site.Params "paginatedSections" }} -->
+      <!-- {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedSections }} -->
+  <!-- {{ else }} -->
+      <!-- {{ $.Scratch.Set "paginatedSections" "post" }} -->
+  <!-- {{ end }} -->
+<!-- {{ end }} -->
 
+<!-- {{ $list := where .Site.RegularPages "Section" "in" ($.Scratch.Get "paginatedSections") }} -->
+<!-- {{ $list := where $list "Section" "!=" "" }} -->
+<!-- {{ $paginator := .Paginate ( $list ) }} -->
 
+<!-- <div class="extra-pagination inner"> -->
+  <!-- {{ partial "pagination.html" $paginator }} -->
+<!-- </div> -->
 
+<!-- {{ range $index, $page := $paginator.Pages }} -->
+  <!-- {{ partial "li-new.html" . }} -->
+<!-- {{ end }} -->
 
-{{ if not ($.Scratch.Get "paginatedSections") }}
-  {{ if isset .Site.Params "paginatedSections" }}
-      {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedSections }}
-  {{ else }}
-      {{ $.Scratch.Set "paginatedSections" "post" }}
-  {{ end }}
-{{ end }}
-
-{{ $list := where .Site.RegularPages "Section" "in" ($.Scratch.Get "paginatedSections") }}
-{{ $list := where $list "Section" "!=" "" }}
-{{ $paginator := .Paginate ( $list ) }}
-
-<div class="extra-pagination inner">
-  {{ partial "pagination.html" $paginator }}
-</div>
-
-{{ range $index, $page := $paginator.Pages }}
-  {{ partial "li-new.html" . }}
-{{ end }}
-
-{{ partial "pagination.html" $paginator }}
+<!-- {{ partial "pagination.html" $paginator }} -->
 
 
 </main>

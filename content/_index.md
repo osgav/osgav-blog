@@ -1,8 +1,8 @@
 +++
 author = "osgav"
-title = "AH HA"
-subtitle = "subtitle"
+title = "Welcome!"
+subtitle = "this is the subtitle"
 
 +++
 
-content now?
+and this is the content.
