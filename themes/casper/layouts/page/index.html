@@ -41,71 +41,82 @@
 
 <main id="content" class="content" role="main"></main>
 
-  <header class="homepage-header">
-    <h1>{{.Title}}</h1>
-    {{ with .Params.subtitle }}
-    <span class="subtitle">{{.}}</span>
-    {{ end }}
-  </header>
-  <div class="homepage-content">
-    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-    {{.Content}}
+
+  <div class="row">
+
+    <div class="innercolumn">
+      <section class="post post-content inner">
+      yada yada yada<br />
+      blah blah blah<br />
+      <br />
+      this is where "managed content" will go, i.e. things managed by the <code>content/_index.md</code> file...
+      <br /><br />
+
+      <h1>{{.Title}}</h1>
+
+      {{ with .Params.subtitle }}
+      {{.}}
+      {{ end }}
+
+      <br /><br />
+      and then the actual file contents, after the frontmatter, comes as a giant blob:
+      <br />
+      <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+      {{.Content}}
+
+    </section>
+  
+    </div>
+  
+  
+    <div class="innercolumn">
+      <section class="post post-content inner">
+
+          <span class="post-meta">
+          {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+          {{ range first 5 $pages }}
+          <span class="post-tags">
+              {{ $t := (time "2016-06-05") }}
+              <!-- date of osgav.run first post -->
+              {{ $delta := $t.Sub (time .Date) }}
+              {{ $osgav_epoch_negative := int (div $delta.Hours 24)}}
+              {{ $osgav_epoch := int (sub 0 $osgav_epoch_negative) }}      
+          <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] {{ .Title }}</a>
+          <br />
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }} 
+          </time> | 
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            reading time: <b>{{ .ReadingTime }} mins</b>
+          </time><br />
+          <br />
+          <!-- .Format string needs to be actual specific date in 2006 -->
+          <!-- https://gohugo.io/functions/format/ -->
+          <!-- https://www.madboa.com/blog/2016/08/24/hugo-dateformat/ -->
+          </span>
+          {{ end }}
+          </span>
+        </section>
+
+        <div class="post pagination inner">
+          <a class="newer-posts" href="/post.html">browse my blog &rarr;</a>
+          <a class="older-posts" href="/tags.html">view blog archive &rarr;</a>
+          <br />
+        </div>
+
+        <div class="post inner">
+          <center>
+            {{ partial "tagcloudlog.html" . }}
+          </center>
+        </div>      
+
+    </div>
+
   </div>
 
 
 
-  <section class="post post-content inner">
-    <br />
-    <h6>latest posts</h6>
-      <span class="post-meta">
-      {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
-      {{ range first 5 $pages }}
-      <span class="post-tags">
-          {{ $t := (time "2016-06-05") }}
-          <!-- date of osgav.run first post -->
-          {{ $delta := $t.Sub (time .Date) }}
-          {{ $osgav_epoch_negative := int (div $delta.Hours 24)}}
-          {{ $osgav_epoch := int (sub 0 $osgav_epoch_negative) }}      
-      <a href="{{ .Permalink }}">{{ .Date.Format "2006" }} [{{ $osgav_epoch }}] {{ .Title }}</a>
-      <br />
-      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-        {{ .Date.Format "2 Jan 2006" }} 
-      </time> | 
-      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-        reading time: <b>{{ .ReadingTime }} mins</b>
-      </time><br />
-      <br />
-      <!-- .Format string needs to be actual specific date in 2006 -->
-      <!-- https://gohugo.io/functions/format/ -->
-      <!-- https://www.madboa.com/blog/2016/08/24/hugo-dateformat/ -->
-      </span>
-      {{ end }}
-      </span>
-    </section>
 
-    <div class="post pagination inner">
-      <a class="newer-posts" href="/post.html">browse my blog &rarr;</a>
-      <br />
-      <span class="newer-posts-text" style="font-family:monospace; text-transform:uppercase;">
-      typical blog feed with excerpts and "read on" links...
-      </span>
-      <br /><br />
-    </div>
-
-    <div class="post pagination inner">
-      <a class="older-posts" href="/tags.html">view blog archive &rarr;</a>
-      <br />
-      <span class="older-posts-text" style="font-family:monospace; text-transform:uppercase;">
-      ...a single list of all blog post titles
-      </span>
-      <br /><br />
-    </div>
-
-    <div class="post inner">
-      <center>
-        {{ partial "tagcloudlog.html" . }}
-      </center>
-    </div>
 
 
 
@@ -133,6 +144,7 @@
 
 
 </main>
+
 
 
 

@@ -525,6 +525,19 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0 auto;
 }
 
+.innercolumn {
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /* Centres vertically yo. (IE8+) */
 .vertical {
     display: table-cell;
@@ -1718,7 +1731,13 @@ body:not(.post-template) .post-title {
    10. Media Queries - Smaller than 900px
    ========================================================================== */
 
-@media only screen and (max-width: 900px) {
+   @media only screen and (max-width: 1040px) {
+    .innercolumn {
+        width: 100%;
+    }       
+}
+
+   @media only screen and (max-width: 900px) {
 
     blockquote {
         margin-left: 0;
@@ -1944,6 +1963,10 @@ body:not(.post-template) .post-title {
     .pagination {
         width: auto;
         margin: 2rem auto;
+    }
+
+    .innercolumn {
+        width: 100%;
     }
 
     .post {
