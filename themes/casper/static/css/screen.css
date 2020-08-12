@@ -1602,24 +1602,13 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    color: #9EABB3;
-    text-align: center;
-}
-
-.pagination-home-buttons {
-    position: relative;
-    width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
     font-family: monospace;
     font-size: 12px;
     color: #9EABB3;
     text-align: center;
 }
 
-.pagination a, .pagination-home-buttons a {
+.pagination a {
     color: #ac393f;
     transition: all 0.5s ease;
 }
