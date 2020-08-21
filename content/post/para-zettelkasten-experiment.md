@@ -76,7 +76,7 @@ Another blog post - more about my notetaking app search.
 
 I became a bit unsure of the first app I used and started looking for a second. I made a list of the features I wanted from a notetaking app to aid my thinking. So my next blog post will be a non-comprehensive comparison of the two apps based off my list.
 
-
+***Update: [next blog post is here](/post/onenote-vs-joplin.html)***
 
 
 ### More
