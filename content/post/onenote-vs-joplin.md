@@ -117,7 +117,7 @@ A brief version of events for this comparison:
 
 This also weighed heavily in Joplin's favour.
 
-*(If that sparked your interest then stay tuned, I will come back to this in my next blog post and share my script.)*
+*(If that sparked your interest then stay tuned, I will come back to this in [my next blog post](/post/randomnote-for-joplin.html) and share my script.)*
 
 
 
