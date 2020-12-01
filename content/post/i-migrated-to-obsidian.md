@@ -3,7 +3,7 @@
 author = "osgav"
 date = "2020-11-30T19:31:50Z"
 draft = false
-image = "/images/posts/i-migrated-to-obsidian/obsidian.jpg"
+image = "images/posts/i-migrated-to-obsidian/obsidian.jpg"
 share = true
 slug = "i-migrated-to-obsidian"
 tags = ["notetaking", "Zettelkasten", "Joplin", "Obsidian"]
