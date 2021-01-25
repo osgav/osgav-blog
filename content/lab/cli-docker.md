@@ -29,3 +29,6 @@ parent = "lab"
 - https://docs.docker.com/engine/reference/commandline/image_prune/
 
 
+**inspecting containers and images**
+
+- https://pythonspeed.com/articles/docker-history/
