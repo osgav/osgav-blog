@@ -12,7 +12,7 @@ index = true
 name = "whois"
 identifier = "whois"
 post = "<span class=\"icon-help\"></span>"
-weight = -10
+weight = -20
 
 +++
 

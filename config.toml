@@ -25,7 +25,7 @@ preserveTaxonomyNames = true
 
 [[menu.main]]
 	name = "home"
-	post = "<span class=\"icon-edit\"></span>"
+	post = "<span class=\"icon-website\"></span>"
 	pre = "<h4 class=\"menutitle\"><span class=\"icon-cog\"></span> osgav</h4>"
 	weight = -100
 	identifier = "home"
@@ -41,7 +41,7 @@ preserveTaxonomyNames = true
 [[menu.main]]
 	name = "tags"
 	post = "<span class=\"icon-tag\"></span>"
-	weight = -80
+	weight = -70
 	identifier = "tags"
 	url = "/tags.html"
 
