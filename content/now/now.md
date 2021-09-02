@@ -1,7 +1,7 @@
 +++
 author = "osgav"
 comments = false
-date = "2021-08-24T15:56:06Z"
+date = "2021-09-02T14:16:33Z"
 draft = false
 share = false
 slug = "now"
@@ -16,12 +16,9 @@ weight = -10
 
 +++
 
-August 2021. 
-
 What am I up to? 
 
-
-
-
-
+- adding my first [Now page](https://nownownow.com/about) to my website
+- delving into my [notetaking](/tags/notetaking.html) system
+- playing games on my [newly built PC](/tags/pc-build-project.html)
 
