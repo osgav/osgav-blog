@@ -17,18 +17,31 @@ preserveTaxonomyNames = true
 	logo = "images/tux.jpg"
 	hideHUGOSupport = false
 
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+	name = "home"
+	post = "<span class=\"icon-website\"></span>"
+	pre = "<h4 class=\"menutitle\"><span class=\"icon-cog\"></span> osgav</h4>"
+	weight = -100
+	identifier = "home"
+	url = "/"
+
 [[menu.main]]
 	name = "blog"
 	post = "<span class=\"icon-edit\"></span>"
-	pre = "<h4 class=\"menutitle\"><span class=\"icon-cog\"></span> osgav</h4>"
-	weight = -100
+	weight = -90
 	identifier = "blog"
-	url = "/"
+	url = "/post.html"
 
 [[menu.main]]
 	name = "tags"
 	post = "<span class=\"icon-tag\"></span>"
-	weight = -80
+	weight = -70
 	identifier = "tags"
 	url = "/tags.html"
 

@@ -1,8 +1,6 @@
 {{ $baseurl := .Site.BaseURL }}
 <article class="post {{ .Section }}">
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    </header>
+    <span class="post-meta post-tags"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
     <footer class="post-meta">
         {{$author := index .Site.Data.authors .Params.author }}
         {{ if isset $author "thumbnail" }}
@@ -31,8 +29,5 @@
         </span>
 
     </footer>    
-    <section class="post-excerpt">
-        &nbsp;{{ .Summary }} <br /><a class="read-more" href="{{.RelPermalink}}"><i>read on... &raquo;</i></a>
-    </section>
 </article>
 

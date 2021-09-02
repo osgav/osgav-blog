@@ -12,7 +12,7 @@ index = true
 name = "lab"
 identifier = "lab"
 post = "<span class=\"icon-code\"></span>"
-weight = -90
+weight = -80
 
 +++
 # Lab Notes

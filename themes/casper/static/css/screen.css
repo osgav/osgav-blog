@@ -525,6 +525,19 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0 auto;
 }
 
+.innercolumn {
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /* Centres vertically yo. (IE8+) */
 .vertical {
     display: table-cell;
@@ -1189,6 +1202,15 @@ body:not(.post-template) .post-title {
     color: #9EABB3;
 }
 
+.post-list-homepage {
+    display: block;
+    margin: 1.75rem 0 0 0;
+    font-family: monospace;
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    color: #9EABB3;
+}
+
 .author-thumb {
     width: 24px;
     height: 24px;
@@ -1580,7 +1602,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: monospace;
     font-size: 12px;
     color: #9EABB3;
     text-align: center;
@@ -1616,6 +1638,20 @@ body:not(.post-template) .post-title {
 
 .newer-posts {
     left: 0;
+}
+
+.newer-posts-text {
+    position: absolute;
+    display: inline-block;
+    color: #ac393f;
+    left: 0;
+}
+
+.older-posts-text {
+    position: absolute;
+    display: inline-block;
+    color: #ac393f;
+    right: 0;
 }
 
 .older-posts:hover,
@@ -1704,7 +1740,13 @@ body:not(.post-template) .post-title {
    10. Media Queries - Smaller than 900px
    ========================================================================== */
 
-@media only screen and (max-width: 900px) {
+   @media only screen and (max-width: 1040px) {
+    .innercolumn {
+        width: 100%;
+    }       
+}
+
+   @media only screen and (max-width: 900px) {
 
     blockquote {
         margin-left: 0;
@@ -1930,6 +1972,10 @@ body:not(.post-template) .post-title {
     .pagination {
         width: auto;
         margin: 2rem auto;
+    }
+
+    .innercolumn {
+        width: 100%;
     }
 
     .post {

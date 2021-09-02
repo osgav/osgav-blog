@@ -6,138 +6,154 @@
 <header class="main-header no-cover">
 {{end}}
 
-    <nav class="main-nav overlay clearfix">
-        <div id="stickymenu">
-        {{ if .Site.Params.logo }}
-            <a class="home-button" href="{{ .Permalink }}"><span class="icon-standard"> </span><span class="word">home</span></a>
-        {{end}}
-        
-        {{ if .Site.Menus.main }}
-            <a class="menu-button" href="#"><span class="icon-cog"></span> <span class="word">osgav</span></a>
+<nav class="main-nav overlay clearfix">
+    <div id="stickymenu">
+    {{ if .Site.Params.logo }}
+        <a class="home-button" href="{{ .Permalink }}"><span class="icon-standard"> </span><span class="word">home</span></a>
+    {{end}}
+    
+    {{ if .Site.Menus.main }}
+        <a class="menu-button" href="#"><span class="icon-cog"></span> <span class="word">osgav</span></a>
+    {{else}}
+        {{ if .Site.Params.RSSLink}}
+          <a class="menu-button icon-feed" href="{{.Site.Params.RSSLink }}">&nbsp;&nbsp;Subscribe</a>
         {{else}}
-            {{ if .Site.Params.RSSLink}}
-              <a class="menu-button icon-feed" href="{{.Site.Params.RSSLink }}">&nbsp;&nbsp;Subscribe</a>
-            {{else}}
-              <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
-            {{end}}
+          <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
         {{end}}
-        </div>
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            {{ if .Site.Params.linkedinName }}
-                <a class="bloglogo" href="https://www.linkedin.com/in/{{ .Site.Params.linkedinName }}" target="_blank">
-                    <span class="icon-linkedin" style="color:white;font-size:2em"></span>
-                </a>
-            &nbsp;
-            {{end}}
-            {{ if .Site.Params.githubName }}
-                <a class="bloglogo" href="https://github.com/{{ .Site.Params.githubName }}" target="_blank">
-                <span class="icon-github" style="color:white;font-size:2em"></span>
-                </a>
-            &nbsp;
-            {{end}}
-            {{ if .Site.Params.twitterName }}
-                <a class="bloglogo" href="https://twitter.com/{{ .Site.Params.twitterName }}" target="_blank">
-                    <span class="icon-twitter" style="color:white;font-size:2em"></span>
-                </a>
-            &nbsp;
-            {{end}}
-            {{ if .Site.Params.facebookName }}
-                <a class="bloglogo" href="https://www.facebook.com/{{ .Site.Params.facebookName }}" target="_blank">
-                    <span class="icon-facebook" style="color:white;font-size:2em"></span>
-                </a>
-            &nbsp;
-            {{end}}
-            {{ if .Site.Params.instagramName }}
-                <a class="bloglogo" href="https://instagram.com/{{ .Site.Params.instagramName }}" target="_blank">
-                    <span class="icon-instagram" style="color:white;font-size:2em"></span>
-                </a>
-            &nbsp;
-            {{end}}
-            {{ if .Site.Params.pinterestName }}
-                <a class="bloglogo" href="https://www.pinterest.com/{{ .Site.Params.pinterestName }}" target="_blank">
-                    <span class="icon-pinterest" style="color:white;font-size:2em"></span>
-                </a>
-            &nbsp;
-            {{end}}
-            {{ if .Site.Params.googlePlusName }}
-                <a class="bloglogo" href="https://google.com/+{{ .Site.Params.googlePlusName }}" target="_blank">
-                    <span class="icon-google-plus" style="color:white;font-size:2em"></span>
-                </a>
-            &nbsp;
-            {{end}}
-
-            <h1><span class="page-title icon-cog">&nbsp;{{ .Site.Title }}&nbsp;</span></h1>
-            <h2 style="line-height: 1px;"><span class="page-description" style="background-color:rgba(255,255,255,0.8); color:#ac393f;">{{ .Site.Params.description }}</span></h2>
-        </div>
+    {{end}}
     </div>
-    <a class="scroll-down icon-arrow-left" href="#proceed"><span class="hidden">Scroll Down</span></a>
+</nav>
+
+<div class="vertical">
+    <div class="main-header-content inner">
+        <h1><span class="page-title icon-cog">&nbsp;{{ .Site.Title }}&nbsp;</span></h1>
+        <h2 style="line-height: 1px;"><span class="page-description" style="background-color:rgba(255,255,255,0.8); color:#ac393f;">{{ .Site.Params.description }}</span></h2>
+    </div>
+</div>
+
+<a class="scroll-down icon-arrow-left" href="#proceed"><span class="hidden">Scroll Down</span></a>
+
 </header>
+
 
 <div id="proceed" class="proceed"></div>
 
-<main id="content" class="content" role="main">
 
-    {{ range .Data.Pages }}
-        {{if eq .Type "index" }}
-        <div class="index-content post">
-        {{.Content}}
+<main id="content" class="content" role="main"></main>
+
+
+  <div class="row">
+
+    <div class="innercolumn">
+      <section class="post post-content inner">
+
+        <h1>{{.Title}}</h1>
+
+      {{ with .Params.subtitle }}
+      {{.}}
+      {{ end }}
+
+      <br /><br />
+      <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+      {{.Content}}
+
+    </section>
+  
+    </div>
+  
+  
+    <div class="innercolumn">
+      <section class="post post-content inner">
+
+          <span class="post-list-homepage">
+          {{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+          {{ range first 5 $pages }}
+          <span class="post-tags">
+          <a href="{{ .Permalink }}"><b>{{ .Title }}</b></a>
+          <br />
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }} 
+          </time> | 
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            read time: <b>{{ .ReadingTime }} mins</b>
+          </time><br />
+          <br />
+          </span>
+          {{ end }}
+          </span>
+        </section>
+
+        <div class="post pagination inner">
+          <a class="newer-posts" href="/post.html">browse my blog &rarr;</a>
+          <a class="older-posts" href="/tags.html">view blog archive &rarr;</a>
+          <br />
         </div>
-        {{end}}
-    {{ end }}
 
-    {{ if not ($.Scratch.Get "paginatedSections") }}
-        {{ if isset .Site.Params "paginatedSections" }}
-            {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedSections }}
-        {{ else }}
-            {{ $.Scratch.Set "paginatedSections" "post" }}
-        {{ end }}
-    {{ end }}
+        <div class="post inner">
+          <center>
+            {{ partial "tagcloudlog.html" . }}
+          </center>
+        </div>      
 
-    {{ $list := where .Data.Pages "Section" "in" ($.Scratch.Get "paginatedSections") }}
-    {{ $list := where $list "Section" "!=" "" }}
-    {{ $paginator := .Paginate ( $list ) }}
-
-    <div class="extra-pagination inner">
-        {{ partial "pagination.html" $paginator }}
     </div>
 
-    {{ range $index, $page := $paginator.Pages }}
-        {{ partial "li.html" . }}
-    {{ end }}
+  </div>
 
-    {{ partial "pagination.html" $paginator }}
+
+
+<!-- {{ if not ($.Scratch.Get "paginatedSections") }} -->
+  <!-- {{ if isset .Site.Params "paginatedSections" }} -->
+      <!-- {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedSections }} -->
+  <!-- {{ else }} -->
+      <!-- {{ $.Scratch.Set "paginatedSections" "post" }} -->
+  <!-- {{ end }} -->
+<!-- {{ end }} -->
+
+<!-- {{ $list := where .Site.RegularPages "Section" "in" ($.Scratch.Get "paginatedSections") }} -->
+<!-- {{ $list := where $list "Section" "!=" "" }} -->
+<!-- {{ $paginator := .Paginate ( $list ) }} -->
+
+<!-- <div class="extra-pagination inner"> -->
+  <!-- {{ partial "pagination.html" $paginator }} -->
+<!-- </div> -->
+
+<!-- {{ range $index, $page := $paginator.Pages }} -->
+  <!-- {{ partial "li-new.html" . }} -->
+<!-- {{ end }} -->
+
+<!-- {{ partial "pagination.html" $paginator }} -->
+
 
 </main>
 
+
+
+
 <script>
 
-        window.onscroll = function() {myFunction()};
-        
-        var header = document.getElementById("stickymenu");
-        // var sticky = header.offsetTop;
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("stickymenu");
+    // var sticky = header.offsetTop;
 
-        var header2 = document.getElementById("proceed");
-        var sticky2 = header2.offsetTop;        
-        
-        function myFunction() {
-          if (window.pageYOffset >= 0) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-          if (window.pageYOffset >= (sticky2)) {
-            header2.classList.add("stickymenuholder");
-          } else {
-            header2.classList.remove("stickymenuholder");
-          }          
-        }
+    var header2 = document.getElementById("proceed");
+    var sticky2 = header2.offsetTop;        
+    
+    function myFunction() {
+      if (window.pageYOffset >= 0) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+      if (window.pageYOffset >= (sticky2)) {
+        header2.classList.add("stickymenuholder");
+      } else {
+        header2.classList.remove("stickymenuholder");
+      }          
+    }
 
-     
+ 
 
 </script>
-
-
 
 {{ partial "footer.html" . }}

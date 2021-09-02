@@ -16,9 +16,6 @@ rm public/fonts/example.html
 
 # remove unwanted page/post index pages
 #
-rm public/post.html
-rm -rf public/post/page/
-
 rm public/lab.html
 rm -rf public/lab/page/
 
