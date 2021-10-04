@@ -36,6 +36,8 @@ parent = "lab"
 
 - https://gist.github.com/hofmannsven/6814451
 - https://github.com/jessfraz/dotfiles/blob/master/.gitconfig
+- https://maggieappleton.com/apps
+  - specifically [this image](https://res.cloudinary.com/dxj9qr5gj/image/upload/v1621767505/maggieappleton.com/notes/tools/GitMistakes--large_shrink_qm96ik.png)
 
 ***Pull Request workflow**
 
