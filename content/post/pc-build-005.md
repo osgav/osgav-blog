@@ -14,6 +14,8 @@ parent = "blog"
 
 The short answer: *no.*
 
+<!--more-->
+
 Suffice to say I have spent more time playing games on my new computer than I have finishing my write-up of building it. 
 
 At some point between post 003 and this one, I sat down and wrote rough outlines for each of the *five* remaining posts I had in mind. Some time later, I published the next one, post 004. 
