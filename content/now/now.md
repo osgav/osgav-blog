@@ -1,7 +1,7 @@
 +++
 author = "osgav"
 comments = false
-date = "2021-09-02T14:16:33Z"
+date = "2022-03-16T12:11:22Z"
 draft = false
 share = false
 slug = "now"
@@ -18,7 +18,7 @@ weight = -10
 
 What am I up to? 
 
-- adding my first [Now page](https://nownownow.com/about) to my website
-- delving into my [notetaking](/tags/notetaking.html) system
-- playing games on my [newly built PC](/tags/pc-build-project.html)
+- exploring the world of GIS
+- spending more time working with my notes, than tweaking my system
+- trying to keep a podocarpus bonsai plant alive
 
