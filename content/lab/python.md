@@ -65,6 +65,7 @@ https://www.pythonsheets.com/
 ### environment (pyenv)
 
 - https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14
+- https://realpython.com/intro-to-pyenv/
 
 
 ### jupyter
