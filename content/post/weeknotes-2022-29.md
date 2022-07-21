@@ -6,7 +6,7 @@ draft = false
 image = "images/headers/marianne-bos-unsplash.jpg"
 share = true
 slug = "weeknotes-2022-29"
-tags = ["SQL", "basemap", "atlas"]
+tags = ["GIS", "SQL", "basemap", "cartography", "atlas"]
 title = "weeknotes: SQL, basemaps, and old atlases"
 [menu.main]
 parent = "blog"

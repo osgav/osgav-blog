@@ -6,7 +6,7 @@ draft = false
 image = "images/headers/stamen-newcastle-toner-background-green.png"
 share = true
 slug = "a-map-of-swellendam"
-tags = ["GIS", "QGIS", "maps", "map design"]
+tags = ["GIS", "QGIS", "maps", "map design", "cartography"]
 title = "A map of Swellendam"
 [menu.main]
 parent = "blog"
