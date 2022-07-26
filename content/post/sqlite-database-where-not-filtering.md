@@ -13,9 +13,9 @@ parent = "blog"
 +++
 
 It is possible to create a table in an SQLite database where the columns have no *type.*
-
+<br><br>
 For example, the columns in this `STATS` table have no type specified:
-
+<br><br>
 ```sql
 sqlite> PRAGMA TABLE_INFO('STATS');
 cid  name       type  notnull  dflt_value  pk
@@ -28,9 +28,9 @@ cid  name       type  notnull  dflt_value  pk
 5    HR               0                    0 
 6    RBI              0                    0 
 ```
-
+<br><br>
 This doesn't seem to make much of a difference if you are storing strings / text data, and writing queries to retrieve things based on those strings.
-
+<br><br>
 However, if you are storing numbers, then you'll notice a problem if you try queries like this:
 
 <!--more-->
