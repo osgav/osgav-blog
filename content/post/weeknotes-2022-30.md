@@ -6,7 +6,7 @@ draft = false
 image = "images/headers/marianne-bos-unsplash.jpg"
 share = true
 slug = "weeknotes-2022-30"
-tags = ["GIS", "remote sensing"]
+tags = ["GIS", "NASA ARSET", "remote sensing"]
 title = "weeknotes: UFOs and NASA"
 [menu.main]
 parent = "blog"

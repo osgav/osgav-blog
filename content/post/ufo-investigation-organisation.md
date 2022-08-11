@@ -6,7 +6,7 @@ draft = false
 image = "images/headers/coolcatgamestudio-2668046-ufo-pixabay.jpg"
 share = true
 slug = "ufo-investigation-organization"
-tags = ["database design", "diagrams", "UFOs"]
+tags = ["databases", "database design", "diagrams", "UFOs"]
 title = "UFO Investigation Organization"
 [menu.main]
 parent = "blog"
