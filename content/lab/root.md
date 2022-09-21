@@ -8,12 +8,9 @@ slug = "root"
 title = "Lab"
 description = "non-chronological content"
 index = true
-[menu.main]
-name = "lab"
-identifier = "lab"
-post = "<span class=\"icon-code\"></span>"
-weight = -80
-
+showReadingTime = false
+showDate = false
+showTableOfContents = false
 +++
 # Lab Notes
 

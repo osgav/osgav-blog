@@ -2,11 +2,9 @@
   {{/* Footer menu */}}
   {{ if .Site.Menus.footer }}
     <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
-      <ul class="flex flex-col list-none sm:flex-row">
+      <ul>
         {{ range .Site.Menus.footer }}
-          <li
-            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
-          >
+          <li class="mt-1 font-mono">
             <a
               class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
               href="{{ .URL }}"
@@ -22,7 +20,7 @@
     <div>
       {{/* Copyright */}}
       {{ if .Site.Params.footer.showCopyright | default true }}
-        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+        <p class="mt-6 mb-3 font-mono text-sm text-neutral-500 dark:text-neutral-400">
           {{- with .Site.Params.copyright }}
             {{ . | emojify | markdownify }}
           {{- else }}
@@ -34,11 +32,11 @@
       {{ end }}
       {{/* Theme attribution */}}
       {{ if .Site.Params.footer.showThemeAttribution | default true }}
-        <p class="text-xs text-neutral-500 dark:text-neutral-400">
-          {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
+        <p class="font-mono text-xs text-neutral-500 dark:text-neutral-400">
+          {{ $hugo := printf `<a class="powered-by-link uppercase hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">&nbsp;Hugo&nbsp;</a><br>`
           }}
-          {{ $congo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">Congo</a>` }}
+          {{ $congo := printf `<a class="powered-by-link uppercase hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">&nbsp;Congo&nbsp</a>` }}
           {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Congo" $congo) | safeHTML }}
         </p>
       {{ end }}

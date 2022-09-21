@@ -2,6 +2,15 @@
   <h3 class="flex items-center mt-6 text-xl font-semibold">
     {{ with .Params.externalUrl }}
       <div>
+        <span
+          class="align-top cursor-default text-neutral-400 dark:text-neutral-500"
+          title="{{ i18n "list.externalurl_title" }}"
+        >
+          {{ $icon := resources.Get (print "icons/link.svg") }}
+          <span class="relative inline-block align-text-bottom icon">
+            {{ $icon.Content | safeHTML }}
+          </span>
+        </span>&nbsp;
         <a
           class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
           href="{{ . }}"
@@ -9,17 +18,10 @@
           rel="external"
           >{{ $.Title | emojify }}</a
         >
-        <span
-          class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500"
-          title="{{ i18n "list.externalurl_title" }}"
-        >
-          <span class="rtl:hidden">&#8599;</span>
-          <span class="ltr:hidden">&#8598;</span>
-        </span>
       </div>
     {{ else }}
       <a
-        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
+        class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-primary-400"
         href="{{ .RelPermalink }}"
         >{{ .Title | emojify }}</a
       >
@@ -33,7 +35,7 @@
       {{ partial "extend-article-link.html" . }}
     {{ end }}
   </h3>
-  <div class="text-sm text-neutral-500 dark:text-neutral-400">
+  <div class="mt-1 text-xs text-neutral-500 dark:text-neutral-400" style="max-width: 75ch;">
     {{ partial "article-meta.html" . }}
   </div>
   {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}

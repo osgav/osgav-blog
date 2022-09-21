@@ -1,9 +1,11 @@
-+++
-author = "osgav"
-title = "Welcome!"
-subtitle = "I'm Gavin."
+---
+title: "&nbsp;$ ./osgav.run"
+draft: false
+---
 
-+++
+Welcome!
+
+I'm Gavin. 
 
 This is where I write about stuff and things that interest me.
 
