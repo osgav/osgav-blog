@@ -2,12 +2,12 @@ language: go
 go:
 - 1.4
 install:
-- export HUGO_DOWNLOAD=0.48
+- export HUGO_DOWNLOAD=0.102.3
 - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_DOWNLOAD}/hugo_${HUGO_DOWNLOAD}_Linux-64bit.tar.gz
 - tar xvzf hugo_${HUGO_DOWNLOAD}_Linux-64bit.tar.gz
 - mkdir -p $GOPATH/bin
 - cp hugo $GOPATH/bin/hugo
-script: hugo -t casper
+script: hugo -t congo
 before_deploy: ./build/post-build-script.sh
 deploy:
   provider: s3
