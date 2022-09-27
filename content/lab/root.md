@@ -1,17 +1,17 @@
+
 +++
-author = "osgav"
-comments = false
+title = "Lab"
+slug = "root"
 date = "2017-05-30T18:50:42Z"
 draft = false
-share = false
-slug = "root"
-title = "Lab"
+type = "lab"
+author = "osgav"
 description = "non-chronological content"
-index = true
 showReadingTime = false
 showDate = false
 showTableOfContents = false
 +++
+
 # Lab Notes
 
 I've been swithering about how to use this portion of my website - I knew I wanted a *"reference"* section of some sort to accompany blog posts, and somewhere to generally experiment with my content. Until I stumbled across [this](https://ghuntley.com/notes/) I was unsure what I was really doing here - Geoff eloquently explained my scattered thoughts to me, which boil down to:

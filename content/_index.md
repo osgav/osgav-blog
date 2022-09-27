@@ -1,7 +1,8 @@
----
-title: "&nbsp;$ ./osgav.run"
-draft: false
----
+
++++
+title = "&nbsp;$ ./osgav.run"
+draft = false
++++
 
 Welcome!
 

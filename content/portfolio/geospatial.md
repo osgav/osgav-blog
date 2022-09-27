@@ -1,12 +1,14 @@
----
-title: "Geospatial"
-date: 2022-09-21T17:03:17+01:00
-draft: false
-type: portfolio
-showDate: false
-showReadingTime: false
-summary: "i like maps"
----
+
++++
+title = "Geospatial"
+slug = "geospatial"
+date = "2022-09-21T17:03:17+01:00"
+draft = false
+type = "portfolio"
+showDate = false
+showReadingTime = false
+summary = "i like maps"
++++
 
 
 # Jen and Barry's Site Selection

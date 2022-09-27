@@ -1,13 +1,11 @@
+
 +++
-author = "osgav"
-comments = false
+title = "Now."
+slug = "now"
 date = "2022-03-16T12:11:22Z"
 draft = false
-share = false
-slug = "now"
-title = "Now."
-description = "wuu2"
-index = true
+type = "now"
+author = "osgav"
 showReadingTime = false
 +++
 
