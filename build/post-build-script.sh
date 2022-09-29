@@ -5,7 +5,7 @@
 
 # remove unwanted page/post index pages
 #
-rm public/page/ # paginated homepage recent feed
+rm -rf public/page/ # paginated homepage recent feed
 
 rm public/portfolio/index.xml
 rm -rf public/portfolio/page/
