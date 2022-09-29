@@ -6,7 +6,7 @@ draft = false
 image = "images/posts/pc-build/pc-build-header.jpg"
 share = true
 slug = "pc-build-003"
-tags = ["PC Build Project", "Linus Tech Tips", "ASUS TUF"]
+tags = ["PC Build", "Linus Tech Tips", "ASUS TUF"]
 title = "PC Build 003: bundle of joy"
 [menu.main]
 parent = "blog"

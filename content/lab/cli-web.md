@@ -6,7 +6,7 @@ image = ""
 share = false
 slug = "cli-web"
 title = "CLI web"
-tags = ["bash", "web_tools"]
+tags = ["bash", "web tools"]
 [menu.main]
 parent = "lab"
 

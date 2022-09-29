@@ -5,7 +5,7 @@ draft = false
 image = "images/posts/pc-build/pc-build-header.jpg"
 share = true
 slug = "pc-build-001"
-tags = ["PC Build Project", "Thermaltake Core V21"]
+tags = ["PC Build", "Thermaltake Core V21"]
 title = "PC Build 001: bought a Thermaltake Core V21 case"
 [menu.main]
 parent = "blog"

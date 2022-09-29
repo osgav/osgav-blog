@@ -6,7 +6,7 @@ draft = false
 image = "images/posts/pc-build/pc-build-header.jpg"
 share = true
 slug = "pc-build-004"
-tags = ["PC Build Project", "Seasonic"]
+tags = ["PC Build", "Seasonic"]
 title = "PC Build 004: Powered by Seasonic"
 [menu.main]
 parent = "blog"

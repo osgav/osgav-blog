@@ -13,18 +13,7 @@ parent = "blog"
 
 +++
 
-> Why migrate to AWS?<br />
-> Hugo --> S3<br />
-> S3 --> CloudFront (+ ACM)<br />
-> Route53<br />
-> HTTP 403<br />
-> HTTP 403 (moar)<br />
-> www.osgav.run<br />
-> References<br />
-
-
 #### Why migrate to AWS?
-
 
 As well as [catching up](/post/rundeck-on-aws-part-i.html) on drafted blog posts last weekend, I migrated this blog from GitHub Pages, KloudSec, Domain Registrar's DNS & Let's Encrypt to Amazon Web Services: S3, CloudFront, Route53 & Certificate Manager. I also introduced Travis CI and continued using GitHub for version control (but no longer hosting). This migration to AWS was in light of one of my apprehensions about KloudSec unfortunately materializing - it was a fairly small and new company and has recently ceased to exist. As such my Let's Encrypt certificate had expired and was no longer auto-renewed by KloudSec so my blog was showing a HTTPS error when you visited it - boo. Time to pay for a risky design choice...
 
@@ -132,7 +121,7 @@ To fix this I needed to make an edit to my hugo site `config.toml` file to inclu
 
 #### HTTP 403 (moar)
 
-Round III of HTTP 403 errors. So I thought everything was fine after setting `uglyurls = true` - but that was not the case. I didn't notice that the tag pages (links at the bottom of post summaries on my blog feed and top of posts, like #hugo and #AWS for this post) were still broken.
+Round III of HTTP 403 errors. So I thought everything was fine after setting `uglyurls = true` - but that was not the case. I didn't notice that the tag pages (links at the bottom of post summaries on my blog feed and top of posts, like `#hugo` and `#AWS` for this post) were still broken.
 
 Once I noticed I googled the issue and quickly found a couple of relevant GitHub issues. One of them hinted at some edits that could be made to template files to "fix" the problem (you need to undo those changes if you set `uglyurls = false` again). 
 

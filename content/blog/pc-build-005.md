@@ -6,7 +6,7 @@ draft = false
 image = "images/posts/pc-build/pc-build-header.jpg"
 share = true
 slug = "pc-build-005"
-tags = ["PC Build Project"]
+tags = ["PC Build"]
 title = "PC Build 005: is it Build Day yet?"
 [menu.main]
 parent = "blog"

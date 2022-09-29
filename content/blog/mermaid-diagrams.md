@@ -34,14 +34,6 @@ click B "https://mermaidjs.github.io" "Mermaid!"
 
 <!--more-->
 
-> Grafana<br />
-> Flowcharts<br />
-> Sequence Diagrams<br />
-> Gantt Charts<br />
-> Mermaid CLI<br />
-> Mermaid Diagrams on Hugo<br />
-> More
-
 ### Grafana
 
 I have Grafana to thank for introducing me to Mermaid diagrams - one day at work a new *Diagram* widget appeared and naturally I had to explore further.

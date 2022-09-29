@@ -68,9 +68,9 @@ osgav.run Blog: [Cheatsheet](/lab/cheatsheet.html)<br />
 [Mermaid](/lab/mermaid.html)<br />
 
 
-# #100DaysOfCode
+# `#100DaysOfCode`
 
-days | [#100DaysOfCode in Python](/lab/100daysofcode.html)
+days | [`#100DaysOfCode` in Python](/lab/100daysofcode.html)
 ---- | --------------
 01-03-datetimes | [code](/md/100days/01-03-datetimes.html)
 

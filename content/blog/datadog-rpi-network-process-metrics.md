@@ -5,7 +5,7 @@ draft = false
 image = "images/posts/datadog-rpi-network-process-metrics/dd-rpi.png"
 share = true
 slug = "datadog-rpi-network-process-metrics"
-tags = ["Datadog", "monitoring", "network", "process", "metrics", "graphs", "raspberry_pi", "Raspbian", "linux", "go"]
+tags = ["Datadog", "monitoring", "network", "process", "metrics", "graphs", "raspberry pi", "Raspbian", "linux", "go"]
 title = "Datadog on Raspberry Pi: Enabling Network and Process Metrics"
 [menu.main]
 parent = "blog"

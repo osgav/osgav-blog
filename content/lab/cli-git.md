@@ -6,7 +6,7 @@ image = ""
 share = false
 slug = "cli-git"
 title = "CLI git"
-tags = ["git", "GitHub", "version_control"]
+tags = ["git", "GitHub", "version control"]
 [menu.main]
 parent = "lab"
 

@@ -6,7 +6,7 @@ draft = false
 image = "images/posts/pc-build/pc-build-header.jpg"
 share = true
 slug = "pc-build-002"
-tags = ["PC Build Project", "Linus Tech Tips"]
+tags = ["PC Build", "Linus Tech Tips"]
 title = "PC Build 002: passive research"
 [menu.main]
 parent = "blog"

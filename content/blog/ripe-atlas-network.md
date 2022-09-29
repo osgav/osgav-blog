@@ -6,18 +6,12 @@ draft = false
 image = "images/posts/ripe-atlas-network/atlas.png"
 share = true
 slug = "ripe-atlas-network"
-tags = ["RIPE_Atlas", "network", "synthetic_testing", "monitoring", "raspberry_pi"]
+tags = ["RIPE Atlas", "network", "synthetic testing", "monitoring", "raspberry pi"]
 title = "RIPE Atlas Network"
 [menu.main]
 parent = "blog"
 
 +++
-
-> RIPE Atlas Network<br />
-> Atlas Probe<br />
-> RIPE NCC Access Account<br />
-> What next?<br />
-
 
 #### RIPE Atlas Network
 
@@ -83,4 +77,4 @@ The ability to run network diagnostic tools from a network with such a large num
 
 #### What next?
 
-What will my probe be doing next? Well, the same thing it has been doing for the last couple of weeks or so - running lots of tests. What will I be doing next? Getting familiar with the RIPE portal and using some credits. And also playing around with the [#raspberry_pi](/tags/raspberry_pi.html) providing the probe's power...
+What will my probe be doing next? Well, the same thing it has been doing for the last couple of weeks or so - running lots of tests. What will I be doing next? Getting familiar with the RIPE portal and using some credits. And also playing around with the [`#raspberry_pi`](/tags/raspberry_pi.html) providing the probe's power...
