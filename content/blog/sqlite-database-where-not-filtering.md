@@ -119,7 +119,7 @@ Anyway. The sensible way to deal with this is to give the columns types, so that
 
 Unfortunately in the instance of SQLite databases, the `ALTER TABLE` --> `MODIFY COLUMN` command is not supported. One way of dealing with this is to dump the database, modify the `CREATE TABLE` commands, then create a new database. 
 
-This is what I did to address the problem with the database I [mentioned previously](/post/weeknotes-2022-29.html).
+This is what I did to address the problem with the database I [mentioned previously](/blog/weeknotes-2022-29.html).
 
 First, dump the database:
 

@@ -33,4 +33,4 @@ SEE ALSO
       ZER0D0TS(8)
 ```
 
-&lt;[https://osgav.run/post/zerodots](/post/zerodots.html)&gt;
+&lt;[https://osgav.run/blog/zerodots](/blog/zerodots.html)&gt;

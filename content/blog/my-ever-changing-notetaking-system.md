@@ -47,9 +47,9 @@ This one is from [David Perell](https://perell.com/) and was accompanied by an i
 
 So... what about my notetaking system then? My *ever changing* notetaking system?
 
-When I started looking into notetaking more seriously in 2020, I wrote a blog post declaring I was starting an [experiment](/post/para-zettelkasten-experiment.html). Over the next 6 months I wrote a few more blog posts on the topic. When I looked back, they weren't quite what I had aspired to write at the beginning. 
+When I started looking into notetaking more seriously in 2020, I wrote a blog post declaring I was starting an [experiment](/blog/para-zettelkasten-experiment.html). Over the next 6 months I wrote a few more blog posts on the topic. When I looked back, they weren't quite what I had aspired to write at the beginning. 
 
-In my [experiment conclusion](/post/para-zettelkasten-conclusion.html) I listed a few items that, at different points, I had very much been meaning to write about. But for each of those items (and others) it didn't take me long until I was thinking about and tinkering with the next idea. I could have written *many* "My *XYZ* Experiment" blog posts, but instead I wrote none.
+In my [experiment conclusion](/blog/para-zettelkasten-conclusion.html) I listed a few items that, at different points, I had very much been meaning to write about. But for each of those items (and others) it didn't take me long until I was thinking about and tinkering with the next idea. I could have written *many* "My *XYZ* Experiment" blog posts, but instead I wrote none.
 
 Fast forward to now and, well, that hasn't changed much to be honest. The rate at which I dive into rabbit holes might have slowed down a bit, but I do still have at least a handful of experimental things within my notetaking system that I could (and would like to) write about. 
 

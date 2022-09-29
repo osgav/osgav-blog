@@ -150,7 +150,7 @@ INSERT INTO class_roster.students (last_name, first_name, postal_code)
 ;
 ```
 
-With all the *necessary* data in the database, I just had the counties and states shapefiles left to import. These could have been added to the QGIS project directly rather than to PostGIS first, but I thought I may as well add them to the database since I figured how to do that [earlier in Lesson 3](/post/weeknotes-2022-31.html). I did this with `ogr2ogr`:
+With all the *necessary* data in the database, I just had the counties and states shapefiles left to import. These could have been added to the QGIS project directly rather than to PostGIS first, but I thought I may as well add them to the database since I figured how to do that [earlier in Lesson 3](/blog/weeknotes-2022-31.html). I did this with `ogr2ogr`:
 
 ```
 ogr2ogr -f PostgreSQL PG:"host=localhost port=5432 dbname=Lesson3db user=postgres password=......" -lco SCHEMA=class_roster -nlt GEOMETRY counties.shp

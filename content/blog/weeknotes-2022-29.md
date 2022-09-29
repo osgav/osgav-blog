@@ -12,7 +12,7 @@ title = "weeknotes: SQL, basemaps, and old atlases"
 parent = "blog"
 +++
 
-In the last week I got stuck into GEOG 868 (the Pennsylvania State University [Spatial Database Management course](https://roam.libraries.psu.edu/node/1357) I mentioned [last week](/post/weeknotes-2022-28.html)). I started off with a bit of an SQL refresher via [SQLBolt](https://sqlbolt.com) and some [SQLZOO](https://sqlzoo.net/wiki/SQL_Tutorial), then cracked on with GEOG 868 Lesson 1. 
+In the last week I got stuck into GEOG 868 (the Pennsylvania State University [Spatial Database Management course](https://roam.libraries.psu.edu/node/1357) I mentioned [last week](/blog/weeknotes-2022-28.html)). I started off with a bit of an SQL refresher via [SQLBolt](https://sqlbolt.com) and some [SQLZOO](https://sqlzoo.net/wiki/SQL_Tutorial), then cracked on with GEOG 868 Lesson 1. 
 
 <!--more-->
 

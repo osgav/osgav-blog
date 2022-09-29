@@ -13,7 +13,7 @@ parent = "blog"
 
 +++
 
-Following on from [Part I](/post/rundeck-on-aws-part-i.html), I've now starting writing an Ansible playbook for creating a Rundeck server in AWS - which can currently provision and terminate a Rundeck server. No more CloudFormation to deploy a new instance woohoo!
+Following on from [Part I](/blog/rundeck-on-aws-part-i.html), I've now starting writing an Ansible playbook for creating a Rundeck server in AWS - which can currently provision and terminate a Rundeck server. No more CloudFormation to deploy a new instance woohoo!
 
 <!--more-->
 

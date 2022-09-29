@@ -15,7 +15,7 @@ parent = "blog"
 
 #### Why migrate to AWS?
 
-As well as [catching up](/post/rundeck-on-aws-part-i.html) on drafted blog posts last weekend, I migrated this blog from GitHub Pages, KloudSec, Domain Registrar's DNS & Let's Encrypt to Amazon Web Services: S3, CloudFront, Route53 & Certificate Manager. I also introduced Travis CI and continued using GitHub for version control (but no longer hosting). This migration to AWS was in light of one of my apprehensions about KloudSec unfortunately materializing - it was a fairly small and new company and has recently ceased to exist. As such my Let's Encrypt certificate had expired and was no longer auto-renewed by KloudSec so my blog was showing a HTTPS error when you visited it - boo. Time to pay for a risky design choice...
+As well as [catching up](/blog/rundeck-on-aws-part-i.html) on drafted blog posts last weekend, I migrated this blog from GitHub Pages, KloudSec, Domain Registrar's DNS & Let's Encrypt to Amazon Web Services: S3, CloudFront, Route53 & Certificate Manager. I also introduced Travis CI and continued using GitHub for version control (but no longer hosting). This migration to AWS was in light of one of my apprehensions about KloudSec unfortunately materializing - it was a fairly small and new company and has recently ceased to exist. As such my Let's Encrypt certificate had expired and was no longer auto-renewed by KloudSec so my blog was showing a HTTPS error when you visited it - boo. Time to pay for a risky design choice...
 
 <!--more-->
 

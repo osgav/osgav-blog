@@ -27,7 +27,7 @@ I discovered the concept of "RandomNote" via Tiago Forte's [PARA series](https:/
 <br><br>
 The purpose of such a button is to aid in serendipitous rediscovery of your old notes. That's not going much deeper, to be honest. To see what inspired me into action I encourage you to [read Tiago's post](https://fortelabs.co/blog/p-a-r-a-iii-building-an-idea-generator/) about it. He has a way with words which I do not. 
 <br><br>
-The rest of this post is an extension of the "API / Automation Friendly" criteria from my [OneNote vs Joplin](/post/onenote-vs-joplin.html) blog post. 
+The rest of this post is an extension of the "API / Automation Friendly" criteria from my [OneNote vs Joplin](/blog/onenote-vs-joplin.html) blog post. 
 
 <!--more-->
 
@@ -58,7 +58,7 @@ One more nail for good measure it turned out.
 
 ### RandomNote for Joplin 
 
-Once I had concluded OneNote was not going to be my notetaking app of choice (see [my last blog post](/post/onenote-vs-joplin.html) for the other reasons) I searched for another. 
+Once I had concluded OneNote was not going to be my notetaking app of choice (see [my last blog post](/blog/onenote-vs-joplin.html) for the other reasons) I searched for another. 
 
 On my travels, I spotted a notetaking app that had a mobile app, desktop app and [**CLI app**](https://joplinapp.org/terminal/). That jumped out at me and said *"hmmm RandomNote?"* Upon closer inspection I found that Joplin had a [local API](https://joplinapp.org/api/) - even better!
 

@@ -26,7 +26,7 @@ My original plan was adding to the playbook so it configured the [Rundeck Ansibl
 
 My monthly AWS invoice. Specifically the proportion of it accounted for by my single ELB.
 
-It might be nice and easy to hook up my domain to my Rundeck server with SSL on there via an [ELB](https://aws.amazon.com/elasticloadbalancing/) and [ACM](https://aws.amazon.com/certificate-manager/) but it seems to amount to nearly ***$200/year!*** I [briefly](/post/hugo-to-aws-to-https.html) had my blog's SSL implemented via [Let's Encrypt](https://letsencrypt.org/) a while ago and more recently heard about [certbot](https://certbot.eff.org/) so thought I will look into this to replace ACM. I couldn't decide what to replace the ELB with, between HAProxy and NGINX, so have ended up experimenting with both! More on that later.
+It might be nice and easy to hook up my domain to my Rundeck server with SSL on there via an [ELB](https://aws.amazon.com/elasticloadbalancing/) and [ACM](https://aws.amazon.com/certificate-manager/) but it seems to amount to nearly ***$200/year!*** I [briefly](/blog/hugo-to-aws-to-https.html) had my blog's SSL implemented via [Let's Encrypt](https://letsencrypt.org/) a while ago and more recently heard about [certbot](https://certbot.eff.org/) so thought I will look into this to replace ACM. I couldn't decide what to replace the ELB with, between HAProxy and NGINX, so have ended up experimenting with both! More on that later.
 
 #### Is this Rundeck on AWS Part III?
 

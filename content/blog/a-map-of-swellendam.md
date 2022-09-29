@@ -13,7 +13,7 @@ parent = "blog"
 +++
 
 
-As noted in [Hello (GIS) World](/post/hello-gis-world.html) I was recently working on the first assignment in the [QGIS Training Manual](https://docs.qgis.org/3.16/en/docs/training_manual/index.html). I planned to do 3 things for the assignment:
+As noted in [Hello (GIS) World](/blog/hello-gis-world.html) I was recently working on the first assignment in the [QGIS Training Manual](https://docs.qgis.org/3.16/en/docs/training_manual/index.html). I planned to do 3 things for the assignment:
 
 <!--more-->
 

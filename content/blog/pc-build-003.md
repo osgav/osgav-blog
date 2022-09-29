@@ -15,7 +15,7 @@ parent = "blog"
 
 July was an exciting month.
 <br><br>
-Following my [last post](/post/pc-build-002.html) a whole bunch of purchasing ensued. In fact, the next posts are all going to be retrospective as I've built my PC now!
+Following my [last post](/blog/pc-build-002.html) a whole bunch of purchasing ensued. In fact, the next posts are all going to be retrospective as I've built my PC now!
 
 <!--more-->
 

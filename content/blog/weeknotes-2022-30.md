@@ -16,8 +16,8 @@ A fairly database-focussed week. The last of the "refresher" stuff before I move
 
 <!--more-->
 
-- I finished the post I mentioned last week about [tables in SQLite databases that don't have a type](/post/sqlite-database-where-not-filtering.html)
-- I did Lesson 2 of GEOG 868 ([here is my post about the Lesson 2 Project](/post/ufo-investigation-organization.html))
+- I finished the post I mentioned last week about [tables in SQLite databases that don't have a type](/blog/sqlite-database-where-not-filtering.html)
+- I did Lesson 2 of GEOG 868 ([here is my post about the Lesson 2 Project](/blog/ufo-investigation-organization.html))
 
 Before my University of Oxford [Introduction to Mapping, Spatial Data and GIS](https://www.conted.ox.ac.uk/courses/introducing-mapping-spatial-data-and-gis-online) course gets even smaller in the rear-view mirror, I'm going to share a couple of the maps I made from it very soon. The first will be from one of the weekly exercises and the second will be my map for the course assignment. 
 

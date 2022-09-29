@@ -9,5 +9,5 @@ showDate = false
 showReadingTime = false
 +++
 
-I'm going to write a new blurb here soon - my first one can still be [found here](/post/whois-osgav.html).
+I'm going to write a new blurb here soon - my first one can still be [found here](/blog/whois-osgav.html).
 

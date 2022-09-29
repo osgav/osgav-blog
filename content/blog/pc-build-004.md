@@ -12,7 +12,7 @@ title = "PC Build 004: Powered by Seasonic"
 parent = "blog"
 +++
  
- A power supply unit, or PSU, was the first thing I started looking into after I bought [my case](/post/pc-build-001.html). But I soon realised there is a vast range of power-supplying capabilities – with the most basic question *"what wattage is it?"* ranging from 300W to 1200W. That's quite a difference.
+ A power supply unit, or PSU, was the first thing I started looking into after I bought [my case](/blog/pc-build-001.html). But I soon realised there is a vast range of power-supplying capabilities – with the most basic question *"what wattage is it?"* ranging from 300W to 1200W. That's quite a difference.
 
 So, ignoring other fancy PSU stuff, how do you figure out what wattage to get?
 
@@ -32,11 +32,11 @@ It didn't take long for more realisations to stack up. *You can't pick a motherb
 
 In short, it's quite a juggling act to piece together a computer where all the components bring out the best in each other. No throttling and bottlenecks and the like. 
 
-Luckily, [one of the first pages I found](https://www.gpumag.com/psu-hierarchy/) while looking into PSUs included a *"Techquickie"* video where someone called *Linus* was explaining the difference between single-rail and multi-rail PSUs. I figured I'd see if there were some other helpful videos like this that could teach me stuff... and so began my [passive research](/post/pc-build-002.html) rabbit hole...
+Luckily, [one of the first pages I found](https://www.gpumag.com/psu-hierarchy/) while looking into PSUs included a *"Techquickie"* video where someone called *Linus* was explaining the difference between single-rail and multi-rail PSUs. I figured I'd see if there were some other helpful videos like this that could teach me stuff... and so began my [passive research](/blog/pc-build-002.html) rabbit hole...
 
 Some time later, I started looking into PSUs again.
 
-In the interim, I went from thinking I will build my computer piece-by-piece, to deciding I would be better off [buying a bundle](/post/pc-build-003.html) and accepting that I'll do a little less computer building myself. As my other post mentions, that was largely due to the CPU I wanted to get and the whole GPU scarcity situation.
+In the interim, I went from thinking I will build my computer piece-by-piece, to deciding I would be better off [buying a bundle](/blog/pc-build-003.html) and accepting that I'll do a little less computer building myself. As my other post mentions, that was largely due to the CPU I wanted to get and the whole GPU scarcity situation.
 
 Now that I knew what the majority of my components were, I revisited my initial PSU research notes and dug into: 
 

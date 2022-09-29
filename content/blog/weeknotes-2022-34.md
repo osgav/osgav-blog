@@ -18,7 +18,7 @@ A few things I got up to this week:
 
 - all of GEOG 868 Lesson 4, and most of the lesson project (blog post to follow soon)
 - started working on a PostGIS reference note / cheatsheet, as Lesson 4 introduced a whole swath of spatial functions for me to get to grips with
-- posted the [map of Melbourne](/post/a-map-of-melbourne.html) I made in my [Intro to GIS](/post/weeknotes-2022-28.html) course
+- posted the [map of Melbourne](/blog/a-map-of-melbourne.html) I made in my [Intro to GIS](/blog/weeknotes-2022-28.html) course
 - started drafting a post about the NASA ARSET course I've mentioned in the last few weeks
 - listened to another Mapscaping podcast ([Openlayers - Geospatial JavaScript](https://mapscaping.com/podcast/openlayers-geospatial-javascript/) episode)
 - joined the [British Cartographic Society](https://www.cartography.org.uk/) (and about to get my ticket for the upcoming annual conference)!

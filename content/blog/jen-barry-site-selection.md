@@ -111,7 +111,7 @@ $ ogr2ogr -f PostgreSQL PG:"host=localhost port=5432 dbname=lesson4db user=postg
 $ ogr2ogr -f PostgreSQL PG:"host=localhost port=5432 dbname=lesson4db user=postgres password=......" -lco SCHEMA=jen_barry_site -nlt GEOMETRY -t_srs EPSG:4267 recareas.shp 
 ```
 
-(This time specifying the CRS with `-t_srs`, unlike [before](/post/weeknotes-2022-31.html) where I didn't and it eventually came back to bite me like I suspected it would.)
+(This time specifying the CRS with `-t_srs`, unlike [before](/blog/weeknotes-2022-31.html) where I didn't and it eventually came back to bite me like I suspected it would.)
 
 That went smoothly, except for one minor hiccup which was handled automatically by `ogr2ogr`. The interstates shapefile had 2 fields with the same name, so the second one was automatically renamed – I was informed by this warning in the output from `ogr2ogr`:
 

@@ -11,7 +11,7 @@ title = "P.A.R.A. and Zettelkasten Experiment: My Conclusion"
 parent = "blog"
 +++
 
-At the beginning of [my experiment](/post/para-zettelkasten-experiment.html) I intended to write regular updates on what I was getting up to, however I haven't really done that.
+At the beginning of [my experiment](/blog/para-zettelkasten-experiment.html) I intended to write regular updates on what I was getting up to, however I haven't really done that.
 <br><br>
 If I *had* been doing that, here are a few things I retrospectively imagine I would have written about:
 <br>

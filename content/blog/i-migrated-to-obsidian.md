@@ -12,7 +12,7 @@ title = "I Migrated to Obsidian"
 parent = "blog"
 +++
 
-For continuity of my [experiment](/post/para-zettelkasten-experiment.html) I felt I should mention that I have migrated from [Joplin](https://joplinapp.org) to [Obsidian](https://obsidian.md). 
+For continuity of my [experiment](/blog/para-zettelkasten-experiment.html) I felt I should mention that I have migrated from [Joplin](https://joplinapp.org) to [Obsidian](https://obsidian.md). 
 <br><br>
 In fact, I migrated about 2 months ago now. So, as far as my journey into building a notetaking system is concerned, I've been using Obsidian for almost as long as I used Joplin (which was about 3 months). 
 <br><br>
@@ -28,7 +28,7 @@ For a brief period of time, I tried to convince myself I would be happy with loa
 
 ### Linking Notes
 
-Again I was aware of Obsidian's (superior) way of linking notes from my first encounter with it. I even mentioned Obsidian in my [comparison](/post/onenote-vs-joplin.html) blog post under wiki-style links.
+Again I was aware of Obsidian's (superior) way of linking notes from my first encounter with it. I even mentioned Obsidian in my [comparison](/blog/onenote-vs-joplin.html) blog post under wiki-style links.
 
 I gave Joplin a fair chance at being my notetaking app of choice. As I continued reading into the world of Zettelkasten, I repeatedly encountered the key concept of linking your notes. I often saw the same set of app recommendations, praised for their linking abilities. They would sometimes include Obsidian, so it continued to lurk in the back of my mind. But I kept dismissing any thoughts of trying other apps. *"Joplin can link notes so I'm all good"*, I thought.
 

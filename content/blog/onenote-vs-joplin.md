@@ -12,7 +12,7 @@ parent = "blog"
 
 +++
 
-As explained in my [previous blog post](/post/para-zettelkasten-experiment.html), I have started an experiment on my notetaking methods. 
+As explained in my [previous blog post](/blog/para-zettelkasten-experiment.html), I have started an experiment on my notetaking methods. 
 <br><br>
 Before I had the idea for that experiment I dived into using [Microsoft OneNote](https://www.onenote.com/), because I was so excited to try out [P.A.R.A.](https://fortelabs.co/blog/para/) 
 <br><br>
@@ -117,7 +117,7 @@ A brief version of events for this comparison:
 
 This also weighed heavily in Joplin's favour.
 
-*(If that sparked your interest then stay tuned, I will come back to this in [my next blog post](/post/randomnote-for-joplin.html) and share my script.)*
+*(If that sparked your interest then stay tuned, I will come back to this in [my next blog post](/blog/randomnote-for-joplin.html) and share my script.)*
 
 
 
