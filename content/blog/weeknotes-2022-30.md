@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: UFOs and NASA"
+slug = "weeknotes-2022-30"
 date = "2022-07-27T14:37:09Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-30"
 tags = ["GIS", "NASA ARSET", "remote sensing"]
-title = "weeknotes: UFOs and NASA"
-[menu.main]
-parent = "blog"
 +++
 
 A fairly database-focussed week. The last of the "refresher" stuff before I move onto actual *spatial database stuff.*

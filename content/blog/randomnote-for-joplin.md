@@ -1,15 +1,13 @@
+
 +++
-author = "osgav"
+title = "RandomNote for Joplin"
+slug = "randomnote-for-joplin"
 date = "2020-09-30T21:13:01Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/para-zettelkasten-experiment/header_01.jpg"
-share = true
-slug = "randomnote-for-joplin"
 tags = ["notetaking", "RandomNote", "Joplin", "OneNote", "PARA", "Tiago Forte", "bash", "python", "AppleScript"]
-title = "RandomNote for Joplin"
-[menu.main]
-parent = "blog"
-
 +++
 
 ### TL;DR 

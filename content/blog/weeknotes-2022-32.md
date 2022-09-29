@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: ST_FirstSpatialQueries"
+slug = "weeknotes-2022-32"
 date = "2022-08-11T20:28:10Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-32"
 tags = ["GIS", "NASA ARSET", "remote sensing", "databases", "PostGIS", "CLI", "pgcli"]
-title = "weeknotes: ST_FirstSpatialQueries"
-[menu.main]
-parent = "blog"
 +++
 
 So. Hello again. 

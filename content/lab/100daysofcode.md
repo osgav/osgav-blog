@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "#100DaysOfCode in Python"
+slug = "100daysofcode"
 date = "2019-01-20T16:00:08Z"
 draft = false
-image = ""
-share = false
-slug = "100daysofcode"
-title = "#100DaysOfCode in Python"
+type = "lab"
+author = "osgav"
 tags = ["python"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 20/01/2019`**<br />

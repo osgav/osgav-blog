@@ -1,16 +1,12 @@
 
 +++
-author = "osgav"
+title = "CLI docker"
+slug = "cli-docker"
 date = "2019-02-01T22:47:21Z"
 draft = false
-image = ""
-share = false
-slug = "cli-docker"
-title = "CLI docker"
+type = "lab"
+author = "osgav"
 tags = ["docker", "cheatsheet"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 01/02/2019`**<br />

@@ -1,17 +1,14 @@
 
 +++
-author = "osgav"
+title = "PC Build 002: passive research"
+slug = "pc-build-002"
 date = "2021-07-08T13:07:37Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/pc-build/pc-build-header.jpg"
-share = true
-slug = "pc-build-002"
 tags = ["PC Build", "Linus Tech Tips"]
-title = "PC Build 002: passive research"
-[menu.main]
-parent = "blog"
 +++
-
 
 The last couple of months have consisted largely of what I've come to call *passive research* - aka I discovered *Linus Tech Tips* [videos on YouTube](https://youtube.com/linustechtips) and have watched a copius amount of them...
 

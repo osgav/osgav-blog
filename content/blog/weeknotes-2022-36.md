@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: week 36"
+slug = "weeknotes-2022-36"
 date = "2022-09-12T20:01:51Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-36"
 tags = ["GIS", "QGIS", "ArcGIS",]
-title = "weeknotes: week 36"
-[menu.main]
-parent = "blog"
 +++
 
 Things I got up to in the last week:

@@ -1,14 +1,13 @@
+
 +++
-author = "osgav"
+title = "PC Build 001: bought a Thermaltake Core V21 case"
+slug = "pc-build-001"
 date = "2021-04-22T14:01:09Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/pc-build/pc-build-header.jpg"
-share = true
-slug = "pc-build-001"
 tags = ["PC Build", "Thermaltake Core V21"]
-title = "PC Build 001: bought a Thermaltake Core V21 case"
-[menu.main]
-parent = "blog"
 +++
 
 For a couple of years I've had the intention of building a PC for myself – something I haven't done in a very long time. In fact, I've never built a PC from scratch *for myself* before. Back in college, in hardware class, is the only time I've gone from an empty case to a working computer. Around the same time, but outside of college, I did a little bit of cobbling together the better components from old computers I could get my hands on to upgrade the computers of friends and family. But I never built my own machine.

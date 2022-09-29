@@ -1,17 +1,14 @@
 
 +++
-author = "osgav"
+title = "Exploring GIS"
+slug = "exploring-gis"
 date = "2022-06-10T09:07:17Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/topographic-green.jpg"
-share = true
-slug = "exploring-gis"
 tags = ["GIS", "geospatial"]
-title = "Exploring GIS"
-[menu.main]
-parent = "blog"
 +++
-
 
 I've been exploring the world of GIS for a few months now, and it wouldn't be unreasonable to say I've been taking notes in a similar manner to this dog drinking from a hose:
 

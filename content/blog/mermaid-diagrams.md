@@ -1,15 +1,13 @@
+
 +++
-author = "osgav"
+title = "Mermaid Diagrams"
+slug = "mermaid-diagrams"
 date = "2019-02-23T11:00:01Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/mermaid-diagrams/mermaidheader.png"
-share = true
-slug = "mermaid-diagrams"
 tags = ["mermaid", "diagrams", "Grafana", "Hugo"]
-title = "Mermaid Diagrams"
-[menu.main]
-parent = "blog"
-
 +++
 
 {{< mermaid/source >}}

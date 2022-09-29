@@ -1,15 +1,13 @@
+
 +++
-author = "osgav"
+title = "Hugo TravisCI Pipeline Broken?"
+slug = "hugo-travis-broken"
 date = "2017-05-30T17:51:59Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/hugo-travis-broken/hugo-travis.png"
-share = true
-slug = "hugo-travis-broken"
 tags = ["Hugo", "TravisCI", "go"]
-title = "Hugo TravisCI Pipeline Broken?"
-[menu.main]
-parent = "blog"
-
 +++
 
 #### TL;DR

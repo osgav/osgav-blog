@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "A map of Melbourne"
+slug = "a-map-of-melbourne"
 date = "2022-08-24T11:09:13Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/joey-csunyo-unsplash.jpg"
-share = true
-slug = "a-map-of-melbourne"
 tags = ["GIS", "QGIS", "maps", "map design", "cartography"]
-title = "A map of Melbourne"
-[menu.main]
-parent = "blog"
 +++
 
 The *Making Maps* unit for the [Introduction to Mapping, Spatial Data and GIS](https://www.conted.ox.ac.uk/courses/introducing-mapping-spatial-data-and-gis-online) course I completed in June featured a tourism case study. The exercise that week was to create a tourist map of Melbourne in Australia. 

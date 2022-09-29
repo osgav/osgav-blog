@@ -1,16 +1,12 @@
 
 +++
-author = "osgav"
+title = "mermaid"
+slug = "mermaid"
 date = "2019-03-09T16:35:49Z"
 draft = false
-image = ""
-share = false
-slug = "mermaid"
-title = "mermaid"
+type = "lab"
+author = "osgav"
 tags = ["mermaid", "diagrams"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 09/03/2019`**<br />

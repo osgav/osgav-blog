@@ -1,17 +1,14 @@
+
 +++
-author = "osgav"
+title = "GNU Terry Pratchett through the Looking Glasses"
+slug = "gnu-terry-pratchett-through-the-looking-glasses"
 date = "2020-10-30T14:14:18Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/gnu-terry-pratchett-through-the-looking-glasses/pratchett_graffiti_1.jpg"
-share = true
-slug = "gnu-terry-pratchett-through-the-looking-glasses"
 tags = ["looking glass", "python", "BeautifulSoup", "SQLite", "web crawler", "X-Clacks-Overhead", "Terry Pratchett"]
-title = "GNU Terry Pratchett through the Looking Glasses"
-[menu.main]
-parent = "blog"
 +++
-
-
 
 > *"A man is not dead while his name is still spoken."*
 

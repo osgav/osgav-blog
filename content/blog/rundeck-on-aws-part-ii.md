@@ -1,16 +1,13 @@
+
 +++
-author = "osgav"
-comments = true
+title = "Rundeck on AWS Part II: Ansible"
+slug = "rundeck-on-aws-part-ii"
 date = "2016-10-20T19:47:42Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/rundeck-logo2.png"
-share = true
-slug = "rundeck-on-aws-part-ii"
 tags = ["Rundeck", "AWS", "Ansible", "EC2"]
-title = "Rundeck on AWS Part II: Ansible"
-[menu.main]
-parent = "blog"
-
 +++
 
 Following on from [Part I](/blog/rundeck-on-aws-part-i.html), I've now starting writing an Ansible playbook for creating a Rundeck server in AWS - which can currently provision and terminate a Rundeck server. No more CloudFormation to deploy a new instance woohoo!

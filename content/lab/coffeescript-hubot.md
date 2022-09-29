@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "CoffeeScript (Hubot)"
+slug = "coffeescript-hubot"
 date = "2019-01-04T11:00:08Z"
 draft = false
-image = ""
-share = false
-slug = "coffeescript-hubot"
-title = "CoffeeScript (Hubot)"
+type = "lab"
+author = "osgav"
 tags = ["CoffeeScript", "hubot", "bots"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 04/01/2019`**<br />

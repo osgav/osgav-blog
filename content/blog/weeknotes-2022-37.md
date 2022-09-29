@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: week 37"
+slug = "weeknotes-2022-37"
 date = "2022-09-19T20:02:41Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-37"
 tags = ["BCS", "cartography", "DigitalOcean", "CLI", "doctl", "AWS", "CloudFront"]
-title = "weeknotes: week 37"
-[menu.main]
-parent = "blog"
 +++
 
 Another week passes, and what a good one it was! 

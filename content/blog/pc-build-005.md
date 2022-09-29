@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "PC Build 005: is it Build Day yet?"
+slug = "pc-build-005"
 date = "2021-12-15T13:53:49Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/pc-build/pc-build-header.jpg"
-share = true
-slug = "pc-build-005"
 tags = ["PC Build"]
-title = "PC Build 005: is it Build Day yet?"
-[menu.main]
-parent = "blog"
 +++
 
 The short answer: *no.*

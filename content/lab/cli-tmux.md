@@ -1,16 +1,12 @@
 
 +++
-author = "osgav"
+title = "CLI tmux"
+slug = "cli-tmux"
 date = "2019-02-17T15:56:48Z"
 draft = false
-image = ""
-share = false
-slug = "cli-tmux"
-title = "CLI tmux"
+type = "lab"
+author = "osgav"
 tags = ["tmux"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 17/02/2019`**<br />

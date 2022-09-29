@@ -1,15 +1,13 @@
+
 +++
-author = "osgav"
+title = "Recent Ansible Adventures"
+slug = "recent-ansible-adventures"
 date = "2017-05-30T12:51:59Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/ansible_logo-tile.png"
-share = true
-slug = "recent-ansible-adventures"
 tags = ["Ansible", "configuration", "Rundeck", "AWS", "ELB", "ACM"]
-title = "Recent Ansible Adventures"
-[menu.main]
-parent = "blog"
-
 +++
 
 #### Oops

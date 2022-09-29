@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "GEOG 868: Mapping the Class Roster"
+slug = "mapping-the-class-roster"
 date = "2022-08-18T16:15:45Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/kelsoknight-unsplash.jpg"
-share = true
-slug = "mapping-the-class-roster"
 tags = ["GIS", "SQL", "CLI", "database design", "map design", "cartography",  "PostGIS", "pgcli", "ogr2ogr", "QGIS"]
-title = "GEOG 868: Mapping the Class Roster"
-[menu.main]
-parent = "blog"
 +++
 
 [![class roster map](/images/posts/class-roster/class-roster-map.png)](/images/posts/class-roster/class-roster-map.png)

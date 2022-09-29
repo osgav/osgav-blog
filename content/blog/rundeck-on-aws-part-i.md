@@ -1,16 +1,13 @@
+
 +++
-author = "osgav"
-comments = true
+title = "Rundeck on AWS Part I: CloudFormation"
+slug = "rundeck-on-aws-part-i"
 date = "2016-09-25T11:37:09Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/rundeck-logo2.png"
-share = true
-slug = "rundeck-on-aws-part-i"
 tags = ["Rundeck", "AWS", "CloudFormation", "EC2"]
-title = "Rundeck on AWS Part I: CloudFormation"
-[menu.main]
-parent = "blog"
-
 +++
 
 #### Then...

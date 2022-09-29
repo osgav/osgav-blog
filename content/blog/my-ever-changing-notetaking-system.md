@@ -1,19 +1,14 @@
 
 +++
-author = "osgav"
+title = "My ever changing notetaking system"
+slug = "my-everchanging-notetaking-system"
 date = "2022-02-08T14:30:42Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/pale-blue-dot.jpg" 
-share = true
-slug = "my-everchanging-notetaking-system"
 tags = ["notetaking", "Obsidian"]
-title = "My ever changing notetaking system"
-[menu.main]
-parent = "blog"
 +++
-
-
-
 
 > "Everything starts from a dot." 
 

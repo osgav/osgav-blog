@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "CLI web"
+slug = "cli-web"
 date = "2019-01-04T12:10:08Z"
 draft = false
-image = ""
-share = false
-slug = "cli-web"
-title = "CLI web"
+type = "lab"
+author = "osgav"
 tags = ["bash", "web tools"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 04/01/2019`**<br />

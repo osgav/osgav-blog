@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: week 34"
+slug = "weeknotes-2022-34"
 date = "2022-08-28T19:21:51Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-34"
 tags = ["GIS", "PostGIS", "BCS", "cartography"]
-title = "weeknotes: week 34"
-[menu.main]
-parent = "blog"
 +++
 
 A few things I got up to this week:

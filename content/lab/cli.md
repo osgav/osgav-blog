@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "Command Line Interface"
+slug = "cli"
 date = "2019-01-04T12:10:08Z"
 draft = false
-image = ""
-share = false
-slug = "cli"
-title = "Command Line Interface"
+type = "lab"
+author = "osgav"
 tags = ["bash"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 04/01/2019`**<br />

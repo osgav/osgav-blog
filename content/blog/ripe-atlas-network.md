@@ -1,16 +1,13 @@
+
 +++
-author = "osgav"
-comments = true
+title = "RIPE Atlas Network"
+slug = "ripe-atlas-network"
 date = "2016-10-30T19:26:48Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/ripe-atlas-network/atlas.png"
-share = true
-slug = "ripe-atlas-network"
 tags = ["RIPE Atlas", "network", "synthetic testing", "monitoring", "raspberry pi"]
-title = "RIPE Atlas Network"
-[menu.main]
-parent = "blog"
-
 +++
 
 #### RIPE Atlas Network

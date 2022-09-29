@@ -1,12 +1,12 @@
+
 +++
-author = "osgav"
+title = "$ whois osgav"
+slug = "whois-osgav"
 date = "2016-06-05T13:41:15Z"
 draft = false
-title = "$ whois osgav"
+type = "blog"
+author = "osgav"
 image = "images/halfheadimg.jpg"
-share = false
-
-
 +++
 
 ### osgav.run

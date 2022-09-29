@@ -1,16 +1,13 @@
+
 +++
-author = "osgav"
-comments = true
+title = "operation not possible due to rf-kill hard blocked"
+slug = "operation-not-possible-rfkill"
 date = "2018-09-09T20:20:02Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headimgr.jpg"
-share = true
-slug = "operation-not-possible-rfkill"
 tags = ["rfkill", "linux", "wireless"]
-title = "operation not possible due to rf-kill hard blocked"
-[menu.main]
-parent = "blog"
-
 +++
 
 Are you googling for `rfkill` :question:

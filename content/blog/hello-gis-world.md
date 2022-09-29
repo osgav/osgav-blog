@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "Hello (GIS) World!"
+slug = "hello-gis-world"
 date = "2022-03-16T11:04:07Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/topographic-green.jpg"
-share = true
-slug = "hello-gis-world"
 tags = ["GIS", "QGIS", "PyQGIS", "python", "CmdModule", "CLI"]
-title = "Hello (GIS) World!"
-[menu.main]
-parent = "blog"
 +++
 
 I am exploring the world of **Geographic Information Systems** (GIS).

@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "I Migrated to Obsidian"
+slug = "i-migrated-to-obsidian"
 date = "2020-11-30T19:31:50Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/i-migrated-to-obsidian/obsidian.jpg"
-share = true
-slug = "i-migrated-to-obsidian"
 tags = ["notetaking", "Zettelkasten", "Joplin", "Obsidian"]
-title = "I Migrated to Obsidian"
-[menu.main]
-parent = "blog"
 +++
 
 For continuity of my [experiment](/blog/para-zettelkasten-experiment.html) I felt I should mention that I have migrated from [Joplin](https://joplinapp.org) to [Obsidian](https://obsidian.md). 

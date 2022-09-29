@@ -1,16 +1,12 @@
 
 +++
-author = "osgav"
+title = "cli-database"
+slug = "cli-database"
 date = "2019-03-09T15:47:31Z"
 draft = false
-image = ""
-share = false
-slug = "cli-database"
-title = "cli-database"
+type = "lab"
+author = "osgav"
 tags = ["database", "sqlite3"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 09/03/2019`**<br />

@@ -1,16 +1,13 @@
+
 +++
-author = "osgav"
-comments = true
+title = "hugo --> AWS --> https://osgav.run"
+slug = "hugo-to-aws-to-https"
 date = "2016-10-01T14:56:12Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/hugo-to-aws-to-https/aws.jpg"
-share = true
-slug = "hugo-to-aws-to-https"
 tags = ["Hugo", "AWS", "GitHub", "TravisCI", "S3", "CloudFront", "CDN", "Route53", "DNS", "ACM", "HTTPS", "graphs"]
-title = "hugo --> AWS --> https://osgav.run"
-[menu.main]
-parent = "blog"
-
 +++
 
 #### Why migrate to AWS?

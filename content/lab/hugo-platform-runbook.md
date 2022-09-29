@@ -1,14 +1,12 @@
+
 +++
-author = "osgav"
+title = "Hugo Platform Runbook"
+slug = "hugo-platform-runbook"
 date = "2016-06-12T21:33:09Z"
 draft = false
+type = "lab"
+author = "osgav"
 image = "images/hugo-logo2.png"
-share = false
-slug = "hugo-platform-runbook"
-title = "Hugo Platform Runbook"
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 12/06/2016`**

@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "ELK"
+slug = "elk"
 date = "2019-01-04T11:50:08Z"
 draft = false
-image = ""
-share = false
-slug = "elk"
-title = "ELK"
+type = "lab"
+author = "osgav"
 tags = ["ELK"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 04/01/2019`**<br />

@@ -1,13 +1,12 @@
+
 +++
-author = "osgav"
+title = "cheatsheet" 
+slug = "cheatsheet"
 date = "2019-01-01T12:30:00Z"
 draft = false
-slug = "cheatsheet"
+type = "lab"
+author = "osgav"
 tags = ["Hugo"]
-title = "cheatsheet" 
-[menu.main]
-parent = "lab"
-
 +++
 
 [***view source on Github***](https://raw.githubusercontent.com/osgav/osgav-source/master/content/lab/cheatsheet.md)

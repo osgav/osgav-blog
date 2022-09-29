@@ -1,16 +1,13 @@
+
 +++
-author = "osgav"
-comments = true
+title = "Fix Rundeck Export Archive"
+slug = "fix-rundeck-export-archive"
 date = "2018-09-09T20:20:01Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/fix-rundeck-export-archive/rundeck-header.png"
-share = true
-slug = "fix-rundeck-export-archive"
 tags = ["Rundeck", "bash"]
-title = "Fix Rundeck Export Archive"
-[menu.main]
-parent = "blog"
-
 +++
 
 Seeing an error when trying to Export Archive for one of your Rundeck projects?

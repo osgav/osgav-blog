@@ -1,16 +1,14 @@
+
 +++
-author = "osgav"
+title = "hugo --> https://osgav.run"
+slug = "hugo-to-https"
 comments = true
 date = "2016-06-12T11:33:49Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/hugo-logo2.png"
-share = true
-slug = "hugo-to-https"
 tags = ["Hugo", "GitHub", "CDN", "HTTPS"]
-title = "hugo --> https://osgav.run"
-[menu.main]
-parent = "blog"
-
 +++
 
 I stumbled across the Hugo static site generator recently and after reading a little and watching a [short video](https://gohugo.io/overview/quickstart/) (01:08) I thought it looked pretty interesting and worth trying out. It's a fairly light blogging platform which can be used with GitHub Pages, which can then be topped with another service to provide SSL via a Let's Encrypt certificate.

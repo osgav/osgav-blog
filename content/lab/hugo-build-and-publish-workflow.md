@@ -1,14 +1,12 @@
+
 +++
-author = "osgav"
+title = "Hugo Build and Publish Workflow"
+slug = "hugo-build-and-publish-workflow"
 date = "2016-06-11T20:10:08Z"
 draft = false
+type = "lab"
+author = "osgav"
 image = "images/hugo-logo2.png"
-share = false
-slug = "hugo-build-and-publish-workflow"
-title = "Hugo Build and Publish Workflow"
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 11/06/2016`**<br />

@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "UFO Investigation Organization"
+slug = "ufo-investigation-organization"
 date = "2022-07-26T17:02:10Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/coolcatgamestudio-2668046-ufo-pixabay.jpg"
-share = true
-slug = "ufo-investigation-organization"
 tags = ["databases", "database design", "diagrams", "UFOs"]
-title = "UFO Investigation Organization"
-[menu.main]
-parent = "blog"
 +++
 
 In the off chance you arrived at this web page hoping to report a UFO sighting, I am afraid this website does not take UFO sighting reports.

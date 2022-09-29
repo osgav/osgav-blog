@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "PC Build 004: Powered by Seasonic"
+slug = "pc-build-004"
 date = "2021-10-26T09:34:04Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/pc-build/pc-build-header.jpg"
-share = true
-slug = "pc-build-004"
 tags = ["PC Build", "Seasonic"]
-title = "PC Build 004: Powered by Seasonic"
-[menu.main]
-parent = "blog"
 +++
  
  A power supply unit, or PSU, was the first thing I started looking into after I bought [my case](/blog/pc-build-001.html). But I soon realised there is a vast range of power-supplying capabilities – with the most basic question *"what wattage is it?"* ranging from 300W to 1200W. That's quite a difference.

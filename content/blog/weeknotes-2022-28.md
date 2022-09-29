@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: GIS 101"
+slug = "weeknotes-2022-28"
 date = "2022-07-13T14:32:02Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-28"
 tags = ["GIS", "weeknotes"]
-title = "weeknotes: GIS 101"
-[menu.main]
-parent = "blog"
 +++
 
 So I've decided to give *weeknotes* a go. 

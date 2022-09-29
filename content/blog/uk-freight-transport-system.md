@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "UK Freight Transport System"
+slug = "uk-freight-transport-system"
 date = "2022-09-13T10:40:48Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/gift_habeshaw-unsplash.jpg"
-share = true
-slug = "uk-freight-transport-system"
 tags = ["GIS", "QGIS", "maps", "map design", "cartography", "supply chain", "supply chain analysis", "climate change", "shipping ports", "railway network", "uncertainty"]
-title = "UK Freight Transport System"
-[menu.main]
-parent = "blog"
 +++
 
 For the graded assignment in the [Introduction to Mapping, Spatial Data and GIS](https://www.conted.ox.ac.uk/courses/introducing-mapping-spatial-data-and-gis-online) course I completed in June I made the following map:

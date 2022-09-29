@@ -1,14 +1,13 @@
+
 +++
-author = "osgav"
+title = "P.A.R.A. and Zettelkasten Experiment: My Conclusion"
+slug = "para-zettelkasten-conclusion"
 date = "2021-04-21T14:15:59Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/para-zettelkasten-experiment/header_01.jpg"
-share = true
-slug = "para-zettelkasten-conclusion"
 tags = ["PARA", "Zettelkasten", "notetaking"]
-title = "P.A.R.A. and Zettelkasten Experiment: My Conclusion"
-[menu.main]
-parent = "blog"
 +++
 
 At the beginning of [my experiment](/blog/para-zettelkasten-experiment.html) I intended to write regular updates on what I was getting up to, however I haven't really done that.

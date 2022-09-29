@@ -1,15 +1,13 @@
+
 +++
-author = "osgav"
+title = "OneNote vs Joplin"
+slug = "onenote-vs-joplin"
 date = "2020-08-19T21:06:18Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/para-zettelkasten-experiment/header_01.jpg"
-share = true
-slug = "onenote-vs-joplin"
 tags = ["notetaking", "OneNote", "Joplin", "PARA", "BASB"]
-title = "OneNote vs Joplin"
-[menu.main]
-parent = "blog"
-
 +++
 
 As explained in my [previous blog post](/blog/para-zettelkasten-experiment.html), I have started an experiment on my notetaking methods. 

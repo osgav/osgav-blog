@@ -1,17 +1,14 @@
 
 +++
-author = "osgav"
+title = "PC Build 003: bundle of joy"
+slug = "pc-build-003"
 date = "2021-08-19T10:42:58Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/pc-build/pc-build-header.jpg"
-share = true
-slug = "pc-build-003"
 tags = ["PC Build", "Linus Tech Tips", "ASUS TUF"]
-title = "PC Build 003: bundle of joy"
-[menu.main]
-parent = "blog"
 +++
- 
 
 July was an exciting month.
 <br><br>

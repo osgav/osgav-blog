@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "SQLite database WHERE clause condition not filtering rows"
+slug = "sqlite-database-where-not-filtering"
 date = "2022-07-26T14:55:32Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/myrfa-3126475-files-pixabay.jpg"
-share = true
-slug = "sqlite-database-where-not-filtering"
 tags = ["SQLite", "SQL", "database design"]
-title = "SQLite database WHERE clause condition not filtering rows"
-[menu.main]
-parent = "blog"
 +++
 
 It is possible to create a table in an SQLite database where the columns have no *type.*

@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
-date = "2019-01-04T12:10:08Z"
-draft = false
-image = ""
-share = false
 slug = "cli-env-shell"
 title = "CLI environment & shell"
+date = "2019-01-04T12:10:08Z"
+draft = false
+type = "lab"
+author = "osgav"
 tags = ["bash"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 04/01/2019`**<br />

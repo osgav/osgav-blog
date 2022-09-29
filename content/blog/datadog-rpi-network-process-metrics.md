@@ -1,15 +1,13 @@
+
 +++
-author = "osgav"
+title = "Datadog on Raspberry Pi: Enabling Network and Process Metrics"
+slug = "datadog-rpi-network-process-metrics"
 date = "2018-05-06T16:10:01Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/datadog-rpi-network-process-metrics/dd-rpi.png"
-share = true
-slug = "datadog-rpi-network-process-metrics"
 tags = ["Datadog", "monitoring", "network", "process", "metrics", "graphs", "raspberry pi", "Raspbian", "linux", "go"]
-title = "Datadog on Raspberry Pi: Enabling Network and Process Metrics"
-[menu.main]
-parent = "blog"
-
 +++
 
 Empty graphs in Datadog after installing the agent on a Raspberry Pi?<br />

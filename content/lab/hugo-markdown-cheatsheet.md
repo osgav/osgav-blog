@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
-comments = false
+title = "Hugo Markdown Cheatsheet"
+slug = "hugo-markdown-cheatsheet"
 date = "2016-06-11T16:40:05Z"
 draft = false
+type = "lab"
+author = "osgav"
 image = "images/hugo-logo2.png"
-share = false
-slug = "hugo-markdown-cheatsheet"
-title = "Hugo Markdown Cheatsheet"
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 11/06/2016`**<br />

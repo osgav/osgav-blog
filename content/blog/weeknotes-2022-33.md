@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: week 33"
+slug = "weeknotes-2022-33"
 date = "2022-08-22T19:21:23Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-33"
 tags = ["GIS", "MapScaping", "cartography", "python", "ankibox"]
-title = "weeknotes: week 33"
-[menu.main]
-parent = "blog"
 +++
 
 Oops, my first late weeknote! I intended to get it done at the weekend rather than on Wednesday like usual, but that has ended up slipping over to today, Monday. Anyway. What GIS things did I get up to since my last post? 

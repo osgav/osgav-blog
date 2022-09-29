@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "CLI git"
+slug = "cli-git"
 date = "2019-01-04T11:20:08Z"
 draft = false
-image = ""
-share = false
-slug = "cli-git"
-title = "CLI git"
+type = "lab"
+author = "osgav"
 tags = ["git", "GitHub", "version control"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 04/01/2019`**<br />

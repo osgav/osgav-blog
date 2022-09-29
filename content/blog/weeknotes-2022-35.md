@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: week 35"
+slug = "weeknotes-2022-35"
 date = "2022-09-04T19:20:01Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-35"
 tags = ["GIS", "BCS", "cartography"]
-title = "weeknotes: week 35"
-[menu.main]
-parent = "blog"
 +++
 
 Just a few things to note this week:

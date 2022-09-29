@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "Hugo Date Operations (osgav epoch)"
+slug = "hugo-date-operations"
 date = "2019-01-19T14:18:00Z"
 draft = false
-image = ""
-share = false
-slug = "hugo-date-operations"
-title = "Hugo Date Operations (osgav epoch)"
+type = "lab"
+author = "osgav"
 tags = ["Hugo", "go"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 19/01/2019`**<br />

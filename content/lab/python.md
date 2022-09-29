@@ -1,16 +1,12 @@
 
 +++
-author = "osgav"
+title = "python"
+slug = "python"
 date = "2019-01-27T10:08:37Z"
 draft = false
-image = ""
-share = false
-slug = "python"
-title = "python"
+type = "lab"
+author = "osgav"
 tags = ["python"]
-[menu.main]
-parent = "lab"
-
 +++
 
 **`created: 27/01/2019`**<br />

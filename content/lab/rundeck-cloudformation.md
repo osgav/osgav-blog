@@ -1,15 +1,12 @@
+
 +++
-author = "osgav"
+title = "Rundeck CloudFormation"
+slug = "rundeck-cloudformation"
 date = "2016-09-25T11:37:09Z"
 draft = false
+type = "lab"
+author = "osgav"
 image = "images/rundeck-logo2.png"
-share = false
-slug = "rundeck-cloudformation"
-title = "Rundeck CloudFormation"
-[menu.main]
-parent = "lab"
-
-
 +++
 
 **`created: 25/09/2016`**

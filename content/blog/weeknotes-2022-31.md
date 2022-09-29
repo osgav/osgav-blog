@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "weeknotes: more NASA"
+slug = "weeknotes-2022-31"
 date = "2022-08-03T20:34:21Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
-share = true
-slug = "weeknotes-2022-31"
 tags = ["GIS", "NASA ARSET", "remote sensing", "Google Earth Engine", "ogr2ogr", "CLI"]
-title = "weeknotes: more NASA"
-[menu.main]
-parent = "blog"
 +++
 
 A bit of a lull in GEOG 868 progress in the last week, as I crammed the prerequisites for the [NASA ARSET](https://appliedsciences.nasa.gov/join-mission/training/english/arset-satellite-remote-sensing-measuring-urban-heat-islands-and) course I mentioned last week. 

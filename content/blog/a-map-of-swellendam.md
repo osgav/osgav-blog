@@ -1,17 +1,14 @@
 
 +++
-author = "osgav"
+title = "A map of Swellendam"
+slug = "a-map-of-swellendam"
 date = "2022-04-08T15:57:04Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/stamen-newcastle-toner-background-green.png"
-share = true
-slug = "a-map-of-swellendam"
 tags = ["GIS", "QGIS", "maps", "map design", "cartography"]
-title = "A map of Swellendam"
-[menu.main]
-parent = "blog"
 +++
-
 
 As noted in [Hello (GIS) World](/blog/hello-gis-world.html) I was recently working on the first assignment in the [QGIS Training Manual](https://docs.qgis.org/3.16/en/docs/training_manual/index.html). I planned to do 3 things for the assignment:
 

@@ -1,17 +1,14 @@
+
 +++
-author = "osgav"
+title = "P.A.R.A. and Zettelkasten Experiment"
+slug = "para-zettelkasten-experiment"
 date = "2020-07-31T08:31:13Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/posts/para-zettelkasten-experiment/header_01.jpg"
-share = true
-slug = "para-zettelkasten-experiment"
 tags = ["PARA", "Tiago Forte", "Zettelkasten", "Niklas Luhmann", "notetaking"]
-title = "P.A.R.A. and Zettelkasten Experiment"
-[menu.main]
-parent = "blog"
-
 +++
-
 
 Recently I decided to do something about my notes and notetaking methods.
 <br><br>

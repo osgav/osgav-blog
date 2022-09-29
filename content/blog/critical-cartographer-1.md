@@ -1,15 +1,13 @@
 
 +++
-author = "osgav"
+title = "critical cartographer: 1"
+slug = "critical-cartographer-1"
 date = "2022-09-16T14:44:48Z"
 draft = false
+type = "blog"
+author = "osgav"
 image = "images/headers/qaway-4858305981-flickr.jpg"
-share = true
-slug = "critical-cartographer-1"
 tags = ["cartography", "map design", "critique"]
-title = "critical cartographer: 1"
-[menu.main]
-parent = "blog"
 +++
 
 The first *Student Reflection* in [GEOG 486 Lesson 1](https://www.e-education.psu.edu/geog486/node/643) asks:
