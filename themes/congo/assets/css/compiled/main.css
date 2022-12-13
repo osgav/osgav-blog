@@ -2522,10 +2522,6 @@ body:has(#menu-controller:checked) {
   font-weight: 400;
 }
 
-.font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -3172,53 +3168,4 @@ body:has(#menu-controller:checked) {
   .xl\:w-1\/5 {
     width: 20%;
   }
-}
-
-
-/* osgav custom */
-
-.heading-box {
-  color: rgba(var(--color-neutral-50));
-  border: rgba(var(--color-neutral-600),1) 2px solid;
-  border-radius: 25px;
-  padding: 15px;
-}
-
-.explore-button {
-  padding: 10px 15px;
-  display: inline-block;
-  border: var(--tw-prose-quote-borders) 1px solid;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: all 0.5s ease;
-}
-
-.explore-button:hover {
-  color: #ffffff;
-  background-color: var(--tw-prose-quote-borders);
-  border: var(--tw-prose-links) 1px solid;
-  border-radius: 4px; 
-}
-
-.tagcloudtag {
-  background-color: transparent;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-.tagcloudtag:hover {
-  color: rgba(var(--color-neutral-900),1);
-  background-color: rgba(var(--color-primary-600),1);
-}
-
-.powered-by-link {
-  color: rgb(var(--color-neutral-100));
-  background-color: rgb(var(--color-primary-600));
-  padding-top: 2px;
-  transition: all 0.5s ease;
-}
-
-.powered-by-link:hover {
-  color: rgb(var(--color-neutral-900));
-  background-color: rgb(var(--color-neutral-100));
 }

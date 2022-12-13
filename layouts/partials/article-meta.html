@@ -47,13 +47,13 @@
 
   {{/* Output taxonomies */}}
   {{ if .Params.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false) }}
-    <div class="my-1 text-xs text-neutral-500 dark:text-neutral-400 ">
+    <div class="my-1 font-mono text-xs text-neutral-500 dark:text-neutral-400" style="line-height:2.75em;">
       {{ range $taxonomy, $terms := .Site.Taxonomies }}
         {{ if (gt (len ($context.GetTerms $taxonomy)) 0) }}
           {{ range $context.GetTerms $taxonomy }}
             <a
               href="{{ .RelPermalink }}"
-              class="px-1 py-[1px] border rounded-md border-neutral-200 dark:border-neutral-600 hover:border-primary-300 hover:text-primary-700 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              class="px-1 py-1 border rounded-md border-neutral-200 dark:border-neutral-600 hover:border-primary-300 hover:text-primary-700 dark:hover:border-primary-600 dark:hover:text-primary-400"
               >{{ .LinkTitle }}</a
             >
           {{ end }}

@@ -1,0 +1,29 @@
+<article class="max-w-full prose dark:prose-invert">
+  {{ with .Title }}
+    <header>
+      <h1 class="heading-box font-mono mt-8 text-4xl font-extrabold text-neutral-50">{{ . | emojify }}</h1>
+    </header>
+  {{ end }}
+  <section>{{ .Content | emojify }}</section>
+</article>
+
+<section>
+  {{ partial "recent-articles.html" . }}
+</section>
+
+<article class="max-w-full prose dark:prose-invert">
+<section>
+  <br>
+  <h1 class="heading-box prose dark:prose-invert font-mono mt-8 text-4xl font-extrabold text-neutral-50">&nbsp;$ ./explore</h1>
+  <center>
+    {{ partial "explore-buttons.html" . }}
+  </center>
+</section>
+</article>
+
+<section>
+  <center>
+    {{ partial "tagcloud.html" . }}
+  </center>
+</section>
+
