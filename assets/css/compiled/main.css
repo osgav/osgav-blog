@@ -2513,6 +2513,10 @@ body:has(#menu-controller:checked) {
   line-height: 1.75rem;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
 .leading-6 {
   line-height: 1.5rem;
 }

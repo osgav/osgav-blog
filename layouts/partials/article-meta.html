@@ -47,7 +47,7 @@
 
   {{/* Output taxonomies */}}
   {{ if .Params.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false) }}
-    <div class="my-1 font-mono text-xs text-neutral-500 dark:text-neutral-400 osgav-line-height-275em">
+    <div class="my-1 font-mono text-xs leading-8 text-neutral-500 dark:text-neutral-400">
       {{ range $taxonomy, $terms := .Site.Taxonomies }}
         {{ if (gt (len ($context.GetTerms $taxonomy)) 0) }}
           {{ range $context.GetTerms $taxonomy }}
