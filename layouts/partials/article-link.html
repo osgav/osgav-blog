@@ -35,7 +35,7 @@
       {{ partial "extend-article-link.html" . }}
     {{ end }}
   </h3>
-  <div class="mt-1 text-xs text-neutral-500 dark:text-neutral-400" style="max-width: 75ch;">
+  <div class="mt-1 text-xs text-neutral-500 dark:text-neutral-400 osgav-max-width-75ch">
     {{ partial "article-meta.html" . }}
   </div>
   {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
