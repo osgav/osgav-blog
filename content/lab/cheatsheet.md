@@ -42,6 +42,12 @@ smaller header
 
 
 ---
+highlighting
+---
+
+use `<mark>` to <mark>highlight</mark>
+
+---
 **Hyperlinks**
 ---
 
