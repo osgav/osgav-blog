@@ -2253,6 +2253,11 @@ body:has(#menu-controller:checked) {
   border-style: dotted;
 }
 
+.border-neutral-700 {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-neutral-700), var(--tw-border-opacity));
+}
+
 .border-neutral-400 {
   --tw-border-opacity: 1;
   border-color: rgba(var(--color-neutral-400), var(--tw-border-opacity));
