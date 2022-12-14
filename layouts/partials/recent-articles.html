@@ -1,6 +1,6 @@
 {{ if .Site.Params.homepage.showRecent | default false }}
   <br>
-  <h1 class="heading-box prose dark:prose-invert font-mono mt-8 text-4xl font-extrabold text-neutral-50">&nbsp;$ ./recent</h1>
+  <h1 class="rounded-box prose dark:prose-invert font-mono mt-8 p-4 text-4xl font-extrabold text-neutral-50">&nbsp;$ ./recent</h1>
   <br>
   {{ range first 5 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
     {{ partial "article-link.html" . }}

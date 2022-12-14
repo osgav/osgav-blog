@@ -8,11 +8,9 @@
 
 /* osgav custom */
 
-.heading-box {
-  color: rgba(var(--color-neutral-50));
+.rounded-box {
   border: rgba(var(--color-neutral-600),1) 2px solid;
   border-radius: 25px;
-  padding: 15px;
 }
 
 .explore-button {
