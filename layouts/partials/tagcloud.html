@@ -8,7 +8,7 @@
   {{ $spread := sub $max $min }}
   {{ $fontStep := div $fontSpread $spread }}
 
-  <div class="mt-12 mb-12 osgav-tagcloud-padding" id="tag-cloud">
+  <div class="my-12 px-4 py-1" id="tag-cloud">
       {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
           {{ $currentTagCount := len $taxonomy.Pages }}
           {{ $currentFontSize := (add $smallestFontSize (mul (sub $currentTagCount $min) $fontStep) ) }}
