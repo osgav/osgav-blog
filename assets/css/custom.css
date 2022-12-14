@@ -45,10 +45,6 @@
   background-color: rgb(var(--color-neutral-100));
 }
 
-.osgav-max-width-75ch {
-  max-width: 75ch;
-}
-
 .osgav-tagcloud-tag-span {
   line-height: 1.25em;
   vertical-align: middle;

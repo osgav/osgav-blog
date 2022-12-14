@@ -2125,6 +2125,10 @@ body:has(#menu-controller:checked) {
   max-width: 65ch;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
 .max-w-\[10rem\] {
   max-width: 10rem;
 }
