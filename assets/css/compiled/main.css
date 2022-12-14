@@ -2443,6 +2443,10 @@ body:has(#menu-controller:checked) {
   vertical-align: top;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .align-text-bottom {
   vertical-align: text-bottom;
 }

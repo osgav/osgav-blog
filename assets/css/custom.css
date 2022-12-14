@@ -44,10 +44,3 @@
   color: rgb(var(--color-neutral-900));
   background-color: rgb(var(--color-neutral-100));
 }
-
-.osgav-tagcloud-tag-span {
-  line-height: 1.25em;
-  vertical-align: middle;
-  font-family: monospace;
-  text-decoration: none;
-}

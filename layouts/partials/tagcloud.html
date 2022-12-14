@@ -16,7 +16,7 @@
           {{ $weight := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
           {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weight) ) }}
           <!--Current font size: {{$currentFontSize}}-->
-          <span class="osgav-tagcloud-tag-span">
+          <span class="font-mono align-middle leading-6">
           <a class="tagcloudtag" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}.html" style="font-size:{{$currentFontSize}}{{$fontUnit}}">{{ .Page.Title }}</a>
           </span>
       {{ end }}
