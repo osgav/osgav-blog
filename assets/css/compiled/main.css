@@ -2277,11 +2277,6 @@ body:has(#menu-controller:checked) {
   border-color: rgba(var(--color-neutral-200), var(--tw-border-opacity));
 }
 
-.border-primary-900 {
-  --tw-border-opacity: 1;
-  border-color: rgba(var(--color-primary-900), var(--tw-border-opacity));
-}
-
 .border-primary-400 {
   --tw-border-opacity: 1;
   border-color: rgba(var(--color-primary-400), var(--tw-border-opacity));
@@ -2301,8 +2296,18 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-neutral), 0.5);
 }
 
+.bg-neutral-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-neutral-400), var(--tw-bg-opacity));
+}
+
 .bg-neutral-100\/50 {
   background-color: rgba(var(--color-neutral-100), 0.5);
+}
+
+.bg-primary-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-primary-400), var(--tw-bg-opacity));
 }
 
 .bg-neutral-500\/50 {
@@ -2381,6 +2386,16 @@ body:has(#menu-controller:checked) {
   padding-bottom: 2rem;
 }
 
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2406,6 +2421,11 @@ body:has(#menu-controller:checked) {
   padding-bottom: 2.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2414,11 +2434,6 @@ body:has(#menu-controller:checked) {
 .py-\[1px\] {
   padding-top: 1px;
   padding-bottom: 1px;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pt-8 {
@@ -2583,19 +2598,14 @@ body:has(#menu-controller:checked) {
   color: rgba(var(--color-neutral-800), var(--tw-text-opacity));
 }
 
-.text-neutral-50 {
+.text-primary-400 {
   --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-50), var(--tw-text-opacity));
+  color: rgba(var(--color-primary-400), var(--tw-text-opacity));
 }
 
 .text-primary-700 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-700), var(--tw-text-opacity));
-}
-
-.text-primary-400 {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-primary-400), var(--tw-text-opacity));
 }
 
 .\!text-neutral {
@@ -2678,9 +2688,9 @@ body:has(#menu-controller:checked) {
   border-color: rgba(var(--color-primary-400), var(--tw-border-opacity));
 }
 
-.hover\:bg-primary-900:hover {
+.hover\:bg-primary-400:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-primary-900), var(--tw-bg-opacity));
+  background-color: rgba(var(--color-primary-400), var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-600:hover {
@@ -2703,6 +2713,21 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-primary-500), var(--tw-bg-opacity)) !important;
 }
 
+.hover\:px-2:hover {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.hover\:py-0\.5:hover {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.hover\:py-0:hover {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .hover\:text-primary-600:hover {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-600), var(--tw-text-opacity));
@@ -2713,9 +2738,9 @@ body:has(#menu-controller:checked) {
   color: rgba(var(--color-primary-700), var(--tw-text-opacity));
 }
 
-.hover\:text-neutral-50:hover {
+.hover\:text-neutral-800:hover {
   --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-50), var(--tw-text-opacity));
+  color: rgba(var(--color-neutral-800), var(--tw-text-opacity));
 }
 
 .hover\:text-primary-500:hover {

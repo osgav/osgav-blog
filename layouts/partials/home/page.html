@@ -1,7 +1,7 @@
 <article class="max-w-full prose dark:prose-invert">
   {{ with .Title }}
     <header>
-      <h1 class="rounded-box font-mono mt-8 p-4 text-4xl font-extrabold text-neutral-50">{{ . | emojify }}</h1>
+      <h1 class="font-mono mt-8 px-4 py-3 text-4xl font-extrabold text-neutral-800 bg-primary-400">{{ . | emojify }}</h1>
     </header>
   {{ end }}
   <section>{{ .Content | emojify }}</section>
@@ -14,9 +14,15 @@
 <article class="max-w-full prose dark:prose-invert">
 <section>
   <br>
-  <h1 class="rounded-box prose dark:prose-invert font-mono mt-8 p-4 text-4xl font-extrabold text-neutral-50">&nbsp;$ ./explore</h1>
+  <h1 class="font-mono mt-8 px-4 py-3 text-4xl font-extrabold text-neutral-800 bg-neutral-400">&nbsp;$ ./explore</h1>
   <center>
-    {{ partial "explore-buttons.html" . }}
+    {{ .Scratch.Set "href" "/blog.html" }}
+    {{ .Scratch.Set "text" "browse my blog >>>" }}
+    {{ partial "explore-button.html" . }}
+
+    {{ .Scratch.Set "href" "/tags.html" }}
+    {{ .Scratch.Set "text" "view blog archive >>>" }}
+    {{ partial "explore-button.html" . }}
   </center>
 </section>
 </article>
