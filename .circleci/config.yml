@@ -20,7 +20,7 @@ jobs:
       - aws-s3/copy:
           install-aws-cli: false
           from: /tmp/workspace/public/
-          to: s3://osgav.run/
+          to: s3://osgav.run/circleci-test02
           arguments: --recursive
 
 workflows:
@@ -39,6 +39,6 @@ workflows:
             - hugo/build
           context:
             - oidc
-          filters:
-            branches:
-              only: master
+#          filters:
+#            branches:
+#              only: master
