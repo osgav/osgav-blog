@@ -30,6 +30,10 @@ workflows:
       - hugo/build:
           version: "0.102.3"
           html-proofer: false
+          post-steps:
+            - run:
+                name: "run post-build-script.sh"
+                command: ./build/post-build-script.sh
       - deploy:
           requires:
             - hugo/build
