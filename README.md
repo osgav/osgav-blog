@@ -1,9 +1,6 @@
 # osgav-blog
 
-.
-
-[![Build Status](https://api.travis-ci.com/osgav/osgav-blog.svg?branch=master)](https://app.travis-ci.com/github/osgav/osgav-blog)
+[![CircleCI Build Status](https://circleci.com/gh/osgav/osgav-blog.svg?style=shield)](https://circleci.com/gh/osgav/osgav-blog)
 
 Source for https://osgav.run
 
-.
