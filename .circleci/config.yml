@@ -23,7 +23,7 @@ jobs:
           command: ls -R /tmp/workspace/public
       - run:
           name: run post-build-script.sh
-          command: ./post-build-script.sh
+          command: ./build/post-build-script.sh
           working_directory: /tmp/workspace
       - run:
           name: check build output 02
