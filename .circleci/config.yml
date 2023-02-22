@@ -13,10 +13,16 @@ jobs:
       - attach_workspace:
           at: /tmp/workspace
       - run:
+          name: look in the workspace
+          command: ls -a /tmp/workspace
+      - run:
+          name: pwd and ls
+          command: "pwd; ls -a"
+      - run:
           name: check build output
           command: ls -R /tmp/workspace/public
       - aws-cli/setup:
-          role-arn: "arn:aws:iam::698362578618:role/oidc-circleci-osgav-blog"
+          role-arn: "arn:aws:iam::698362578618:role/oidc-circleci-osgav-blog-STOPDEPLOY"
       - aws-s3/copy:
           install-aws-cli: false
           from: /tmp/workspace/public/
@@ -30,11 +36,19 @@ workflows:
       - hugo/build:
           version: "0.102.3"
           html-proofer: false
+          post-steps:
+            - run:
+                name: pwd and ls
+                command: "pwd; ls -a"
+            - persist_to_workspace:
+                root: .
+                paths:
+                  - build/
       - deploy:
           requires:
             - hugo/build
           context:
             - oidc
-          filters:
-            branches:
-              only: master
+#          filters:
+#            branches:
+#              only: master
