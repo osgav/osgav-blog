@@ -1,0 +1,7 @@
+<figure>
+<img
+  class="p-8 rounded-md bg-primary-100"
+  src="{{ .Get "src" }}" {{ with .Get "alt" }}alt="{{ . }}"{{ end }}
+/>
+  {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

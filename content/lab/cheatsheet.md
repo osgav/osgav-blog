@@ -119,6 +119,25 @@ and this
 
 {{< tweet 666616452582129664 >}}
 
+---
+**Drawing Shortcode**
+---
+
+https://github.com/osgav/osgav-blog/tree/master/layouts/shortcodes/drawing.html
+
+use `<` and `>` inside the `{{ }}` braces
+
+```
+drawing src="/path/to/image.png"
+```
+
+optional parameters:
+
+
+```
+drawing src="/path/to/image.png" alt="alt text" caption="caption text"
+```
+
 
 ---
 **Code formatting**

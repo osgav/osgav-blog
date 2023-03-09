@@ -14,7 +14,13 @@
   --color-neutral-900: 24, 24, 27;
   /* Yellow */
   --color-primary-50: 254, 252, 232;
-  --color-primary-100: 254, 249, 195;
+
+  /* Drawing Shortcode */
+  /*--color-primary-100: 254, 249, 195;*/
+  --color-primary-100: 251, 241, 199;
+  /* hijacking unused primary color
+     and tweaking it ever so slightly */
+
   --color-primary-200: 254, 240, 138;
   --color-primary-300: 253, 224, 71;
   --color-primary-400: 250, 204, 21;

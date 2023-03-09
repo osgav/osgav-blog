@@ -2301,6 +2301,11 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-neutral-400), var(--tw-bg-opacity));
 }
 
+.bg-primary-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-primary-100), var(--tw-bg-opacity));
+}
+
 .bg-neutral-100\/50 {
   background-color: rgba(var(--color-neutral-100), 0.5);
 }
@@ -2328,11 +2333,6 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-neutral-300), var(--tw-bg-opacity));
 }
 
-.bg-primary-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-primary-100), var(--tw-bg-opacity));
-}
-
 .bg-primary-600 {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-primary-600), var(--tw-bg-opacity));
@@ -2350,6 +2350,10 @@ body:has(#menu-controller:checked) {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .p-1 {
