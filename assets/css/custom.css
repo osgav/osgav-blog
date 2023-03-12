@@ -46,3 +46,21 @@ html {
   color: rgb(var(--color-neutral-800));
   background-color: rgb(var(--color-primary-400));
 }
+
+
+/* brackets around footnote links */
+/* via https://geekthis.net/post/hugo-footnotes-and-citations/ */
+
+a.footnote-ref::before {
+  content: '[';
+}
+
+a.footnote-ref::after {
+  content: ']';
+}
+
+/* applying font-mono in a hacky fashion */
+
+a.footnote-ref {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
+}
