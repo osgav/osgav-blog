@@ -58,10 +58,33 @@ Python was automagically making things work by not caring that a `float` was pro
 The next hiccup I encountered was that the MapSwipe Tool *Active Layer* (whichever layer you have selected when you enable the tool) wasn't scaled properly. The problem looks exactly like these reports:
 
 - https://gis.stackexchange.com/questions/324519/using-qgis-map-swipe-tool
-- https://github.com/lmotta/mapswipetool_plugin/issues/11
+- [MapSwipe Tool does not properly align both images](https://github.com/lmotta/mapswipetool_plugin/issues/11)
 
 Unfortunately I don't have a fix for this one, and so far have only been able to confirm that it appears to relate to OS-level resolution scaling (at least for me, on Fedora / Wayland). When I set my display scale to 100% instead of 200% the MapSwipe Tool worked perfectly (as it does on my Windows desktop, just like the first report linked above). 
 
+**UPDATE: 20230318**
+
+I figured out how to fix this issue!
+
+In my case it seems to relate to the *Device Pixel Ratio* not being correct. After the following lines in `swipemap.py` in the `setMap` function...
+
+```
+settings = QgsMapSettings( self.canvas.mapSettings() )
+settings.setLayers( self.layers )
+settings.setBackgroundColor( QColor( Qt.transparent ) )
+```
+
+...add this line:
+
+```
+settings.setDevicePixelRatio( 1 )
+```
+
+The PyQGIS docs for [QgsMapSettings](https://qgis.org/pyqgis/3.4/core/QgsMapSettings.html#qgis.core.QgsMapSettings) say that `1` and `2` are common values for the `devicePixelRatio`:
+
+> `devicePixelRatio` – Returns device pixel ratio Common values are 1 for normal-dpi displays and 2 for high-dpi “retina” displays.
+
+Based on that I thought setting it to `2` might fix it, but it didn't. I then found that my Device Pixel Ratio was `1` with the help of `alacritty -v` (via [ArchWiki](https://wiki.archlinux.org/title/Alacritty), there are probably other ways to find this out but I happened to have `alacritty` already installed so it was convenient for me). So I set the value to `1` and *tadaaa* the MapSwipe Active Layer is now correctly aligned with the layer below it, wahey!
 
 ## swiping maps on the web
 
