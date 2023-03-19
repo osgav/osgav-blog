@@ -1,11 +1,14 @@
 {{ define "main" }}
+
   {{ $toc := and (.Params.showTableOfContents | default (.Site.Params.list.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
+
   <header>
     {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
     <h1 class="rounded-box font-mono mt-0 p-4 text-4xl font-extrabold text-neutral-900 dark:text-neutral">&nbsp;$ ./portfolio</h1>
   </header>
+
   <section
     class="flex flex-col max-w-full prose lg:flex-row dark:prose-invert {{ if $toc -}}
       mt-12
@@ -24,26 +27,25 @@
       {{ .Content | emojify }}
     </div>
   </section>
-  {{ if gt .Pages 0 }}
-    <section>
-      {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
-        {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
-          <h2 class="mt-12 text-2xl font-bold first:mt-8 text-neutral-700 dark:text-neutral-300">
-            {{ .Key }}
-          </h2>
-          <hr class="border-dotted border-neutral-400 w-36" />
-        {{ end }}
-        {{ range .Pages }}
-          {{ partial "article-link.html" . }}
-        {{ end }}
+
+
+<!-- messing around with creating a gallery view -->
+
+<section class="text-neutral-300">
+  <div class="container py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+    {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
+      {{ range .Pages }}
+        {{ partial "portfolio-link.html" . }}
       {{ end }}
-    </section>
-    {{ partial "pagination.html" . }}
-  {{ else }}
-    <section class="mt-10 prose dark:prose-invert">
-      <p class="py-8 border-t">
-        <em>{{ i18n "list.no_articles" | emojify }}</em>
-      </p>
-    </section>
-  {{ end }}
+    {{ end }}
+
+    </div>
+  </div>
+</section>
+
+<!-- messing around with creating a gallery view -->
+
+
 {{ end }}
