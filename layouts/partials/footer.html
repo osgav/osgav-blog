@@ -32,7 +32,7 @@
       {{ end }}
       {{/* Theme attribution */}}
       {{ if .Site.Params.footer.showThemeAttribution | default true }}
-        <p class="font-mono text-xs text-neutral-500 dark:text-neutral-400">
+        <p class="mb-3 font-mono text-xs text-neutral-500 dark:text-neutral-400">
           {{ $hugo := printf `<a class="powered-by-link uppercase hover:text-primary-500"
             href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">&nbsp;Hugo&nbsp;</a><br>`
           }}
@@ -40,6 +40,10 @@
           {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Congo" $congo) | safeHTML }}
         </p>
       {{ end }}
+      {{/* link to changelog */}}
+      <p class="font-mono text-xs text-neutral-500 dark:text-neutral-400">
+      view my <a class="powered-by-link hover:text-primary-500" href="/changelog.html">&nbsp;changelog&nbsp;</a>
+      </p>
     </div>
     {{/* Appearance switch */}}
     {{ if .Site.Params.footer.showAppearanceSwitcher | default false }}
