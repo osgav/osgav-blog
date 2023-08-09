@@ -37,7 +37,7 @@ html {
 
 .powered-by-link {
   color: rgb(var(--color-neutral-800));
-  background-color: rgb(var(--color-neutral-400));
+  background-color: rgb(var(--color-neutral-300));
   padding-top: 2px;
   transition: all 0.5s ease;
 }
