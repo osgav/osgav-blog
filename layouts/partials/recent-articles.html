@@ -1,6 +1,6 @@
 {{ if .Site.Params.homepage.showRecent | default false }}
   <br>
-  <h1 class="font-mono mt-8 px-4 py-3 text-4xl font-extrabold text-neutral-800 bg-neutral-400">&nbsp;$ ./recent</h1>
+  <h1 class="font-mono mt-8 px-4 py-3 text-4xl font-extrabold text-neutral-800 bg-neutral-300">&nbsp;$ ./recent</h1>
   <br>
   {{ range first 5 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
     {{ partial "article-link.html" . }}
