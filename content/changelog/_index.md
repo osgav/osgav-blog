@@ -13,5 +13,7 @@ showTableOfContents = false
 
 This is the changelog for my website. When I do stuff to the design or structure of things or other miscellany, I try to remember to make a note of it here. 
 
+- **20230810:** changed site logo PNG image to SVG
+- **20230810:** restyled site from "dark mode" to "light mode"
 - **20230514:** added a [changelog](/changelog.html) to my site
 
