@@ -1,31 +1,26 @@
 
 {{ $baseurl := .Site.BaseURL }}
 
-<div class="p-2 md:w-1/2">
-  <div class="flex flex-col h-full overflow-hidden prose dark:prose-invert border-2 border-dotted border-neutral-700">
+<div class="p-2 md:w-1/3 sm:w-1/2">
+  <div class="flex flex-col h-full overflow-hidden border border-neutral-300">
+
+    <a class="hover:bg-primary-400" href="{{ .RelPermalink }}">
     {{ with .Params.cover }}
     <img class="h-auto w-full object-cover object-center" src="{{ $baseurl }}{{ . }}">
     {{ else }}
     <p>no image</p>
     {{ end }}
-    <div class="flex flex-col grow p-6">
+    <div class="flex flex-col grow">
       <div class="flex flex-col">
-      <h1 class="text-2xl font-black text-neutral-300 mb-3">{{ .Title | emojify }}</h1>
+      <h1 class="text-xl text-neutral-800 p-4"><b>{{ .Title | emojify }}</b></h1>
+
       <!-- <p class="leading-relaxed mb-3">{{ .Slug }}</p> -->
       </div>
-      <div class="flex flex-col grow justify-end items-start flex-wrap">
-        <a class="border-4 border-solid border-neutral-700
-                  hover:border-neutral-600
-                  mt-4 px-4 py-1
-                  font-mono text-neutral
-                  hover:bg-neutral-700
-                  no-underline
-                 "
-                 href="{{ .RelPermalink }}">
-        view >>>
-        </a>
-      </div>
 
+      <div class="flex flex-col mb-3 grow justify-end items-start flex-wrap">
+      </div>
     </div>
+   </a>
+
   </div>
 </div>
