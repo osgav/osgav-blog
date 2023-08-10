@@ -2160,8 +2160,8 @@ body:has(#menu-controller:checked) {
   min-width: 2.4rem;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 
 .max-w-full {
@@ -2174,6 +2174,10 @@ body:has(#menu-controller:checked) {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .max-w-3xl {
