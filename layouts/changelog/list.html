@@ -4,7 +4,7 @@
     {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <h1 class="font-mono mt-8 px-4 py-3 text-4xl font-extrabold text-neutral-800 bg-neutral-300">&nbsp;$ ./{{ .Title }}</h1>
   </header>
   <section
     class="flex flex-col max-w-full prose lg:flex-row dark:prose-invert {{ if $toc -}}

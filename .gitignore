@@ -3,6 +3,3 @@ resources/
 ccc/
 exec/
 hugo/
-content/lab/_*
-content/blog/_*
-static/md/_*

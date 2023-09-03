@@ -1,6 +1,6 @@
 
 +++
-title = "&nbsp;$ whois osgav"
+title = "whois osgav"
 slug = "osgav"
 date = "2018-04-19T18:50:42+01:00"
 draft = false

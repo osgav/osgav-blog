@@ -1,6 +1,6 @@
 
 +++
-title = "&nbsp;$ ./osgav.run"
+title = "osgav.run"
 draft = false
 +++
 
