@@ -15,7 +15,10 @@
 >
   {{- partial "head.html" . -}}
   <body
-    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral-100 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-screen-xl"
+    class="bg-neutral-100 dark:bg-neutral-800"
+  >
+  <div
+    class="flex flex-col px-6 m-auto text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:text-neutral max-w-screen-xl"
   >
     <div id="the-top" class="absolute flex self-center">
       <a
@@ -50,10 +53,11 @@
           </div>
         {{ end }}
       </main>
-      {{- partial "footer.html" . -}}
       {{ if .Site.Params.enableSearch | default false }}
         {{- partial "search.html" . -}}
       {{ end }}
     </div>
+  </div>
+      {{- partial "footer.html" . -}}
   </body>
 </html>

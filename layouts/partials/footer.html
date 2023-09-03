@@ -1,26 +1,38 @@
-<footer class="py-10 print:hidden">
+<footer class="flex justify-center py-10 mt-12 print:hidden bg-primary-400 w-full">
+<div class="px-6 m-auto sm:px-14 md:px-24 lg:px-32 grow max-w-screen-xl">
   {{/* Footer menu */}}
   {{ if .Site.Menus.footer }}
-    <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+    <nav class="pb-4 text-base font-medium text-neutral-800 dark:text-neutral-800">
       <ul>
         {{ range .Site.Menus.footer }}
           <li class="mt-1 font-mono">
+	    &#11166;
             <a
-              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+	      class="inline-block hover:bg-neutral-800 hover:text-primary-400"
               href="{{ .URL }}"
               title="{{ .Title }}"
-              >{{ .Name | markdownify | emojify }}</a
+              >&nbsp;{{ .Name | markdownify | emojify }}&nbsp;</a
             >
           </li>
         {{ end }}
       </ul>
     </nav>
   {{ end }}
+
+  <div class="flex items-center font-mono text-sm text-neutral-800 dark:text-neutral-800">
+  {{ partial "rss-icon.html" "rss" }}
+  <a
+    class="leading-[.5rem] self-center decoration-neutral-800 hover:underline hover:decoration-2 hover:underline-offset-2"
+    href="/index.xml"
+    >subscribe to RSS</a
+  >
+  </div>
+
   <div class="flex items-center justify-between">
     <div>
       {{/* Copyright */}}
       {{ if .Site.Params.footer.showCopyright | default true }}
-        <p class="mt-6 mb-3 font-mono text-sm text-neutral-500 dark:text-neutral-400">
+        <p class="mt-6 mb-3 font-mono text-xs text-neutral-800 dark:text-neutral-800">
           {{- with .Site.Params.copyright }}
             {{ . | emojify | markdownify }}
           {{- else }}
@@ -32,17 +44,17 @@
       {{ end }}
       {{/* Theme attribution */}}
       {{ if .Site.Params.footer.showThemeAttribution | default true }}
-        <p class="mb-3 font-mono text-xs text-neutral-500 dark:text-neutral-400">
-          {{ $hugo := printf `<a class="powered-by-link uppercase hover:text-primary-500"
+        <p class="mb-3 font-mono text-xs text-neutral-800 dark:text-neutral-800">
+          {{ $hugo := printf `<a class="powered-by-link uppercase"
             href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">&nbsp;Hugo&nbsp;</a><br>`
           }}
-          {{ $congo := printf `<a class="powered-by-link uppercase hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">&nbsp;Congo&nbsp</a>` }}
+          {{ $congo := printf `<a class="powered-by-link uppercase" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">&nbsp;Congo&nbsp</a>` }}
           {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Congo" $congo) | safeHTML }}
         </p>
       {{ end }}
       {{/* link to changelog */}}
-      <p class="font-mono text-xs text-neutral-500 dark:text-neutral-400">
-      view my <a class="powered-by-link hover:text-primary-500" href="/changelog.html">&nbsp;changelog&nbsp;</a>
+      <p class="font-mono text-xs text-neutral-800 dark:text-neutral-800">
+      view my <a class="powered-by-link" href="/changelog.html">&nbsp;changelog&nbsp;</a>
       </p>
     </div>
     {{/* Appearance switch */}}
@@ -68,4 +80,5 @@
   {{ if templates.Exists "partials/extend-footer.html" }}
     {{ partialCached "extend-footer.html" . }}
   {{ end }}
+</div>
 </footer>

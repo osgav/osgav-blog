@@ -86,8 +86,3 @@
   pageRef = "now"
   weight = 7
 
-[[footer]]
-  name = "RSS"
-  url = "/index.xml"
-  weight = 8
-
