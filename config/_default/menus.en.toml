@@ -12,8 +12,7 @@
 
 [[main]]
   name = "home"
-  pageref = "home"
-  url = "/"
+  pageref = "/"
   weight = 1
 
 [[main]]
@@ -45,11 +44,6 @@
   name = "now"
   pageRef = "now"
   weight = 7
-
-[[main]]
-  name = "RSS"
-  url = "/index.xml"
-  weight = 8
 
 
 # -- Footer Menu --

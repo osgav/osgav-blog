@@ -1978,6 +1978,11 @@ body:has(#menu-controller:checked) {
   margin-right: auto;
 }
 
+.my-0\.5 {
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1989,6 +1994,10 @@ body:has(#menu-controller:checked) {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mt-12 {
@@ -2023,12 +2032,12 @@ body:has(#menu-controller:checked) {
   margin-bottom: 0.75rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .mr-3 {
@@ -2217,6 +2226,10 @@ body:has(#menu-controller:checked) {
 
 .grow {
   flex-grow: 1;
+}
+
+.basis-8\/12 {
+  flex-basis: 66.666667%;
 }
 
 .-translate-y-8 {
@@ -2560,6 +2573,18 @@ body:has(#menu-controller:checked) {
   padding-bottom: 1rem;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pb-1\.5 {
+  padding-bottom: 0.375rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -2625,11 +2650,6 @@ body:has(#menu-controller:checked) {
 
 .text-\[0\.6rem\] {
   font-size: 0.6rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -2815,6 +2835,11 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-primary-400), var(--tw-bg-opacity));
 }
 
+.hover\:bg-neutral-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-neutral-800), var(--tw-bg-opacity));
+}
+
 .hover\:bg-primary-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-primary-600), var(--tw-bg-opacity));
@@ -2868,6 +2893,11 @@ body:has(#menu-controller:checked) {
 .hover\:text-primary-500:hover {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-500), var(--tw-text-opacity));
+}
+
+.hover\:text-primary-400:hover {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-primary-400), var(--tw-text-opacity));
 }
 
 .hover\:text-neutral:hover {
@@ -3292,6 +3322,10 @@ body:has(#menu-controller:checked) {
     width: 33.333333%;
   }
 
+  .md\:basis-7\/12 {
+    flex-basis: 58.333333%;
+  }
+
   .md\:p-\[10vh\] {
     padding: 10vh;
   }
@@ -3333,6 +3367,10 @@ body:has(#menu-controller:checked) {
 
   .lg\:max-w-xs {
     max-width: 20rem;
+  }
+
+  .lg\:basis-6\/12 {
+    flex-basis: 50%;
   }
 
   .lg\:flex-row {
