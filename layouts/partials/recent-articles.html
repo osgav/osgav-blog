@@ -1,8 +1,38 @@
 {{ if .Site.Params.homepage.showRecent | default false }}
-  <br>
-  <h1 class="font-mono mt-8 px-4 py-3 text-4xl font-extrabold text-neutral-800 bg-neutral-300">&nbsp;$ ./recent</h1>
-  <br>
-  {{ range first 5 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
-    {{ partial "article-link.html" . }}
-  {{ end }}
+
+  <div class="flex flex-col lg:flex-row">
+
+    <div class="blog-feed flex-1 py-3 lg:mr-3">
+    <h2 class="font-mono mt-10 mb-8 px-4 py-3 text-2xl font-extrabold text-neutral-800 bg-neutral-300">blog</h2>
+    {{ $pages := (where (where .Site.Pages "Type" "blog") "IsPage" true) }}
+    {{ range first 12 $pages }}
+      {{ partial "article-link-compact.html" . }}
+    {{ end }}
+    </div>
+
+    <div class="weeknotes-feed flex-1 py-3 lg:ml-3">
+    <h2 class="font-mono mt-10 mb-8 px-4 py-3 text-2xl font-extrabold text-neutral-800 bg-neutral-300">weeknotes</h2>
+    <!-- $pages := (where (where .Site.Pages "Params.collections" "intersect" (slice "weeknotes")) "IsPage" true) -->
+    {{ $pages := (where (where .Site.Pages "Type" "weeknotes") "IsPage" true) }}
+    {{ range first 12 $pages }}
+      {{ partial "article-link-compact.html" . }}
+    {{ end }}
+    </div>
+
+  </div>
+
+  <div class="my-12">
+    {{ .Scratch.Set "href" "/blog.html" }}
+    {{ .Scratch.Set "text" "view all blogs" }}
+    {{ partial "explore-button.html" . }}
+
+    {{ .Scratch.Set "href" "/weeknotes.html" }}
+    {{ .Scratch.Set "text" "view all weeknotes" }}
+    {{ partial "explore-button.html" . }}
+
+    {{ .Scratch.Set "href" "/archives.html" }}
+    {{ .Scratch.Set "text" "view everything" }}
+    {{ partial "explore-button.html" . }}
+  </div>
+
 {{ end }}

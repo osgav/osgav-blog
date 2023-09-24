@@ -24,9 +24,9 @@
       {{ .Content | emojify }}
     </div>
   </section>
-  {{ if gt .Pages 0 }}
+  {{ if gt .Site.Pages 0 }}
     <section>
-      {{ $pages := (where .Pages "Type" "blog") }}
+      {{ $pages := (where (where .Site.Pages "Type" "weeknotes") "IsPage" true) }}
       {{ range (.Paginate ($pages.GroupByDate "2006")).PageGroups }}
         {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
           <h2 class="mt-12 text-2xl font-bold first:mt-8 text-neutral-700 dark:text-neutral-300">

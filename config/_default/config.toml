@@ -9,7 +9,7 @@ theme = "congo"
 uglyurls = true
 
 enableRobotsTXT = true
-paginate = 10
+paginate = 100
 summaryLength = 0
 
 [outputs]

@@ -1987,16 +1987,16 @@ body:has(#menu-controller:checked) {
   margin-top: 0px;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .mb-12 {
@@ -2021,6 +2021,10 @@ body:has(#menu-controller:checked) {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-1 {
@@ -2197,6 +2201,10 @@ body:has(#menu-controller:checked) {
 
 .max-w-\[10rem\] {
   max-width: 10rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-none {
@@ -2431,12 +2439,12 @@ body:has(#menu-controller:checked) {
      object-position: left;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-8 {
@@ -2467,6 +2475,16 @@ body:has(#menu-controller:checked) {
   padding-right: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2492,11 +2510,6 @@ body:has(#menu-controller:checked) {
   padding-right: 0.25rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -2510,11 +2523,6 @@ body:has(#menu-controller:checked) {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-24 {
@@ -2619,6 +2627,11 @@ body:has(#menu-controller:checked) {
   font-size: 0.6rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2692,14 +2705,14 @@ body:has(#menu-controller:checked) {
   color: rgba(var(--color-neutral-400), var(--tw-text-opacity));
 }
 
-.text-neutral-500 {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-500), var(--tw-text-opacity));
-}
-
 .text-neutral-800 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-800), var(--tw-text-opacity));
+}
+
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-500), var(--tw-text-opacity));
 }
 
 .text-neutral-300 {
@@ -3300,6 +3313,14 @@ body:has(#menu-controller:checked) {
 
   .lg\:order-last {
     order: 9999;
+  }
+
+  .lg\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
+  .lg\:ml-3 {
+    margin-left: 0.75rem;
   }
 
   .lg\:hidden {
