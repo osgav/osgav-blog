@@ -7,6 +7,7 @@ type = "blog"
 author = "osgav"
 draft = false
 image = "images/headers/marianne-bos-unsplash.jpg"
+collections = ["weeknotes"]
 tags = ["Hugo", "web design", "DigitalOcean", "CLI", "doctl", "configuration", "Tailscale"]
 +++
 

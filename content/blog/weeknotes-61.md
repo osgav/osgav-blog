@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/headers/marianne-bos-unsplash.jpg"]
+collections = ["weeknotes"]
 tags = ["Obsidian", "old books", "Mergin Maps"]
 +++
 

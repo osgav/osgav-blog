@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
+collections = ["weeknotes"]
 tags = ["BCS", "cartography", "qgis2threejs", "CARTO", "Ordnance Survey", "open data", "greenground maps", "mapsinthewild", "30DayMapChallenge", "map design"]
 +++
 

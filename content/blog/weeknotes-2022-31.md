@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/marianne-bos-unsplash.jpg"
+collections = ["weeknotes"]
 tags = ["GIS", "NASA ARSET", "remote sensing", "Google Earth Engine", "ogr2ogr", "CLI"]
 +++
 
