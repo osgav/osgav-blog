@@ -3,7 +3,7 @@
 title = "weeknotes: osgav redesign"
 slug = "weeknotes-2022-39"
 date = "2022-09-29T18:42:03Z"
-type = "blog"
+type = "weeknotes"
 author = "osgav"
 draft = false
 image = "images/headers/marianne-bos-unsplash.jpg"
