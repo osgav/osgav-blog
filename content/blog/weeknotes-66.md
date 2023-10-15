@@ -2,7 +2,7 @@
 +++
 title = "weeknotes 66: memory lane"
 slug = "weeknotes-66"
-date = "2023-10-13T13:33:32Z"
+date = "2023-10-13T13:33:42Z"
 draft = false
 type = "weeknotes"
 author = "osgav"
