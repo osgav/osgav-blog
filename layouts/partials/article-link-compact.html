@@ -29,7 +29,7 @@
       <a
         class="px-2 py-0.5 text-neutral-800 dark:text-neutral-300 dark:hover:text-neutral-800 hover:bg-primary-400 hover:px-2 hover:py-0.5"
         href="{{ .RelPermalink }}"
-	>[{{ $osgav_epoch }}] &nbsp; {{ .Title | emojify }}</a
+	><span class="font-mono">[{{ $osgav_epoch }}]</span> &nbsp; {{ .Title | emojify }}</a
       >
     {{ end }}
     {{ if and .Draft .Site.Params.article.showDraftLabel }}
