@@ -15,5 +15,7 @@ keywords = ["GIS", "QGIS", "maps", "map design", "cartography", "supply chain", 
 
 **blog post:** [UK Freight Transport System](/blog/uk-freight-transport-system.html)
 
+**assignment report:** [PDF](/files/gis-ox-assignment-report.pdf)
+
 [![UK Freight Transport System - shipping ports without rail connections](/images/posts/uk-freight-transport-system/map_35.png)](/images/posts/uk-freight-transport-system/map_65.png)
 
