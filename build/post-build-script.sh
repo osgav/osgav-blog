@@ -24,3 +24,9 @@ rm public/tags/index.xml
 
 rm public/categories.html
 rm -rf public/categories/
+
+# remove git-submodule-related files
+#
+rm public/files/gis/*/.git*
+rm public/files/gis/.git*
+
