@@ -1,0 +1,4 @@
+[submodule "static/files/gis"]
+	path = static/files/gis
+	url = https://github.com/osgav/osgav-gis
+	branch = main
