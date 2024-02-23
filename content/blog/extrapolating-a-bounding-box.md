@@ -1,6 +1,6 @@
 
 +++
-title = "extrapolating the edges of a bounding box"
+title = "extrapolating the edges of a bounding box (QGIS)"
 slug = "extrapolating-a-bounding-box"
 date = "2023-04-29T12:31:36Z"
 draft = false
