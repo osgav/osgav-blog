@@ -13,6 +13,7 @@ showTableOfContents = false
 
 This is the changelog for my website. When I do stuff to the design or structure of things or other miscellany, I try to remember to make a note of it here. 
 
+- **`20240207`** integrated Leaflet maps (see [commit](https://github.com/osgav/osgav-blog/commit/d1dbaea44dd3a7c8a44028169a466fa3dfad0e1c), [lab page](/lab/hugo-leaflet-integration.html))
 - **`20231102`** redesigned site footer (see [commit](https://github.com/osgav/osgav-blog/commit/44bd4a65d00d95cd1ef4fe035a57004e213ff4cb))
 - **`20231018`** redesigned site header (see [commit](https://github.com/osgav/osgav-blog/commit/07ba95f4c82629b5b5dfb83d3b2a79174cc6d93f))
 - **`20230925`** redesigned homepage recent feed (see [commit](https://github.com/osgav/osgav-blog/commit/7a7259adc5652d41646e2e6c43733164958aeef3))
