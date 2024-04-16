@@ -11,7 +11,7 @@ tags = ["PostGIS", "geodatabase", "database design"]
 +++
 
 **`created: 26/09/2023`**<br />
-**`updated: 26/09/2023`**
+**`updated: 16/04/2024`**
 
 
 ## **start/stop PostgreSQL server**
@@ -19,6 +19,15 @@ tags = ["PostGIS", "geodatabase", "database design"]
 ```bash
 sudo systemctl start postgresql
 sudo systemctl stop postgresql
+```
+
+
+## **check PostgreSQL version**
+
+you can check the PostgreSQL server version from the command line with:
+
+```bash
+postgres --version
 ```
 
 
@@ -57,3 +66,97 @@ update the `search_path` to have `\dt` list tables in your schema without specif
 SET search_path TO myschema, public;
 SHOW search_path;
 ```
+
+
+## **check which role you currently are**
+
+```sql
+SELECT current_user;  -- user name of current execution context
+SELECT session_user;  -- session user name
+```
+
+`current_user` will change if you use `SET ROLE something;`
+
+`session_user` will show who you connected to the database as
+
+via https://stackoverflow.com/a/22502312
+
+
+## **create new PostGIS database**
+
+**as superadmin `postgres`:**
+
+```bash
+postgres=# CREATE DATABASE mydb OWNER postgres;
+CREATE DATABASE
+postgres=#
+postgres=# \c mydb
+Password:
+You are now connected to database "mydb" as user "postgres".
+mydb=#
+mydb=# CREATE EXTENSION postgis;
+CREATE EXTENSION
+mydb=#
+```
+
+
+## **check PostGIS version**
+
+```sql
+mydb=# SELECT postgis_full_version();
+```
+
+
+## **create schema**
+
+```sql
+CREATE SCHEMA myschema AUTHORIZATION postgres;
+```
+
+
+## **schema naming convention**
+
+**(work in progress)**
+
+#### **SOURCE schemas**
+
+- are for **new external datasets**
+- name should be based on data provider
+- name should be prefixed with double underscore `__`
+- should *almost* always have an associated **topic schema**
+  - which exists to give a meaningful name to the dataset
+  - and should contain at least one view pointed at the source schema
+
+#### **TOPIC schemas**
+
+- are for **new datasets created by you**
+- or to provide a meaningful name for a **source schema**
+- name should represent the subject or theme of the data inside
+- projects can create things in here
+  - but **not if it involves joining data from outside the schema**
+
+#### **PROJECT schemas**
+
+- are for projects that want to **join data from different schemas**
+- name should be prefixed with single underscore `_`
+
+
+## **create table with geometry column**
+
+```sql
+CREATE TABLE schema.table
+(
+gid serial,
+name character varying(50),
+PRIMARY KEY (gid)
+);
+```
+
+```sql
+SELECT AddGeometryColumn('schema', 'table', 'geom', 4326, 'POINT', 2);
+```
+
+- `geom` is the name of the new geometry column you're adding
+- `4326` is the SRID for WGS84, geographic coordinate reference system (lat / lon)
+- `2` is for a column storing X and Y coordinates
+- `3` would be for storing X, Y and Z coordinates (or X, Y and M if type is `POINTM`)
