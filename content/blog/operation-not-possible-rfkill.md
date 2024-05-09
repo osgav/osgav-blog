@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headimgr.jpg"
+collections = ["blog"]
 tags = ["rfkill", "linux", "wireless"]
 +++
 

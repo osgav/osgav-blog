@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/kelsoknight-unsplash.jpg"
+collections = ["blog"]
 tags = ["GIS", "SQL", "CLI", "database design", "map design", "cartography",  "PostGIS", "pgcli", "ogr2ogr", "QGIS"]
 +++
 

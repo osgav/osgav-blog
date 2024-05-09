@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/rundeck-logo2.png"
+collections = ["blog"]
 tags = ["Rundeck", "AWS", "Ansible", "EC2"]
 +++
 

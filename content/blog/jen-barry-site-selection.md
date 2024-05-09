@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/kik-gallery-vecteezy.jpg"
+collections = ["blog"]
 tags = ["GIS", "SQL", "CLI", "site selection", "spatial analysis", "cartography", "map design", "PostGIS", "visidata", "psql", "ogr2ogr", "pgAdmin", "QGIS", "grayscale", "ice cream"]
 +++
 

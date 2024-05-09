@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/posts/qgis-plugin-mapswipe-tool/maps-nls-uk_scotland_l.jpg"]
+collections = ["blog"]
 tags = ["QGIS", "ArcGIS", "swipe tool", "python", "PyQGIS", "linux"]
 +++
 

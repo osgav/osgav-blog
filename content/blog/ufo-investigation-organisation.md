@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/coolcatgamestudio-2668046-ufo-pixabay.jpg"
+collections = ["blog"]
 tags = ["databases", "database design", "diagrams", "UFOs"]
 +++
 

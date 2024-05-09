@@ -1,0 +1,28 @@
+<div class="pt-8 prose">
+hello world
+<br><br>
+
+<ul>
+{{ range .Params.collections }}
+  {{ if eq . "blog" }}
+  not printing anything
+  {{ else if eq . "weeknotes" }}
+  still not printing anything
+  {{ else }}
+  <li>{{ . }}</li>  
+  {{ $collection := (where (where $.Site.Pages "Params.collections" "intersect" (slice .)) "IsPage" true) }}
+  <ol>
+  {{ range $collection }}
+    {{ if eq $.Title .Title }}
+      <li><b>{{ .Page.Title }}</b></li>
+    {{ else }}
+      <li>{{ .Page.Title }}</li>
+    {{ end }}
+  {{ end }}
+  </ol>
+  {{ end }}
+{{ end }}
+</ul>
+
+</div>
+

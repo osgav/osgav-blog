@@ -8,6 +8,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/hugo-logo2.png"
+collections = ["blog"]
 tags = ["Hugo", "GitHub", "CDN", "HTTPS"]
 +++
 

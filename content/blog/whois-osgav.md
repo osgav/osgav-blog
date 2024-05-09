@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/halfheadimg.jpg"
+collections = ["blog"]
 +++
 
 ### osgav.run

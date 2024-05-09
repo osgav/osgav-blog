@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/joey-csunyo-unsplash.jpg"
+collections = ["blog"]
 tags = ["GIS", "QGIS", "maps", "map design", "cartography"]
 +++
 

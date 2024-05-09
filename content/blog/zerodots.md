@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/zerodots_wordle.png"
+collections = ["blog"]
 tags = ["ZER0D0TS", "Hugo"]
 +++
 

@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/datadog-rpi-network-process-metrics/dd-rpi.png"
+collections = ["blog"]
 tags = ["Datadog", "monitoring", "network", "process", "metrics", "graphs", "raspberry pi", "Raspbian", "linux", "go"]
 +++
 

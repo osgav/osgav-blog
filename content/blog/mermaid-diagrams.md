@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/mermaid-diagrams/mermaidheader.png"
+collections = ["blog"]
 tags = ["mermaid", "diagrams", "Grafana", "Hugo"]
 +++
 

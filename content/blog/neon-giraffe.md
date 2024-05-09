@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/posts/neon-giraffe/neon_giraffe.png"]
+collections = ["blog"]
 tags = ["glitch gallery", "neon giraffe", "abstract art", "bus routes", "Edinburgh", "QGIS"]
 +++
 

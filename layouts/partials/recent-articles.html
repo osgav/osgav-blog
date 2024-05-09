@@ -4,7 +4,9 @@
 
     <div class="blog-feed flex-1 py-3 lg:mr-3">
     <h2 class="font-mono mt-10 mb-8 px-4 py-3 text-2xl font-extrabold text-neutral-800 bg-neutral-300">blog</h2>
-    {{ $pages := (where (where .Site.Pages "Type" "blog") "IsPage" true) }}
+    {{ $weeknotes := (where (where .Site.Pages "Params.collections" "intersect" (slice "weeknotes")) "IsPage" true) }}
+    {{ $pages := (where (where .Site.Pages "Params.collections" "intersect" (slice "blog")) "IsPage" true) | complement $weeknotes }}
+    <!-- $pages := (where (where .Site.Pages "Type" "blog") "IsPage" true) -->
     {{ range first 12 $pages }}
       {{ partial "article-link-compact.html" . }}
     {{ end }}
@@ -12,8 +14,8 @@
 
     <div class="weeknotes-feed flex-1 py-3 lg:ml-3">
     <h2 class="font-mono mt-10 mb-8 px-4 py-3 text-2xl font-extrabold text-neutral-800 bg-neutral-300">weeknotes</h2>
-    <!-- $pages := (where (where .Site.Pages "Params.collections" "intersect" (slice "weeknotes")) "IsPage" true) -->
-    {{ $pages := (where (where .Site.Pages "Type" "weeknotes") "IsPage" true) }}
+    {{ $pages := (where (where .Site.Pages "Params.collections" "intersect" (slice "weeknotes")) "IsPage" true) }}
+    <!-- $pages := (where (where .Site.Pages "Type" "weeknotes") "IsPage" true) -->
     {{ range first 12 $pages }}
       {{ partial "article-link-compact.html" . }}
     {{ end }}

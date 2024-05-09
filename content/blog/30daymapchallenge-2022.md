@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/posts/30dmc/2022/fullres/all.jpg"]
+collections = ["blog"]
 tags = ["30DayMapChallenge", "cartography", "map design", "GIS", "QGIS", "visidata"]
 +++
 

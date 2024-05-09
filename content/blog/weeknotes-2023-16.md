@@ -7,7 +7,7 @@ draft = false
 type = "weeknotes"
 author = "osgav"
 images = ["images/headers/marianne-bos-unsplash.jpg"]
-collections = ["weeknotes"]
+collections = ["blog", "weeknotes"]
 tags = ["Mergin Maps", "BCS", "Leaflet", "atlases", "old books"]
 +++
 

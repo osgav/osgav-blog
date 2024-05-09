@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/headers/geralt-256603-abstract-1280-pixabay.jpg"]
+collections = ["blog"]
 tags = ["Anki", "Obsidian", "ankibox", "notetaking", "spaced repetition"]
 +++
 

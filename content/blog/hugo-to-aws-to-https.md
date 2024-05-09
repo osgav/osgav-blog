@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/hugo-to-aws-to-https/aws.jpg"
+collections = ["blog"]
 tags = ["Hugo", "AWS", "GitHub", "TravisCI", "S3", "CloudFront", "CDN", "Route53", "DNS", "ACM", "HTTPS", "graphs"]
 +++
 

@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/qaway-4858305981-flickr.jpg"
+collections = ["blog"]
 tags = ["cartography", "map design", "critique"]
 +++
 

@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/headers/myrfa-3126475-files-pixabay.jpg"]
+collections = ["blog"]
 tags = ["meta"]
 +++
 

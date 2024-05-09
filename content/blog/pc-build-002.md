@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/pc-build/pc-build-header.jpg"
+collections = ["blog"]
 tags = ["PC Build", "Linus Tech Tips"]
 +++
 

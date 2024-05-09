@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/gift_habeshaw-unsplash.jpg"
+collections = ["blog"]
 tags = ["GIS", "QGIS", "maps", "map design", "cartography", "supply chain", "supply chain analysis", "climate change", "shipping ports", "railway network", "uncertainty"]
 +++
 

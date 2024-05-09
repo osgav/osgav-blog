@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/pale-blue-dot.jpg" 
+collections = ["blog"]
 tags = ["notetaking", "Obsidian"]
 +++
 

@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/i-migrated-to-obsidian/obsidian.jpg"
+collections = ["blog"]
 tags = ["notetaking", "Zettelkasten", "Joplin", "Obsidian"]
 +++
 

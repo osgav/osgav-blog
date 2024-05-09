@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/gnu-terry-pratchett-through-the-looking-glasses/pratchett_graffiti_1.jpg"
+collections = ["blog"]
 tags = ["looking glass", "python", "BeautifulSoup", "SQLite", "web crawler", "X-Clacks-Overhead", "Terry Pratchett"]
 +++
 

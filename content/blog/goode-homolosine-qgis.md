@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/posts/goode-homolosine-qgis/goode-homolosine-osgav.png"]
+collections = ["blog"]
 tags = ["QGIS", "map projections", "Goode Homolosine"]
 +++
 

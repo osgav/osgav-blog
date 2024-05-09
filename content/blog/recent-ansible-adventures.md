@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/ansible_logo-tile.png"
+collections = ["blog"]
 tags = ["Ansible", "configuration", "Rundeck", "AWS", "ELB", "ACM"]
 +++
 

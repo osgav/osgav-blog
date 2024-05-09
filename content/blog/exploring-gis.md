@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/topographic-green.jpg"
+collections = ["blog"]
 tags = ["GIS", "geospatial"]
 +++
 

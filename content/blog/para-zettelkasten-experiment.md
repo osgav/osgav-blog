@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/para-zettelkasten-experiment/header_01.jpg"
+collections = ["blog"]
 tags = ["PARA", "Tiago Forte", "Zettelkasten", "Niklas Luhmann", "notetaking"]
 +++
 

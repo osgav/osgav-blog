@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/posts/ye-olde-street-view/fullres/book02.jpg"]
+collections = ["blog"]
 tags = ["old books", "street view", "building plans"]
 +++
 

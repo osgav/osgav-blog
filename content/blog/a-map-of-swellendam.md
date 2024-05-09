@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/headers/stamen-newcastle-toner-background-green.png"
+collections = ["blog"]
 tags = ["GIS", "QGIS", "maps", "map design", "cartography"]
 +++
 

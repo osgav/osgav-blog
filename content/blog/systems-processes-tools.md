@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/headers/elf-moondance-19728901-workers-1280-pixabay.jpg"]
+collections = ["blog"]
 tags = ["systems thinking", "systems", "processes", "tools"]
 +++
 

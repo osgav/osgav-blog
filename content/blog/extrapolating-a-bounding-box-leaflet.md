@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/posts/extrapolating-a-bounding-box/03.png"]
+collections = ["blog"]
 tags = ["Leaflet"]
 +++
 

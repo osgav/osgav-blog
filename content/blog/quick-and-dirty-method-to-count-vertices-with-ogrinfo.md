@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/headers/geoprocessing.png"]
+collections = ["blog"]
 tags = ["QGIS", "geoprocessing", "CLI", "ogrinfo", "bash"]
 +++
 

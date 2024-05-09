@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/ripe-atlas-network/atlas.png"
+collections = ["blog"]
 tags = ["RIPE Atlas", "network", "synthetic testing", "monitoring", "raspberry pi"]
 +++
 

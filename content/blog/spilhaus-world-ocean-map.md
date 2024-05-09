@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 images = ["images/posts/spilhaus-world-ocean-map/spilhaus-world-ocean-map.jpg"]
+collections = ["blog"]
 tags = ["cartography", "Spilhaus", "ArcGIS"]
 +++
 

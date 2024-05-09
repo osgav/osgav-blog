@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/fix-rundeck-export-archive/rundeck-header.png"
+collections = ["blog"]
 tags = ["Rundeck", "bash"]
 +++
 

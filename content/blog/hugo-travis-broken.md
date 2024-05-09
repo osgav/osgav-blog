@@ -7,6 +7,7 @@ draft = false
 type = "blog"
 author = "osgav"
 image = "images/posts/hugo-travis-broken/hugo-travis.png"
+collections = ["blog"]
 tags = ["Hugo", "TravisCI", "go"]
 +++
 
