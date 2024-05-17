@@ -17,5 +17,7 @@ keywords = ["GIS", "QGIS", "maps", "map design", "cartography", "supply chain", 
 
 **assignment report:** [PDF](/files/gis-ox-assignment-report.pdf)
 
+**python scraper:** [code](https://github.com/osgav/gis-ox-uk-ports-scraper-scripts)
+
 [![UK Freight Transport System - shipping ports without rail connections](/images/posts/uk-freight-transport-system/map_35.png)](/images/posts/uk-freight-transport-system/map_65.png)
 
