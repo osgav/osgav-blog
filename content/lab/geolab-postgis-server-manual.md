@@ -11,7 +11,7 @@ tags = ["PostGIS", "geodatabase", "database design"]
 +++
 
 **`created: 26/09/2023`**<br />
-**`updated: 16/04/2024`**
+**`updated: 17/05/2024`**
 
 
 ## **start/stop PostgreSQL server**
@@ -141,6 +141,13 @@ CREATE SCHEMA myschema AUTHORIZATION postgres;
 - name should be prefixed with single underscore `_`
 
 
+## **create table for test purposes**
+
+```sql
+CREATE TABLE schema.table (gid serial PRIMARY KEY, name varchar(5));
+```
+
+
 ## **create table with geometry column**
 
 ```sql
@@ -160,3 +167,31 @@ SELECT AddGeometryColumn('schema', 'table', 'geom', 4326, 'POINT', 2);
 - `4326` is the SRID for WGS84, geographic coordinate reference system (lat / lon)
 - `2` is for a column storing X and Y coordinates
 - `3` would be for storing X, Y and Z coordinates (or X, Y and M if type is `POINTM`)
+
+
+## **load CSV with psql**
+
+```bash
+\copy schema.table FROM '/path/to/data.csv' WITH (FORMAT csv, HEADER True, QUOTE '"')
+```
+
+
+## **populate geometry column from CSV**
+
+this assumes that `table` has columns called `latitude` and `longitude`
+
+using `ST_GeomFromText`:
+
+```sql
+UPDATE schema.table
+SET geom = ST_GeomFromText('POINT(' || longitude || ' ' || latitude || ')')
+;
+```
+
+using `ST_MakePoint`:
+
+```sql
+UPDATE schema.table
+SET geom = ST_SetSRID(ST_MakePoint(longitude,latitutde),4326)
+;
+```
