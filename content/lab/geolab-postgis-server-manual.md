@@ -11,7 +11,7 @@ tags = ["PostGIS", "geodatabase", "database design"]
 +++
 
 **`created: 26/09/2023`**<br />
-**`updated: 17/05/2024`**
+**`updated: 23/05/2024`**
 
 
 ## **start/stop PostgreSQL server**
@@ -194,4 +194,48 @@ using `ST_MakePoint`:
 UPDATE schema.table
 SET geom = ST_SetSRID(ST_MakePoint(longitude,latitutde),4326)
 ;
+```
+
+
+## use ogr2ogr to load Shapefile
+
+```bash
+ogr2ogr \
+  -nln new_layer_name_aka_table_name \
+  -nlt PROMOTE_TO_MULTI \
+  -lco SCHEMA=myschema \
+  -lco GEOMETRY_NAME=geom \
+  -lco PRECISION=no \
+  pg:"dbname=geolab host=localhost port=5432 user=geolab password=..." \
+  myshapefile.shp
+```
+
+
+## use ogr2ogr to load GeoPackage
+
+```bash
+ogr2ogr \
+  -nln new_layer_name_aka_table_name \
+  -nlt PROMOTE_TO_MULTI \
+  -lco SCHEMA=myschema \
+  -lco GEOMETRY_NAME=geom \
+  -lco PRECISION=no \
+  pg:"dbname=geolab host=localhost port=5432 user=geolab password=..." \
+  mygeopackage.gpkg \
+  layer_name_in_geopackage
+```
+
+
+## use ogr2ogr to load GeoJSON
+
+```bash
+ogr2ogr \
+  -nln new_layer_name_aka_table_name \
+  -nlt PROMOTE_TO_MULTI \
+  -lco SCHEMA=myschema \
+  -lco GEOMETRY_NAME=geom \
+  -lco PRECISION=no \
+  pg:"dbname=geolab host=localhost port=5432 user=geolab password=..." \
+  mygeojsondata.geojson \
+  layer_name_in_geojson
 ```
