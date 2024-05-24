@@ -11,7 +11,12 @@ tags = ["PostGIS", "geodatabase", "database design"]
 +++
 
 **`created: 26/09/2023`**<br />
-**`updated: 23/05/2024`**
+**`updated: 24/05/2024`**
+
+
+## **bootstrap geolab database**
+
+see https://github.com/osgav/geolab for scripts
 
 
 ## **start/stop PostgreSQL server**
@@ -29,6 +34,22 @@ you can check the PostgreSQL server version from the command line with:
 ```bash
 postgres --version
 ```
+
+
+## **locate PostgreSQL config files and data directory**
+
+once connected to the server you can locate these with:
+
+```sql
+SHOW config_file;
+SHOW hba_file;
+SHOW ident_file;
+SHOW data_directory;
+```
+
+https://www.postgresql.org/docs/current/runtime-config-file-locations.html
+
+via https://tomcam.github.io/postgres/
 
 
 ## **connect to server with psql**
@@ -197,7 +218,7 @@ SET geom = ST_SetSRID(ST_MakePoint(longitude,latitutde),4326)
 ```
 
 
-## use ogr2ogr to load Shapefile
+## **use ogr2ogr to load Shapefile**
 
 ```bash
 ogr2ogr \
@@ -211,7 +232,7 @@ ogr2ogr \
 ```
 
 
-## use ogr2ogr to load GeoPackage
+## **use ogr2ogr to load GeoPackage**
 
 ```bash
 ogr2ogr \
@@ -226,7 +247,7 @@ ogr2ogr \
 ```
 
 
-## use ogr2ogr to load GeoJSON
+## **use ogr2ogr to load GeoJSON**
 
 ```bash
 ogr2ogr \
