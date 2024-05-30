@@ -91,6 +91,12 @@ estimated_generation_note_2017 varchar(18)
 );
 ```
 
+**load data into geolab source schema:**
+
+```sql
+\copy __world_resources_institute.global_powerplants_import FROM 'global-power-plants.csv' WITH (FORMAT csv, HEADER True, QUOTE '"')
+```
+
 **create [topic schema](/lab/geolab-postgis-server-manual.html#topic-schemas):**
 
 ```sql
