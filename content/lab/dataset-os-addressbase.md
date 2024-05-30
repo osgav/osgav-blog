@@ -71,7 +71,8 @@ class
 **create table:**
 
 ```sql
-CREATE TABLE __ordnance_survey.addressbase_sample_import (
+CREATE TABLE __ordnance_survey.addressbase_sample_import
+(
 uprn numeric PRIMARY KEY,
 os_address_toid varchar(20),
 udprn numeric,
