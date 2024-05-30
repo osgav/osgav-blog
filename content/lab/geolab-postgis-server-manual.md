@@ -11,7 +11,7 @@ tags = ["geolab", "PostGIS", "geodatabase", "database design"]
 +++
 
 **`created: 26/09/2023`**<br />
-**`updated: 24/05/2024`**
+**`updated: 30/05/2024`**
 
 
 ## **bootstrap geolab database**
