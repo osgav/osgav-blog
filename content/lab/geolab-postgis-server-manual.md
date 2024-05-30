@@ -7,7 +7,7 @@ draft = false
 type = "lab"
 author = "osgav"
 images = ["..."]
-tags = ["PostGIS", "geodatabase", "database design"]
+tags = ["geolab", "PostGIS", "geodatabase", "database design"]
 +++
 
 **`created: 26/09/2023`**<br />
@@ -128,6 +128,19 @@ mydb=# SELECT postgis_full_version();
 ```
 
 
+## **allow non-superuser to install extension**
+
+set `trusted = true` in the extension's control file. e.g. for PostGIS that might be located at:
+
+```
+/usr/share/pgsql/extension/postgis.control
+```
+
+as per https://www.postgresql.org/docs/current/sql-createextension.html
+
+> Loading an extension ordinarily requires the same privileges that would be required to create its component objects. For many extensions this means superuser privileges are needed. However, if the extension is marked _trusted_ in its control file, then it can be installed by any user who has `CREATE` privilege on the current database. In this case the extension object itself will be owned by the calling user, but the contained objects will be owned by the bootstrap superuser (unless the extension's script explicitly assigns them to the calling user). This configuration gives the calling user the right to drop the extension, but not to modify individual objects within it.
+
+
 ## **create schema**
 
 ```sql
@@ -196,6 +209,12 @@ SELECT AddGeometryColumn('schema', 'table', 'geom', 4326, 'POINT', 2);
 \copy schema.table FROM '/path/to/data.csv' WITH (FORMAT csv, HEADER True, QUOTE '"')
 ```
 
+examples:
+
+- [dataset: Global Powerplants](/lab/dataset-global-powerplants.html)
+- [dataset: OS AddressBase](/lab/dataset-os-addressbase.html)
+- [dataset: Supermarket Retail Points](/lab/dataset-supermarket-retail-points.html)
+
 
 ## **populate geometry column from CSV**
 
@@ -260,3 +279,21 @@ ogr2ogr \
   mygeojsondata.geojson \
   layer_name_in_geojson
 ```
+
+
+## **ogr2ogr options**
+
+- https://gdal.org/programs/ogr2ogr.html
+- https://gdal.org/drivers/vector/index.html
+- https://gdal.org/drivers/vector/pg.html#vector-pg
+
+`-nln` = new layer name (aka table name)
+
+`-nlt` = new layer type
+
+`-lco` = layer creation option
+
+
+## **other resources**
+
+https://github.com/geographyclub/postgis-cookbook
